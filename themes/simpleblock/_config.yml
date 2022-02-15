@@ -5,7 +5,7 @@ duoshuo:
 ## Meta
 favicon: /avatars/v1.ico
 icon: /avatars/v1.ico
-source_url: http://www.panshenlian.com/
+source_url: 'https://github.com/senlypan/blog/blob/master/source/'
 license:
   name: 'CC BY-NC-SA 3.0'
   url: 'http://creativecommons.org/licenses/by-nc-sa/3.0/cn'
