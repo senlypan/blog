@@ -1,0 +1,54 @@
+## Services
+google_analytics:
+duoshuo:
+
+## Meta
+favicon: /avatars/v1.ico
+icon: /avatars/v1.ico
+source_url: http://www.panshenlian.com/
+license:
+  name: 'CC BY-NC-SA 3.0'
+  url: 'http://creativecommons.org/licenses/by-nc-sa/3.0/cn'
+
+## Menus
+menus:
+  '关于大晚': /about
+  '简历': /resume
+  '在读书单': /booklist
+  '所有日志': /list
+  
+right_menus:
+  '超级大脑':
+    target: '_blank'
+    href: 'http://super.panshenlian.com'
+
+## Banners && Widgets
+banners:
+  jade: |
+    a(href='http://www.panshenlian.com') 大晚最近在思考如何搭建一套个人网站，持续摸索中。
+
+widgets:
+  -
+    markdown: |
+      大晚生于 1990 年，英文 ID biglate.
+
+      * 2009 ~ 2013 本科毕业
+      * 2013 ~ 2015 创业失败
+      * 2015 ~ 2022 上班划水
+      * 至今一事无成
+
+  -
+    tags: true
+
+  -
+    archives: true
+
+  -
+    copyright: true
+
+## SNS (Work in progress)
+sns:
+  qq: '412560226'
+  mobile: '13276907188'
+  github: 'senlypan'
+
