@@ -21,11 +21,15 @@ right_menus:
   '超级大脑':
     target: '_blank'
     href: 'http://super.panshenlian.com'
+  'fork on Github':
+    target: '_blank'
+    href: 'https://github.com/senlypan/blog'
+
 
 ## Banners && Widgets
 banners:
   jade: |
-    a(href='http://www.panshenlian.com') 大晚最近在思考如何搭建一套个人网站，持续摸索中。
+    | 大晚最近在思考如何 #[a(href='https://hexo.io/') 搭建] 一套个人网站，持续摸索中。
 
 widgets:
   -
