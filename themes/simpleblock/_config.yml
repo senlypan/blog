@@ -29,7 +29,7 @@ right_menus:
 ## Banners && Widgets
 banners:
   jade: |
-    | 大晚最近在思考如何 #[a(href='https://hexo.io/') 搭建] 一套个人网站，持续摸索中。
+    | 大晚最近在研究数据结构和算法，还有一本在读的书 #[a(href='https://book.douban.com/subject/2240482/') 《走在人生边上》] 。
 
 widgets:
   -
