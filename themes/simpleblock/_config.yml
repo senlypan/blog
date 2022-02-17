@@ -18,9 +18,6 @@ menus:
   '所有日志': /list
   
 right_menus:
-  '超级大脑':
-    target: '_blank'
-    href: 'http://super.panshenlian.com'
   'fork on Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
