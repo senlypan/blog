@@ -20,7 +20,9 @@ menus:
   '订阅我': /feed
   
 right_menus:
-  'RSS': /atom.xml
+  'RSS': 
+    target: '_blank'
+    href: 'http://www.panshenlian.com/atom.xml'
   'fork on Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
