@@ -3,6 +3,7 @@ google_analytics:
 duoshuo:
 
 ## Meta
+rss: http://panshenlian/atom.xml
 favicon: /avatars/v1.ico
 icon: /avatars/v1.ico
 source_url: 'https://github.com/senlypan/blog/blob/master/source/'
@@ -16,8 +17,10 @@ menus:
   '简历': /resume
   '在读书单': /booklist
   '所有日志': /list
+  '订阅我': /feed
   
 right_menus:
+  'RSS': /atom.xml
   'fork on Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
