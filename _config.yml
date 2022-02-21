@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://www.panshenlian.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -31,7 +31,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day#:title.md
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -66,9 +66,15 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
 category_map:
 tag_map:
+  atom: Atom
+  java: JAVA
+  jdk: JDK
+  mybatis: Mybatis
+  exception: 异常
+  translation: 译文集
+  
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -104,3 +110,12 @@ theme: simpleblock
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+  
+# Hexo RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 30
+  
+ 
+  
