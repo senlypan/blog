@@ -9,19 +9,16 @@ tags:
 
 
 
+> 草稿预览，未正式发布
+
+
+
 ### 并发编程
 
 ---
 
 
 
+## 参考 
 
-
-
-
-
-
-### References 
-
-[1] XXX: http://www.panshenlian.com
-
+[1] xxx: https://xxx
