@@ -126,7 +126,7 @@ Java 语言是多线程的，这也是 Java 语言的一大特性，线程就像
 
 #### 8、分布式
 
-Java 语言支持 Internet 应用的开发，在 Java 的基本应用编程接口中就有一个网络应用编程接口，它提供了网络应用编程的类库，包括 URL、URLConnection、Socket 等。Java 的 RIM 机制也是开发分布式应用的重要手段。
+Java 语言支持 Internet 应用的开发，在 Java 的基本应用编程接口中就有一个网络应用编程接口，它提供了网络应用编程的类库，包括 URL、URLConnection、Socket 等。Java 的 RMI 机制也是开发分布式应用的重要手段。
 
 
 
