@@ -2,6 +2,9 @@
 title: 关于Java语言特性
 author: 大晚
 date: 2020-02-22
+tags: 
+- Java
+- 面向对象
 reviews:
   -
     author: 大晚
@@ -10,14 +13,11 @@ reviews:
   -
     author: Sim
     body: 安全和性能方面可以展开说说哈。
-tags: 
-- Java
-- OOP
 ---
 
 
 
-> 草稿预览，未正式发布
+⚡ 草稿预览，未正式发布
 
 
 

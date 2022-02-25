@@ -8,11 +8,10 @@ tags:
 - 多线程
 ---
 
-> 作者: 雅各布·詹科夫
-> 原文: http://tutorials.jenkov.com/java-concurrency/index.html  
-> 翻译: [潘深练](http://www.panshenlian.com)，[并发编程网 – ifeve.com](http://ifeve.com/java-concurrency-thread/) 
-> 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
-> 最后更新: 2022-02-23
+> 作者: 雅各布·詹科夫  
+> 原文: http://tutorials.jenkov.com/java-concurrency/index.html
+> 翻译: [潘深练](http://www.panshenlian.com)，[并发编程网 – ifeve.com](http://ifeve.com/java-concurrency-thread/)  如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
+> 更新: 2022-02-23
 
 
 

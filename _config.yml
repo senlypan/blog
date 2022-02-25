@@ -68,13 +68,16 @@ index_generator:
 # Category & Tag
 category_map:
 tag_map:
-  atom: Atom
-  java: JAVA
-  jdk: JDK
-  mybatis: Mybatis
-  exception: 异常
-  translation: 译文集
-  
+  Atom: atom
+  Java: java
+  JDK: jdk
+  Mybatis: mybatis
+  异常: exception
+  译文集: translation
+  多线程: multithreading
+  并发编程: concurrent-programming
+  面向对象: object-oriented
+  潘深练: senlypan
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
