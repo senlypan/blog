@@ -38,8 +38,13 @@ widgets:
     markdown: |
       Hi 你好，我是大晚，最近在去大厂的路上，未来想做自由职业者，关于技术，应该会喜欢一辈子。
 
-      * 不喜欢外企
-      * 不喜欢国企
+      * 有一本[《 Java并发编程学习文档 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
+
+  -
+    markdown: |
+      <img src="http://www.panshenlian.com/images/post/wechat/v1.jpg" alt="潘潘和他的朋友们" width="100%"> 
+      Weibo: <a href="https://weibo.com/senlypan" target="_blank">划水弹夹想吃肉</a><br/>
+      Email: panshenlian@gmail.com 
 
   -
     tags: true
