@@ -287,4 +287,3 @@ JDK 8 的新特性都还没摸透，JDK 16 的新特性就提着刀来了。
 
 
 ![the end](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_the_end.png)
-

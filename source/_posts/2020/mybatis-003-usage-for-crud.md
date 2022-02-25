@@ -606,10 +606,3 @@ Mybatis的删除数据操作，同以上插入与修改操作，也是需要两�
 
 
 ![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_the_end.png)
-
-
-
-
-
-
-

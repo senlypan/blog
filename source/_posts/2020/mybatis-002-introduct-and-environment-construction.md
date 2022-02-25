@@ -539,4 +539,3 @@ public class MybatisTest {
 
 
 ![the end](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_the_end.png)
-

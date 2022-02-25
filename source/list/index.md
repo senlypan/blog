@@ -3,8 +3,6 @@ title: 所有日志
 date: 2022-02-14 16:04:26
 ---
 
-这个博客正式创建于2022年2月14日。
-
 ### 技术
 
 #### Mybatis
@@ -20,3 +18,4 @@ date: 2022-02-14 16:04:26
 #### 译文集
 - [译文《最常见的10种Java异常问题》](/2020/11/30/translation-001-top-10-questions-about-java-exceptions/)
 - [译文《全新首发JDK 16全部新特性》](/2020/12/06/translation-002-jdk-16-new-features/)
+- [译文《Java并发与多线程介绍》](/2022/02/25/2022-translation-001-java-concurrency-and-multithreading/)

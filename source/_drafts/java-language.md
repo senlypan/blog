@@ -2,6 +2,14 @@
 title: 关于Java语言特性
 author: 大晚
 date: 2020-02-22
+reviews:
+  -
+    author: 大晚
+    body: |
+      草稿预览，未正式发布。
+  -
+    author: Sim
+    body: 安全和性能方面可以展开说说哈。
 tags: 
 - Java
 - OOP
@@ -71,7 +79,7 @@ Java 语言是一门面向对象的编程（OOP, Object-Oriented Programming）�
 
 #### 3、平台无关性
 
-大部分高级语言，都具备平台可移植性，只不过跨平台的实现方案不同，Java 语言本身借助 JVM 虚拟机机制 write once, run anywhere ，当 Java 被编译时，它不会被编译成特定于平台的机器，而是编译成与平台无关的字节码。该字节码分布在 Web 上，并由运行它的任何平台上的虚拟机 (JVM) 进行解释。
+大部分高级语言，都具备平台可移植性，只不过跨平台的实现方案不同，Java 语言本身借助 JVM 虚拟机机制 write once, run anywhere ，当 Java 被编译时，它不会被编译成特定于平台的机器码，而是被编译成与平台无关的字节码，该字节码交由不同操作系统上安装的虚拟机 (JVM) 进行解释执行。
 
 
 
@@ -158,4 +166,3 @@ Java 语言不因 JVM 而自命不凡，不因 Go 而患得患失，也从来不
 [6] Principles of OOP: https://developer.ibm.com/tutorials/j-introtojava1/
 
 [7] Oracle Releases Java 17: https://www.oracle.com/news/announcement/oracle-releases-java-17-2021-09-14/
-

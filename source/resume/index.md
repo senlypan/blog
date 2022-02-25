@@ -3,9 +3,7 @@ title: 简历
 date: 2022-02-14 16:04:12
 ---
 
-
-
-#### 基本信息
+## 基本信息
 
 潘深练，男，1990 年生于广东揭阳，现居河南郑州。
 2009 ~ 2013年本科就读于 [佛山科学技术学院](https://www.fosu.edu.cn/) ，信息技术与科学专业，班长。
@@ -13,15 +11,20 @@ date: 2022-02-14 16:04:12
 2015 ~ 2016年在 [以大科技](http://www.ebigcn.com/) 先后任开发工程师、产品经理。
 2016 至今在 [河南建业](https://www.centralchina.com/) 先后任技术服务专员、开发工程师、架构师。
 
-#### 联系方式
 
-*  Github: [senlypan](https://github.com/senlypan)
-* 个人网站: [www.panshenlian.com](http://www.panshenlian.com/)
-* 私人微信:  [panshenlian](wechat: panshenlian)
-* 联系邮箱：[panshenlian@gmail.com](mailto: panshenlian@gmail.com)，邮件中请先进行自我介绍或提供社交网络、博客、产品链接，否则不回复。
+## 互动方式
+
+*  Github：[senlypan](https://github.com/senlypan)
+* 个人网站：[www.panshenlian.com](http://www.panshenlian.com/)
+* 联系邮箱：[panshenlian@gmail.com](mailto:panshenlian@gmail.com)，邮件中请先进行自我介绍或提供社交网络、博客、产品链接，否则不回复。
 
 
-#### IT 技能
+## 开源项目
+
+- [Java并发编程聚合文档](http://concurrent-programming.panshenlian.com/) 一本聚合全球优秀Java并发编程内容的共创文档。
+
+
+## 技能惹惹
 
 - 熟练运用 Java 语言，理解 IO、多线程、集合等，熟悉 JVM内存模型和性能调优，熟悉常见数据结构和算法；
 - 熟练使用 Spring、SpringMVC、Mybatis、SpringBoot、SpringSecurity等开源框架；
@@ -33,7 +36,7 @@ date: 2022-02-14 16:04:12
 - 常用工具与软件如：Maven、Confluence、禅道等。
 
 
-#### 工作经验
+## 工作经验
 
-​    8年 Java 开发经验，Java 基础扎实，深入研究过 CAS、AQS、ThreadLocal、volatile 等内部原理，理解常见设计模式、数据结构与算法。深入理解 Mybatis、Netty、Redis源码设计，了解分布式架构设计，在高可用、弹性、性能、管理等方面有一定实战经验。2年微信平台创业经历、3年微服务项目经验、2年SaaS产品建设经验。负责过中型电商平台建设，平台注册用户800万+，日活用户5万，日访问量20万，订单日均100万。
+​8年 Java 开发经验，Java 基础扎实，深入研究过 CAS、AQS、ThreadLocal、volatile 等内部原理，理解常见设计模式、数据结构与算法。深入理解 Mybatis、Netty、Redis源码设计，了解分布式架构设计，在高可用、弹性、性能、管理等方面有一定实战经验。2年微信平台创业经历、3年微服务项目经验、2年SaaS产品建设经验。负责过中型电商平台建设，平台注册用户800万+，日活用户5万，日访问量20万，订单日均100万。
 
