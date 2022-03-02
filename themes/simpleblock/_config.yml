@@ -17,6 +17,7 @@ menus:
   '简历': /resume
   '在读书单': /booklist
   '所有日志': /list
+  '生活掠影': /live
   '订阅我': /feed
   
 right_menus:

@@ -17,3 +17,4 @@ date: 2022-02-14 16:04:20
 |《原则》|管理学|在读||[8.3](https://book.douban.com/subject/27608239/)|/||
 |《Java并发编程的艺术》|计算机|在读||[7.4](https://book.douban.com/subject/26591326/)|/||
 |《硅谷钢铁侠 埃隆·马斯克的冒险人生》|创业|备读||[8.0](https://book.douban.com/subject/26759508/)|/||
+|《深入理解Java虚拟机（第3版）》|计算机|备读||[9.5](https://book.douban.com/subject/34907497/)|/||
