@@ -21,7 +21,8 @@ date: 2022-02-14 16:04:12
 
 ## 开源项目
 
-- [Java并发编程聚合文档](http://concurrent-programming.panshenlian.com/) 一本聚合全球优秀Java并发编程内容的共创文档。
+- [《Java并发编程聚合文档》](http://concurrent-programming.panshenlian.com/) 一本聚合全球优秀Java并发编程内容的共创文档。
+- [《Java虚拟机学习手册》](http://jvm.panshenlian.com/) 一本聚合全球优秀Java虚拟机内容的共创文档。
 
 
 ## 技能惹惹
