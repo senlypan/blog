@@ -27,13 +27,13 @@ date: 2022-02-14 16:04:12
 
 ## 技能惹惹
 
-- 熟练运用 Java 语言，理解 IO、多线程、集合等，熟悉 JVM内存模型和性能调优，熟悉常见数据结构和算法；
+- 熟练 Java 语言，理解 IO、多线程、集合等，熟悉 JVM 内存模型和性能调优，熟悉常见数据结构和算法；
 - 熟练使用 Spring、SpringMVC、Mybatis、SpringBoot、SpringSecurity等开源框架；
-- 熟悉使用 Tomcat、Nginx等web服务器和Netty，对web服务器性能调优和安全加速有一定实战经验；
-- 熟悉 Dubbo、Zookeeper、SpingCloud等微服务架构，熟悉 RocketMQ、了解 Kafka、Flink；熟悉ES、XXL-Job；
-- 熟悉MySQL 数据库设计原理和性能调优，拥有大量数据存储优化经验，了解MongoDB、Neo4j、HDFS、HBase;
+- 熟悉使用 Tomcat、Nginx 等web服务器和 Netty，对web服务器性能调优和安全加速有一定实战经验；
+- 熟悉 Dubbo、Zookeeper、SpingCloud 等微服务架构，熟悉 RocketMQ、了解 Kafka、Flink；熟悉ES、XXL-Job；
+- 熟悉 MySQL 数据库设计原理和性能调优，拥有大量数据存储优化经验，了解 MongoDB、Neo4j、HDFS、HBase;
 - 熟悉 Redis 相关缓存、锁机制，并在实际项目中深入实践，了解 Guava Cache、EVCache、Tair、Aerospike;
-- 使用过 Docker容器虚拟化技术、了解K8s，对Jenkins、Gitlab、Sonar、Skywalking、Pinpoint有一定实战经验；
+- 使用过 Docker 容器虚拟化技术、了解 K8s，对Jenkins、Gitlab、Sonar、Skywalking、Pinpoint有一定实战经验；
 - 常用工具与软件如：Maven、Confluence、禅道等。
 
 
