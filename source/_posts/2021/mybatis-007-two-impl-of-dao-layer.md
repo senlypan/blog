@@ -7,12 +7,6 @@ tags:
 
 
 
-> 封面：洛小汐
->
-> 作者：潘深练
-
-
-
 
 ![](https://pic2.zhimg.com/v2-7eec74a18a3d77f5008c04f97b283910_r.jpg)
 

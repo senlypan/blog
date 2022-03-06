@@ -9,12 +9,6 @@ tags:
 
 
 
-> 封面：洛小汐
-> 
-> 译者：潘深练
-
-
-
 ![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_start.png)
 
 知彼知己，方能百战不殆。

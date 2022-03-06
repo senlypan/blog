@@ -24,6 +24,17 @@ mixin article(post)
         h1= post.title
 
     .article-meta.clearfix
+      div.post-meta-avatars
+        figure.post-meta-avatar
+          a(target='_blank', href='/about')
+            if post.avatar
+              img(src=post.avatar)
+            else 
+              img(src='/images/post/me/panshenlian4.jpg')
+      if post.author
+        author.left= post.author
+      else 
+        author.left= '潘深练'
       time.left= post.date.format(config.date_format)
 
       if post.categories
