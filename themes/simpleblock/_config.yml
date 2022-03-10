@@ -32,7 +32,7 @@ right_menus:
 ## Banners && Widgets
 banners:
   jade: |
-    | 大晚最近在研究数据结构和算法，还有一本在读的书 #[a(href='https://book.douban.com/subject/2240482/') 《走在人生边上》] ，#[a(href='https://book.douban.com/author/4503676/') 杨绛先生] 在书里说了很多神鬼和人本性的内容，看得我有点认天命。
+    | 大晚最近在研究虚拟机和并发编程，还有一本在读的书 #[a(href='https://book.douban.com/subject/2240482/') 《走在人生边上》] ，#[a(href='https://book.douban.com/author/4503676/') 杨绛先生] 在书里以问答的形式说了很多神鬼、人本性、天命的内容，又强调了人生实苦，每个人都需要修身、锻炼灵魂，实现人生价值，文字很亲近，内容值得思考。
 
 widgets:
   -
@@ -41,6 +41,7 @@ widgets:
 
       * 有一本[《 Java并发编程学习文档 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
       * 有一本[《 Java虚拟机学习手册 》](http://jvm.panshenlian.com/#/)
+      * 有一本[《 Spring框架学习手册 》](http://spring.panshenlian.com/) 
 
   -
     markdown: |
