@@ -71,6 +71,7 @@ tag_map:
   Atom: atom
   Java: java
   JDK: jdk
+  AOP: aop
   Mybatis: mybatis
   异常: exception
   译文集: translation
@@ -79,6 +80,8 @@ tag_map:
   面向对象: object-oriented
   人生目标: life-goal
   游记: travel
+  动态代理: dynamic-proxy
+  一文读懂: easy-to-read
   潘深练: senlypan
 
 # Metadata elements
