@@ -7,6 +7,8 @@ Hi 👋🏼
 
 我是一名普通的程序员，在一家濒临倒闭的房企上班，帮助企业研发和维护 ToC、ToB、SAAS、CDP 等产品，几乎每周我都会更新博客，记录我的成长和价值观的变化，以及最重要的是分享技术上的探索历程。
 
+<div style="width:100%;margin:auto;text-align:center;"><img src="http://www.panshenlian.com/images/post/me/me-in-2019.jpg" width="40%" ></div>
+
 ## 观点
 
 * 时间有限，大胆去做自己想做的事
@@ -17,6 +19,7 @@ Hi 👋🏼
 
 * 周末会抱着电脑在咖啡厅坐一天
 * [看书](/booklist)
+* [听播客](/podcasts)
 * [未来会做的事](/live)
 
 <a id='licence'></a>
