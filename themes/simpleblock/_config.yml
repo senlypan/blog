@@ -16,6 +16,7 @@ menus:
   '关于大晚': /about
   '简历': /resume
   '在读书单': /booklist
+  '在听播客': /podcasts
   '所有日志': /list
   '生活掠影': /live
   '订阅我': /feed
@@ -37,7 +38,7 @@ banners:
 widgets:
   -
     markdown: |
-      Hi，我是大晚，真名潘深练，英文ID：biglate ，最近在去大厂的路上，未来想做自由职业者，关于技术，应该会喜欢一辈子。
+      Hi，我是大晚，真名潘深练，英文ID：biglate ，未来想做自由职业者，相信技术，会让生活更有趣。
 
       * 有一本[《 潘深练的QA手册 》](http://qa.panshenlian.com/) 
       * 有一本[《 Java并发编程学习文档 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
