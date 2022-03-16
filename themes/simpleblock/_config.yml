@@ -39,6 +39,7 @@ widgets:
     markdown: |
       Hi，我是大晚，真名潘深练，英文ID：biglate ，最近在去大厂的路上，未来想做自由职业者，关于技术，应该会喜欢一辈子。
 
+      * 有一本[《 潘深练的QA手册 》](http://qa.panshenlian.com/) 
       * 有一本[《 Java并发编程学习文档 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
       * 有一本[《 Java虚拟机学习手册 》](http://jvm.panshenlian.com/#/)
       * 有一本[《 Spring框架学习手册 》](http://spring.panshenlian.com/) 
