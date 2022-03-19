@@ -6,18 +6,23 @@ date: 2022-03-16 15:34:18
     
 ### 趣谈 
 
-- [发发大王](https://www.ximalaya.com/album/12546834) [`上班划水最爱听`]
+- [发发大王](https://www.ximalaya.com/album/12546834) [`划水最爱`]
     - 一位声线低沉的百灵鸟，King of 主食，心力交瘁的母亲。
 
-- [大内密谈](https://www.ximalaya.com/album/8583636) [`骑自行车最爱听`]
+- [大内密谈](https://www.ximalaya.com/album/8583636) [`骑车最爱`]
     - 一个努力脱离低级趣味的电台。
 
 - [黑水公园](https://www.xiaoyuzhoufm.com/podcast/5e280faf418a84a0461fba0d)  
     - 一档以电影、剧集、科幻、动漫为载体，畅谈人生的趣谈节目。
 
+### 访谈 
+
+- [从零道一](https://www.0011.one/) [`思考推荐`]
+    - 一档访谈类播客，访谈新一代行业领袖。
+
 ### 科技 
 
-- [Teahour](https://teahour.fm/)  
+- [Teahour](https://teahour.fm/) [`干货满满`] 
     - 聚焦于程序、创业以及一切 Geek 话题的中文播客
 
 - [Fork It](https://forkit.fm/)  
@@ -39,8 +44,3 @@ date: 2022-03-16 15:34:18
 
 - [Anyway.FM](https://anyway.fm/)  
     - Anyway.FM 设计杂谈是一档播客节目，由 UI 设计师 JJ Ying 和 Leon Gao 主播，我们的目标是让你的听觉更懂视觉。
-    
-### 访谈 
-
-- [从零道一](https://www.0011.one/)  
-    - 一档访谈类播客，访谈新一代行业领袖。
