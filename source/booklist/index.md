@@ -14,7 +14,7 @@ date: 2022-02-14 16:04:20
 |《走在人生边上》|文学|在读||[8.3](https://book.douban.com/subject/26855800/)|适合思考|**★**|
 |《Java并发编程的艺术》|计算机|在读||[7.4](https://book.douban.com/subject/26591326/)|解析透彻|**★★★**|
 |《数据密集型应用系统设计》|计算机|在读||[9.7](https://book.douban.com/subject/30329536/)|干货密集|**★★★**|
-|《深入理解Java虚拟机（第3版）》|计算机|备读||[9.5](https://book.douban.com/subject/34907497/)|经典实践|**★★★**|
+|《深入理解Java虚拟机（第3版）》|计算机|在读||[9.5](https://book.douban.com/subject/34907497/)|经典实践|**★★★**|
 |《华为工作法》|管理学|在读||[5.7](https://book.douban.com/subject/26932497/)|懂的都懂|**★**|
 |《苦难辉煌》|党史|备读||[8.5](https://book.douban.com/subject/35177921/)|/||
 |《跨越鸿沟》|营销|备读||[8.3](https://book.douban.com/subject/3320425/)|/||
