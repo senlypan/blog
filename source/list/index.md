@@ -20,6 +20,7 @@ date: 2022-02-14 16:04:26
 - [译文《全新首发JDK 16全部新特性》](/2020/12/06/translation-002-jdk-16-new-features/)
 - [译文《Java并发与多线程介绍》](/2022/02/25/translation-001-java-concurrency-and-multithreading/)
 - [译文《Java并发编程之CAS》](/2022/03/12/translation-002-compare-and-swap/)
+- [译文《Java并发编程之volatile》](/2022/03/22/translation-003-java-volatile-keyword/)
 
 #### 一文读懂
 - [一文读懂Java动态代理](/2022/03/15/java-001-java-dynamic-proxy/)

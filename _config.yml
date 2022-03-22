@@ -73,6 +73,8 @@ tag_map:
   JDK: jdk
   AOP: aop
   Mybatis: mybatis
+  CAS: cas
+  volatile: volatile
   异常: exception
   译文集: translation
   多线程: multithreading
