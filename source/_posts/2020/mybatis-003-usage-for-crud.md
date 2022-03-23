@@ -3,6 +3,8 @@ title: Mybatis系列全解（三）：Mybatis简单CRUD使用介绍
 date: 2020-12-01 08:20:00
 tags:
 - Mybatis
+introduce: |
+    上一篇文章《Mybatis系列全解（二）：Mybatis简介与环境搭建》，我们对 Mybatis 做了初步讲解，并搭建了一套基本环境，共同完成了一次查询操作。所以本篇文章我们在此基础上，继续拓展了插入、修改、删除三种操作，把我们的CRUD基础操作进行完善。
 ---
 
 

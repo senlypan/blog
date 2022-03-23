@@ -3,6 +3,8 @@ title: Mybatis系列全解（四）：全网最全！Mybatis配置文件XML全�
 date: 2020-12-10 08:20:00
 tags:
 - Mybatis
+introduce: |
+    上一篇文章《Mybatis系列全解（三）：Mybatis简单CRUD使用介绍》，我们基本上手了 Mybatis 的增删改查操作，也感受到 Mybatis 的简单高效舒美，但是肯定有部分朋友对于 Mybatis 的配置文件只是了解基本组成和大致用法，尚无一套完整的结构记忆，所以本篇文章我们将详细的介绍 Mybatis 的配置全貌，毕竟 Mybatis 的配置文件对于整个 Mybatis 体系的构建与支撑有着深远的影响。
 ---
 
 

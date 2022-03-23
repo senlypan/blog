@@ -50,8 +50,12 @@ mixin article(post)
             li
               a(href=url_for(tag.path))= tag.name
           - });
-
-    .markdown-body!= post.content
+    if page.posts
+      .markdown-body!= post.introduce 
+      div.introduce-center
+        a(href=url_for(post.path))= '阅读全文 >> '
+    else 
+      .markdown-body!= post.content
 
     if !page.posts && theme.duoshuo
       .ds-thread(data-thread-key=commentKey(post), data-title=post.title, data-url=post.permalink)

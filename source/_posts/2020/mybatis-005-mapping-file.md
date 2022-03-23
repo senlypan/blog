@@ -3,6 +3,8 @@ title: Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映�
 date: 2020-12-18 08:20:00
 tags:
 - Mybatis
+introduce: |
+    Mybatis 真正强大就在于它的语句映射，这是它的魔力所在，也是基石。由于它异常强大，映射器的 XML 文件就显得相对简单。如果拿它跟具有相同功能的 JDBC 代码进行对比，你会立即发现省掉了将近 95% 的代码（ 95% 是Mybatis 官网的说法 ，我也就引入一下 ），MyBatis 致力于减少使用成本，让用户能更专注于 SQL 代码。
 ---
 
 

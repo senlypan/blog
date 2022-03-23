@@ -3,6 +3,8 @@ title: Mybatis系列全解（二）：Mybatis简介与环境搭建
 date: 2020-11-28 09:05:09
 tags:
 - Mybatis
+introduce: |
+    Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybatis 的基本全貌，真正从入门到上手，从上手到精通，本文为首篇，我们开始。
 ---
 
 

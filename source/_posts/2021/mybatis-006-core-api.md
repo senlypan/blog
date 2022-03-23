@@ -3,6 +3,8 @@ title: Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？
 date: 2021-01-11 08:20:00
 tags:
 - Mybatis
+introduce: |
+    上节我们介绍了《 Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件 》，经此一文，我们基本能掌握 Mapper 映射器九大顶级元素的基本用法和其中技巧。在本节，我们开始深入，我挑选了 Mybatis 框架中几个比较硬核的 API ，跟大家一起探讨，夯实了这些 API ，有助于你学习理解整个 Mybatis 框架，特别是 Mybatis 核心的数据处理层，你绝对会形成一套清晰的脉络印记，总之，希望大家都能成为 Mybatis King ! 
 ---
 
 

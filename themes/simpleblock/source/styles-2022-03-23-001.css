@@ -35,3 +35,7 @@ time.left{
     display: inline-block;
     margin-left: 13px;
 }
+div.introduce-center{
+    text-align: right;
+    padding: 0 10px 0 0;
+}
