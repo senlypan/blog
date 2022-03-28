@@ -3,6 +3,7 @@ title: 伏羲山游记
 date: 2022-02-28 10:57:22
 tags:
 - 游记
+preview: http://www.panshenlian.com/images/post/live/travel-fuxi-mountain/10.jpg
 introduce: |
     有点亏欠孩子，他已经过了4岁生日，我还没带他去爬过山。平时在幼儿园里可能经常听老师同学们讨论有关爬山的趣事，我下班回到家偶尔能听他提起一些词：登山杖、望远镜、探险、寻宝藏...等等，我知道他很向往。
 ---

@@ -3,6 +3,7 @@ title: Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？
 date: 2021-01-11 08:20:00
 tags:
 - Mybatis
+preview: http://www.panshenlian.com/images/post/java/mybatis/title/06-title.jpg
 introduce: |
     上节我们介绍了《 Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件 》，经此一文，我们基本能掌握 Mapper 映射器九大顶级元素的基本用法和其中技巧。在本节，我们开始深入，我挑选了 Mybatis 框架中几个比较硬核的 API ，跟大家一起探讨，夯实了这些 API ，有助于你学习理解整个 Mybatis 框架，特别是 Mybatis 核心的数据处理层，你绝对会形成一套清晰的脉络印记，总之，希望大家都能成为 Mybatis King ! 
 ---
@@ -10,11 +11,11 @@ introduce: |
 
 
 
-![](https://pic2.zhimg.com/v2-7eec74a18a3d77f5008c04f97b283910_r.jpg)
+![](http://www.panshenlian.com/images/post/java/mybatis/title/06-title.jpg)
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_start.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 2020 年的大疫情，把世界撕成几片。
 
@@ -46,7 +47,7 @@ introduce: |
 
 今年，世界会慢慢复苏，希望都会来临。
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_end.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
@@ -54,7 +55,7 @@ introduce: |
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/happy.png" alt="信心满满-朋友圈封面适用图" style="zoom:40%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/happy.png" alt="信心满满-朋友圈封面适用图" style="zoom:40%;" />
 
 
 
@@ -72,30 +73,25 @@ introduce: |
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/king.png" alt="你揍是一个King" style="zoom:50%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/king.png" alt="你揍是一个King" style="zoom:50%;" />
 
 
 
-**另外, 我们的 Mybatis 全解系列一直在更新**
+**Mybatis 全解系列脑图全览一直在更新哦**
 
-
-
-![Mybatis 全解系列脑图全览](https://img-blog.csdnimg.cn/20201229155652461.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01yUmlnaHRfc2VubHlwYW4=,size_16,color_FFFFFF,t_70#pic_center)
-
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:100%; height:500px;" src="https://www.processon.com/embed/5fb88348f346fb5f0e298069"></iframe>
 
 
 #### Mybaits系列全解 ( 传送门 )
 
-***
-
-- [Mybatis系列全解（一）：手写一套持久层框架]()
-- [Mybatis系列全解（二）：Mybatis简介与环境搭建]()
-- [Mybatis系列全解（三）：Mybatis简单CRUD使用介绍]()
-- [Mybatis系列全解（四）：全网最全！Mybatis配置文件XML全貌详解]()
-- [Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件]()
-- [Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？]()
-- Mybatis系列全解（七）：Dao层两种实现方式
-- Mybatis系列全解（八）：Mybatis的动态SQL
+- [Mybatis系列全解（一）：手写一套持久层框架](/2020/11/16/mybatis-001-hand-write-frame/)
+- [Mybatis系列全解（二）：Mybatis简介与环境搭建](/2020/11/28/mybatis-002-introduct-and-environment-construction/)
+- [Mybatis系列全解（三）：Mybatis简单CRUD使用介绍](/2020/12/01/mybatis-003-usage-for-crud/)
+- [Mybatis系列全解（四）：全网最全！Mybatis配置文件XML全貌详解](/2020/12/10/mybatis-004-xml-config-file/)
+- [Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件](/2020/12/18/mybatis-005-mapping-file/)
+- [Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？](/2021/01/11/mybatis-006-core-api/)
+- [Mybatis系列全解（七）：全息视角看Dao层两种实现方式之传统与代理？](/2021/01/25/mybatis-007-two-impl-of-dao-layer)
+- [Mybatis系列全解（八）：Mybatis的9大动态SQL标签你知道几个？](/2021/03/04/mybatis-008-dynamic-sql)
 - Mybatis系列全解（九）：Mybatis的复杂映射
 - Mybatis系列全解（十）：Mybatis注解开发
 - Mybatis系列全解（十一）：Mybatis缓存全解
@@ -104,8 +100,6 @@ introduce: |
 - Mybatis系列全解（十四）：Spring集成Mybatis
 - Mybatis系列全解（十五）：SpringBoot集成Mybatis
 - Mybatis系列全解（十六）：Mybatis源码剖析
-
-
 
 #### 本文目录
 
@@ -143,7 +137,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/01.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 
 ##### 1、Mybatis 架构与核心API
 
@@ -155,7 +149,7 @@ introduce: |
 
 
 
-<img src="https://gitee.com/senlypan/notes/raw/master/images/emoji/huazhongdian2.png" alt="敲黑板" style="zoom:30%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/emoji/huazhongdian2.png" alt="敲黑板" style="zoom:30%;" />
 
 
 
@@ -167,7 +161,7 @@ introduce: |
 
 
 
-![Mybatis神秘的源码包](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/package.png)
+![Mybatis神秘的源码包](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/package.png)
 
 
 
@@ -175,7 +169,7 @@ introduce: |
 
 
 
-![Mybatis三层架构图示抽象](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/mybatis01.jpg)
+![Mybatis三层架构图示抽象](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/mybatis01.jpg)
 
 
 
@@ -187,7 +181,7 @@ introduce: |
 
 
 
-![Mybatis三层架构图示具象](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/mybatis02.jpg)
+![Mybatis三层架构图示具象](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/mybatis02.jpg)
 
 
 
@@ -210,7 +204,7 @@ introduce: |
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/emoji/questionNEW.png" alt="好奇的小脑袋" style="zoom:50%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/emoji/questionNEW.png" alt="好奇的小脑袋" style="zoom:50%;" />
 
 
 
@@ -218,7 +212,7 @@ introduce: |
 
 
 
-![Mybatis核心处理整体流程](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/mybatis03.jpg)
+![Mybatis核心处理整体流程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/mybatis03.jpg)
 
 
 
@@ -236,7 +230,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/02.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 
 ##### 2、Configuration -- 全局配置对象
 
@@ -244,19 +238,19 @@ introduce: |
 
 
 
-![Configuration配置的9大顶级元素](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/configuration.jpg)
+![Configuration配置的9大顶级元素](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/configuration.jpg)
 
 
 
 配置对象 Configuration 通过解析器 XMLConfigBuilder 进行解析，把全局配置文件 Config.xml 与 映射器配置文件 Mapper.xml 中的配置信息全部构建成完整的 Configuration 对象，后续我们源码分析时详细剖析整个过程。
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/03.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 
 ##### 3、Resources -- 资源辅助类
 
 我们知道，像 Configuration 和 Mapper 的配置信息存放在 XML 文件中，Mybatis 框架在构建配置对象时，必须先把 XML 文件信息加载成流，再做后续的解析封装，而 Resources 作为资源的辅助类，恰恰干的就是这个活，无论是通过加载本地资源或是加载远程资源，最终都会通过 **类加载器** 访问资源文件并输出文件流。
 
-![Resources加载配置文件过程](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/resources_process.png)
+![Resources加载配置文件过程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/resources_process.png)
 
 
 
@@ -274,11 +268,11 @@ Resources 实实在在提供了一系列方法分分钟解决你的文件读取�
 
 
 
-![Resources类方法](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/resources.png)
+![Resources类方法](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/resources.png)
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/04.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 
 ##### 4、SqlSessionFactoryBuilder -- 会话工厂构建器
 
@@ -286,7 +280,7 @@ Resources 实实在在提供了一系列方法分分钟解决你的文件读取�
 
 
 
-![SqlSessionFactoryBuilder构建会话工厂](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/sqlSessionFactoryBuilder_process.png)
+![SqlSessionFactoryBuilder构建会话工厂](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSessionFactoryBuilder_process.png)
 
 在程序应用端，我们一般使用 SqlSessionFactoryBuilder 直接构建会话工厂：
 
@@ -350,7 +344,7 @@ public SqlSessionFactory build(Configuration config) {
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/SqlSessionFactoryBuilder.jpg" alt="会话构建基础流程" style="zoom:50%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/SqlSessionFactoryBuilder.jpg" alt="会话构建基础流程" style="zoom:50%;" />
 
 
 
@@ -358,7 +352,7 @@ public SqlSessionFactory build(Configuration config) {
 
 
 
-![SqlSessionFactoryBuilder最佳作用域呈现](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/SqlSessionFactoryBuilder_method.png)
+![SqlSessionFactoryBuilder最佳作用域呈现](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/SqlSessionFactoryBuilder_method.png)
 
 
 
@@ -370,13 +364,13 @@ SqlSessionFactoryBuilder 中灵活构建会话工厂的一系列接口：
 
 
 
-![SqlSessionFactoryBuilder接口全览](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/SqlSessionFactoryBuilder.png)
+![SqlSessionFactoryBuilder接口全览](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/SqlSessionFactoryBuilder.png)
 
 
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/05.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
 
 ##### 5、SqlSessionFactory -- 会话工厂
 
@@ -389,7 +383,7 @@ SqlSessionFactoryBuilder 中灵活构建会话工厂的一系列接口：
 
 
 
-![SqlSessionFactory生产会话](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/sqlSessionFactory_process.png)
+![SqlSessionFactory生产会话](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSessionFactory_process.png)
 
 
 
@@ -456,7 +450,7 @@ private SqlSession openSessionFromDataSource(
 
 
 
-![SqlSessionFactory接口全览](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/sqlSessionFactory_method.png)
+![SqlSessionFactory接口全览](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSessionFactory_method.png)
 
 
 
@@ -470,7 +464,7 @@ private SqlSession openSessionFromDataSource(
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/onetime.jpg" alt="一次就好" style="zoom:70%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/onetime.jpg" alt="一次就好" style="zoom:70%;" />
 
 
 
@@ -480,11 +474,11 @@ private SqlSession openSessionFromDataSource(
 
 
 
-![SqlSessionFactory最佳作用域呈现](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/SqlSessionFactory_app.png)
+![SqlSessionFactory最佳作用域呈现](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/SqlSessionFactory_app.png)
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/06.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
 
 ##### 6、SqlSession -- 会话
 
@@ -497,7 +491,7 @@ SqlSession 是一个接口，有两个实现类：
 
 
 
-![DefaultSqlSession接口全览](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/DefaultSqlSession.png)
+![DefaultSqlSession接口全览](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/DefaultSqlSession.png)
 
 
 
@@ -505,7 +499,7 @@ sqlSession 的方法除了 CURD，还提供了事务的控制例如提交/关闭
 
 
 
-![SqlSession会话](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/sqlSession_process.png)
+![SqlSession会话](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSession_process.png)
 
 
 
@@ -521,7 +515,7 @@ sqlSession 的方法除了 CURD，还提供了事务的控制例如提交/关闭
 
 
 
-![sqlSession会话高亮展示](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/mybatis_sqlsession.jpg)
+![sqlSession会话高亮展示](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/mybatis_sqlsession.jpg)
 
 
 
@@ -529,7 +523,7 @@ SqlSession 可以理解为一次数据库会话，一次会话当中既可以执
 
 
 
-![SqlSession会话执行](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/sqlSession_process_sql.png)
+![SqlSession会话执行](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSession_process_sql.png)
 
 
 
@@ -541,7 +535,7 @@ SqlSession 可以理解为一次数据库会话，一次会话当中既可以执
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/07.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/07.png)
 
 ##### 7、Executor -- 执行器
 
@@ -549,7 +543,7 @@ Executor 是一个执行器接口，是 Mybatis 的调度核心，它定义了�
 
 
 
-![Executor执行器接口](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/Executor.png)
+![Executor执行器接口](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/Executor.png)
 
 
 
@@ -685,7 +679,7 @@ public class XMLConfigBuilder {
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/emoji/questionNEW.png" alt="好奇的小脑袋" style="zoom:50%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/emoji/questionNEW.png" alt="好奇的小脑袋" style="zoom:50%;" />
 
 
 
@@ -693,7 +687,7 @@ public class XMLConfigBuilder {
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/emoji/huazhongdian2.png" alt="敲黑板了" style="zoom:40%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/emoji/huazhongdian2.png" alt="敲黑板了" style="zoom:40%;" />
 
 
 
@@ -709,7 +703,7 @@ public class XMLConfigBuilder {
 
 
 
-![Executor无缓存执行器](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/Executor_noCache.jpg)
+![Executor无缓存执行器](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/Executor_noCache.jpg)
 
 
 
@@ -717,7 +711,7 @@ public class XMLConfigBuilder {
 
 
 
-![Executor二级缓存执行器](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/Executor_hasCache.jpg)
+![Executor二级缓存执行器](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/Executor_hasCache.jpg)
 
 
 
@@ -725,7 +719,7 @@ public class XMLConfigBuilder {
 
 
 
-![Executor执行器接口](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/Executor_method.png)
+![Executor执行器接口](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/Executor_method.png)
 
 
 
@@ -733,7 +727,7 @@ public class XMLConfigBuilder {
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/08.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/08.png)
 
 ##### 8、StatementHandler -- 语句处理器
 
@@ -741,7 +735,7 @@ StatementHandler 是一个语句处理器接口，它封装了 JDBC Statement �
 
 
 
-![StatementHandler语句处理器接口](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/StatementHandler.png)
+![StatementHandler语句处理器接口](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/StatementHandler.png)
 
 
 
@@ -765,7 +759,7 @@ StatementHandler 是一个语句处理器接口，它封装了 JDBC Statement �
 
 
 
-<img src="http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/statement.png" alt="Statement语句执行对象" style="zoom:50%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/statement.png" alt="Statement语句执行对象" style="zoom:50%;" />
 
 
 
@@ -857,7 +851,7 @@ public class XMLStatementBuilder {
 
 所以，语句执行器与数据库的交互过程：
 
-![StatementHandler执行过程](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/StatementHandler.jpg)
+![StatementHandler执行过程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/StatementHandler.jpg)
 
 
 
@@ -865,11 +859,11 @@ public class XMLStatementBuilder {
 
 
 
-![StatementHandler接口](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/StatementHandler_method.png)
+![StatementHandler接口](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/StatementHandler_method.png)
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/09.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/09.png)
 
 ##### 9、ParamerHandler -- 参数处理器
 
@@ -914,7 +908,7 @@ public abstract class BaseStatementHandler{
 
 
 
-![参数处理器接口](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/ParameterHandler_method.png)
+![参数处理器接口](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/ParameterHandler_method.png)
 
 
 
@@ -970,7 +964,7 @@ public class DefaultResultSetHandler{
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/10.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/10.png)
 
 ##### 10、ResultSetHandler -- 结果集处理器
 
@@ -978,7 +972,7 @@ ResultSetHandler 是一个结果集处理器接口，它负责负责将 JDBC 返
 
 
 
-![结果集处理器接口](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/ResultSetHandler_method.png)
+![结果集处理器接口](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/ResultSetHandler_method.png)
 
 
 
@@ -1000,7 +994,7 @@ ResultSetHandler 是一个结果集处理器接口，它负责负责将 JDBC 返
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/11.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/11.png)
 
 ##### 11、TypeHandler -- 类型转换器
 
@@ -1008,7 +1002,7 @@ TypeHandler 是一个类型转换器/处理器接口，它负责 Java 数据类�
 
 
 
-![类型转换器处理](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/TypeHandler_process.png)
+![类型转换器处理](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/TypeHandler_process.png)
 
 
 
@@ -1059,7 +1053,7 @@ public interface TypeHandler<T> {
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/12.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/12.png)
 
 ##### 12、MappedStatement -- 语句对象
 
@@ -1067,7 +1061,7 @@ MappedStatement 语句对象，就是我们在映射器 Mapper 中维护的每�
 
 
 
-![语句对象解析过程](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/MappedStatement_parse.jpg)
+![语句对象解析过程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/MappedStatement_parse.jpg)
 
 
 
@@ -1178,13 +1172,13 @@ public class MapperBuilderAssistant{
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/13.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/13.png)
 
 ##### 13、SqlSource -- SQL源
 
 SqlSource 是一个 SQL 源接口，它会结合用户传递的参数对象 parameterObject，动态地生成 SQL 语句，并最终封装成 BoundSql 对象。SqlSource 接口有5个实现类，分别是：StaticSqlSource、DynamicSqlSource、RawSqlSource、ProviderSqlSource、~~VelocitySqlSource~~ （这只是一个测试用例，而非真正模板 Sql 源实现类）。
 
-![sql源接口与实现](http://gitee.com/senlypan/notes/raw/master/images/Mybatis/project06/sqlSource_all.jpg)
+![sql源接口与实现](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSource_all.jpg)
 
 
 
@@ -1220,7 +1214,7 @@ public interface SqlSource {
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/14.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/14.png)
 
 ##### 14、BoundSql -- SQL语句
 
@@ -1253,7 +1247,7 @@ public class BoundSql {
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/15.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/15.png)
 
 #### 总结
 
@@ -1270,7 +1264,7 @@ public class BoundSql {
 
 
 
-<img src="https://gitee.com/senlypan/notes/raw/master/images/emoji/next.png" style="zoom:40%;" />
+<img src="http://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png" style="zoom:40%;" />
 
 
 
@@ -1278,7 +1272,7 @@ public class BoundSql {
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_the_end.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
 
 
 
@@ -1289,4 +1283,4 @@ public class BoundSql {
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/emoji/love.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/love.png)

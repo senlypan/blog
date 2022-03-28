@@ -6,6 +6,7 @@ tags:
 - Java
 - 并发编程
 - volatile
+preview: http://www.panshenlian.com/images/post/java/concurrency/volatile/title.jpg
 introduce: |
     Java 的 volatile 关键字用于将 Java 变量标记为 “存储在主内存中”。更准确地说，每次对 volatile 变量的读取都将从计算机主内存中读取，而不是从CPU缓存中读取，并且每次对 volatile 变量的写入都将写入主内存，而不仅仅写在 CPU 缓存。
 ---

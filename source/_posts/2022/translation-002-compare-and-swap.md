@@ -6,9 +6,12 @@ tags:
 - Java
 - 并发编程
 - CAS
+preview: http://www.panshenlian.com/images/post/java/concurrency/cas/title.jpg
 introduce: |
     CAS (compare and swap) 是并发算法设计时使用的一种技术。基本上，CAS 是将变量的值与期望值进行比较，如果值相等，则将变量的值交换设置为新值。CAS 可能听起来有点复杂，但一旦你理解它实际上相当简单，所以让我进一步详细说明这个主题。
 ---
+
+![04-Compare-and-Swap.md#title.jpg](/images/post/java/concurrency/cas/title.jpg)
 
 > 作者: 雅各布·詹科夫  
 > 原文: http://tutorials.jenkov.com/java-concurrency/compare-and-swap.html

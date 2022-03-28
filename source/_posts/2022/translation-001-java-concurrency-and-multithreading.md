@@ -1,21 +1,22 @@
 ---
 title: 译文《Java并发与多线程介绍》
-date: 2022-02-25 17:31:15
+date: 2022-02-25 17:08:11
 tags:
 - 译文集
 - Java
 - 并发编程
 - 多线程
+preview: http://www.panshenlian.com/images/post/java/concurrency/multithreading/title.jpg
 introduce: |
     Java并发是一个涵盖Java平台上多线程、并发和并行性的术语。这里面就涉及到Java并发工具、并发问题和对应的解决方案。本Java并发编程文档内容基本涵盖了Java多线程知识中关于多线程、并发构造、并发问题、并发代价以及并发优点相关的核心概念。
 ---
 
+![translation-004-java-concurrency-and-multithreading-tutorial.md#title.jpg](http://www.panshenlian.com/images/post/java/concurrency/multithreading/title.jpg)
+
 > 作者: 雅各布·詹科夫  
 > 原文: http://tutorials.jenkov.com/java-concurrency/index.html
-> 翻译: [潘深练](http://www.panshenlian.com)，[并发编程网 – ifeve.com](http://ifeve.com/java-concurrency-thread/)  如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
+> 翻译: [潘深练](http://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
 > 更新: 2022-02-23
-
-
 
 Java并发是一个涵盖Java平台上多线程、并发和并行性的术语。这里面就涉及到Java并发工具、并发问题和对应的解决方案。本Java并发编程文档内容基本涵盖了Java多线程知识中关于多线程、并发构造、并发问题、并发代价以及并发优点相关的核心概念。
 
@@ -29,12 +30,12 @@ Java并发是一个涵盖Java平台上多线程、并发和并行性的术语。
 
 多线程指的是在同一个应用程序中存在多个执行线程。每个线程就像都拥有一个独立的CPU在执行你的应用程序。因此，多线程应用程序看起来就像具备多CPU能力一样，能在同时刻执行应用程序中的不同代码片段。
 
-![00-java-concurrency#introduction-1.png](http://tutorials.jenkov.com/images/java-concurrency/introduction-1.png)
+![00-java-concurrency#introduction-1.png](http://www.panshenlian.com/images/post/java/concurrency/tutorial/introduction-1.png)
 
 
 但是，线程不等同于CPU，通常单个CPU在多个线程之间执行时间是共享的，只不过CPU在每个线程获得一定执行时间片之后运行切换。当然，同一个应用程序中的不同线程也可以让不同的CPU来执行。
 
-![00-java-concurrency#introduction-2.png](http://tutorials.jenkov.com/images/java-concurrency/introduction-2.png)
+![00-java-concurrency#introduction-2.png](http://www.panshenlian.com/images/post/java/concurrency/tutorial/introduction-2.png)
 
 
 ## 为什么要有多线程？
@@ -85,7 +86,7 @@ Java并发是一个涵盖Java平台上多线程、并发和并行性的术语。
 
 在很多类型的程序中多线程被用来提升性能，但是多线程比多任务更加有挑战性。多线程是在同一个程序内部并行执行，因此会对相同的内存空间进行并发读写操作。这可能是在单线程程序中从来不会遇到的问题。其中的一些错误也未必会在单CPU机器上出现，因为两个线程从来不会得到真正的并行执行。然而，更现代的计算机伴随着多核CPU的出现，也就意味着不同的CPU内核能够真正意义并行执行不同的线程。
 
-![00-java-concurrency#java-concurrency-tutorial-introduction-1.png](http://tutorials.jenkov.com/images/java-concurrency/java-concurrency-tutorial-introduction-1.png)
+![00-java-concurrency#java-concurrency-tutorial-introduction-1.png](http://www.panshenlian.com/images/post/java/concurrency/tutorial/java-concurrency-tutorial-introduction-1.png)
 
 
 如果一个线程在读一个内存时，另一个线程正向该内存进行写操作，那进行读操作的那个线程将获得什么结果呢？是写操作之前旧的值？还是写操作成功之后的新值？或是一半新一半旧的值？或者，如果是两个线程同时写同一个内存，在操作完成后将会是什么结果呢？是第一个线程写入的值？还是第二个线程写入的值？还是两个线程写入的一个混合值？
@@ -111,3 +112,8 @@ Java是最先支持多线程的开发的语言之一，Java从一开始就支持
 随着所有这些新的发展，我是时候更新这个Java并发教程了。因此，本教程再次进行完善。在时间允许的情况下回继续编写新教程、陆续发布。
 
 （本篇完）
+
+> 作者: 雅各布·詹科夫  
+> 原文: http://tutorials.jenkov.com/java-concurrency/index.html
+> 翻译: [潘深练](http://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
+> 更新: 2022-02-23

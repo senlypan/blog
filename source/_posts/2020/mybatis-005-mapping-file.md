@@ -3,21 +3,22 @@ title: Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映�
 date: 2020-12-18 08:20:00
 tags:
 - Mybatis
+preview: http://www.panshenlian.com/images/post/java/mybatis/title/05-title.jpg
 introduce: |
     Mybatis 真正强大就在于它的语句映射，这是它的魔力所在，也是基石。由于它异常强大，映射器的 XML 文件就显得相对简单。如果拿它跟具有相同功能的 JDBC 代码进行对比，你会立即发现省掉了将近 95% 的代码（ 95% 是Mybatis 官网的说法 ，我也就引入一下 ），MyBatis 致力于减少使用成本，让用户能更专注于 SQL 代码。
 ---
 
 
 
-![](https://pic2.zhimg.com/v2-7eec74a18a3d77f5008c04f97b283910_r.jpg)
+![](http://www.panshenlian.com/images/post/java/mybatis/title/05-title.jpg)
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_start.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 若不是生活所迫，谁愿意背负一身才华。
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_end.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
@@ -27,7 +28,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/emoji/time.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/time.png)
 
 
 
@@ -39,9 +40,29 @@ introduce: |
 
 
 
-**Mybatis系列全解脑图分享，持续更新中**
+**Mybatis 全解系列脑图全览一直在更新哦**
 
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201208231159894.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01yUmlnaHRfc2VubHlwYW4=,size_16,color_FFFFFF,t_70#pic_center)
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:100%; height:500px;" src="https://www.processon.com/embed/5fb88348f346fb5f0e298069"></iframe>
+
+
+#### Mybaits系列全解 ( 传送门 )
+
+- [Mybatis系列全解（一）：手写一套持久层框架](/2020/11/16/mybatis-001-hand-write-frame/)
+- [Mybatis系列全解（二）：Mybatis简介与环境搭建](/2020/11/28/mybatis-002-introduct-and-environment-construction/)
+- [Mybatis系列全解（三）：Mybatis简单CRUD使用介绍](/2020/12/01/mybatis-003-usage-for-crud/)
+- [Mybatis系列全解（四）：全网最全！Mybatis配置文件XML全貌详解](/2020/12/10/mybatis-004-xml-config-file/)
+- [Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件](/2020/12/18/mybatis-005-mapping-file/)
+- [Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？](/2021/01/11/mybatis-006-core-api/)
+- [Mybatis系列全解（七）：全息视角看Dao层两种实现方式之传统与代理？](/2021/01/25/mybatis-007-two-impl-of-dao-layer)
+- [Mybatis系列全解（八）：Mybatis的9大动态SQL标签你知道几个？](/2021/03/04/mybatis-008-dynamic-sql)
+- Mybatis系列全解（九）：Mybatis的复杂映射
+- Mybatis系列全解（十）：Mybatis注解开发
+- Mybatis系列全解（十一）：Mybatis缓存全解
+- Mybatis系列全解（十二）：Mybatis插件开发
+- Mybatis系列全解（十三）：Mybatis代码生成器
+- Mybatis系列全解（十四）：Spring集成Mybatis
+- Mybatis系列全解（十五）：SpringBoot集成Mybatis
+- Mybatis系列全解（十六）：Mybatis源码剖析
 
 
 
@@ -71,7 +92,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/01.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 
 #### mapper 映射器顶级元素全貌 
 
@@ -81,7 +102,7 @@ introduce: |
 
 
 
-![](D:\learn\lagou\notes\images\Mybatis\project03\Mapper.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/Mapper.png)
 
 
 
@@ -109,7 +130,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project03/mapper01.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/mapper01.png)
 
 
 
@@ -122,7 +143,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/02.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 
 #### namespace 命名空间 
 
@@ -136,7 +157,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project03/namespace01.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/namespace01.png)
 
 
 
@@ -145,7 +166,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/03.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 
 #### select 查询 
 
@@ -205,7 +226,7 @@ ps.setInt(1,id);
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project03/sql01.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql01.png)
 
 
 
@@ -302,7 +323,7 @@ select * from t_user where id = 1
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/emoji/goods.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/goods.png)
 
 
 
@@ -392,7 +413,7 @@ rs.previous();
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/04.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 
 #### insert / update / delete 增删改 
 
@@ -542,7 +563,7 @@ selectKey 中的 order 属性有2个选择：BEFORE 和 AFTER 。
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/05.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
 
 #### cache 缓存 
 
@@ -633,7 +654,7 @@ selectKey 中的 order 属性有2个选择：BEFORE 和 AFTER 。
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/emoji/huazhongdian2.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/huazhongdian2.png)
 
 
 
@@ -645,7 +666,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/06.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
 
 #### cache-ref 引用缓存 
 
@@ -660,7 +681,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/07.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/07.png)
 
 #### sql 语句块 
 
@@ -668,7 +689,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project03/sql05.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql05.png)
 
 
 
@@ -703,7 +724,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project03/sql06.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql06.png)
 
 
 
@@ -730,7 +751,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/08.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/08.png)
 
 #### parameterMap 参数映射
 
@@ -738,12 +759,12 @@ parameterMap 元素官方已经不建议使用，并且再后续版本会退出�
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project03/parameterMap.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/parameterMap.png)
 
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/09.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/09.png)
 
 #### 总结
 
@@ -756,11 +777,11 @@ parameterMap 元素官方已经不建议使用，并且再后续版本会退出�
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/emoji/next.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png)
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_the_end.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
 
 
 

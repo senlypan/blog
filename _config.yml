@@ -78,6 +78,7 @@ tag_map:
   异常: exception
   译文集: translation
   多线程: multithreading
+  并行: parallelism
   并发编程: concurrent-programming
   面向对象: object-oriented
   人生目标: life-goal

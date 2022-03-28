@@ -51,6 +51,8 @@ mixin article(post)
               a(href=url_for(tag.path))= tag.name
           - });
     if page.posts
+      div.preview
+        img(src=post.preview)
       .markdown-body!= post.introduce 
       div.introduce-center
         a(href=url_for(post.path))= '阅读全文 >> '

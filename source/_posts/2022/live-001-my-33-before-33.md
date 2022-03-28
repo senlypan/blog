@@ -3,9 +3,12 @@ title: 2022年的33个目标
 date: 2022-03-02 08:33:08
 tags:
 - 人生目标
+preview: http://www.panshenlian.com/images/post/live/33/title.jpg
 introduce: |
     记得从2020年开始，每年年初都会给自己设定一年的目标，类别基本会涵盖：职业财富、亲情陪伴、家庭健康、社会公益、人际交往、个人成长。
 ---
+
+![2022年的33个目标](/images/post/live/33/title.jpg)
 
 
 ## 目标类别

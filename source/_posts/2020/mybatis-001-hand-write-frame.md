@@ -1,14 +1,18 @@
 ---
-title: Mybatis（一）：手写一套持久层框架
+title: Mybatis系列全解（一）：手写一套持久层框架
 date: 2020-11-16 22:05:09
 tags:
 - Mybatis
-introduce: |
+preview: http://www.panshenlian.com/images/post/java/mybatis/title/01-title.jpg
+introduce: 
     本文详细介绍了模仿 Mybatis 框架，手写一套持久层框架。
 ---
 
-**未来半年，有幸与导师们一起学习交流，趁这个机会，把所学所感记录下来：**
 
+
+![手写一套持久层框架](http://www.panshenlian.com/images/post/java/mybatis/title/01-title.jpg)
+
+**未来半年，有幸与导师们一起学习交流，趁这个机会，把所学所感记录下来：**
 
 
 - 一来是自毕业以后，自己先创业后上班，浮沉了近8年，内心着实焦躁，虽说一直是走科班路线，但在技术道路上却始终没静下心来研究、思考、梳理，机会来了，便抓牢。
@@ -22,7 +26,7 @@ introduce: |
 
 
 
-![趁年轻，终生学习吧](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_0.jpg)
+![趁年轻，终生学习吧](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_0.jpg)
 
 
 
@@ -44,7 +48,43 @@ introduce: |
 >
 > 简单来说 “ 大厂都这么写，我们且这么跟随吧 ”。
 
+**Mybatis 全解系列脑图全览一直在更新哦**
 
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:100%; height:500px;" src="https://www.processon.com/embed/5fb88348f346fb5f0e298069"></iframe>
+
+
+#### Mybaits系列全解 ( 传送门 )
+
+- [Mybatis系列全解（一）：手写一套持久层框架](/2020/11/16/mybatis-001-hand-write-frame/)
+- [Mybatis系列全解（二）：Mybatis简介与环境搭建](/2020/11/28/mybatis-002-introduct-and-environment-construction/)
+- [Mybatis系列全解（三）：Mybatis简单CRUD使用介绍](/2020/12/01/mybatis-003-usage-for-crud/)
+- [Mybatis系列全解（四）：全网最全！Mybatis配置文件XML全貌详解](/2020/12/10/mybatis-004-xml-config-file/)
+- [Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件](/2020/12/18/mybatis-005-mapping-file/)
+- [Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？](/2021/01/11/mybatis-006-core-api/)
+- [Mybatis系列全解（七）：全息视角看Dao层两种实现方式之传统与代理？](/2021/01/25/mybatis-007-two-impl-of-dao-layer)
+- [Mybatis系列全解（八）：Mybatis的9大动态SQL标签你知道几个？](/2021/03/04/mybatis-008-dynamic-sql)
+- Mybatis系列全解（九）：Mybatis的复杂映射
+- Mybatis系列全解（十）：Mybatis注解开发
+- Mybatis系列全解（十一）：Mybatis缓存全解
+- Mybatis系列全解（十二）：Mybatis插件开发
+- Mybatis系列全解（十三）：Mybatis代码生成器
+- Mybatis系列全解（十四）：Spring集成Mybatis
+- Mybatis系列全解（十五）：SpringBoot集成Mybatis
+- Mybatis系列全解（十六）：Mybatis源码剖析
+
+#### 目录
+
+1、JDBC是谁？
+
+2、JDBC如何工作？
+
+3、JDBC存在哪些待优化的地方？
+
+4、自定义持久层框架：思路分析
+
+5、自定义持久层框架：编码
+
+6、总结
 
 
 
@@ -54,7 +94,7 @@ introduce: |
 
 
 
-![JDBC是什么](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_1.jpg)
+![JDBC是什么](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_1.jpg)
 
 
 
@@ -116,7 +156,7 @@ JDBC是谁？干啥的？到底有多能打？看看网络上的朋友们怎么�
 
 
 
-![JDBC架构图](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_2.jpg)
+![JDBC架构图](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_2.jpg)
 
 
 
@@ -136,7 +176,7 @@ JDBC是谁？干啥的？到底有多能打？看看网络上的朋友们怎么�
 
 
 
-![鲁迅爷爷](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_luxun.jpg)
+![鲁迅爷爷](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_luxun.jpg)
 
 
 
@@ -164,7 +204,7 @@ JDBC是谁？干啥的？到底有多能打？看看网络上的朋友们怎么�
 
 
 
-![JDBC使用流程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_3.jpg)
+![JDBC使用流程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_3.jpg)
 
 
 
@@ -216,7 +256,7 @@ SQL执行之后会把结果集封装到ResultSet类，ResultSet类本身的迭�
 
 
 
-![项目结构](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_test_project_org.jpg)
+![项目结构](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_test_project_org.jpg)
 
 
 
@@ -224,7 +264,7 @@ SQL执行之后会把结果集封装到ResultSet类，ResultSet类本身的迭�
 
 
 
-![JDBC API 在JDK的结构](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_jar_org.jpg)
+![JDBC API 在JDK的结构](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_jar_org.jpg)
 
 
 
@@ -413,7 +453,7 @@ User{id=2, userName='panshenlian'}
 
 
 
-![用户使用原始JDBC日常](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_4.jpg)
+![用户使用原始JDBC日常](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_4.jpg)
 
 
 
@@ -569,7 +609,7 @@ JDBC是个人作战，凡事亲力亲为，低效而高险，自己加载驱动�
 
 
 
-![JDBC VS 持久层框架](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_8.jpg)
+![JDBC VS 持久层框架](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_8.jpg)
 
 
 
@@ -593,7 +633,7 @@ JDBC是个人作战，凡事亲力亲为，低效而高险，自己加载驱动�
 
 
 
-![手写持久层框架基本思路](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_5.jpg)
+![手写持久层框架基本思路](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_5.jpg)
 
 
 
@@ -751,7 +791,7 @@ B、框架本身，实质上就是对JDBC代码进行封装，基本6步：
 
 
 
-![持久层框架UML简约版](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_6.jpg)
+![持久层框架UML简约版](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_6.jpg)
 
 
 
@@ -761,7 +801,7 @@ B、框架本身，实质上就是对JDBC代码进行封装，基本6步：
 
 
 
-![持久层框架UML详细版](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_7.jpg)
+![持久层框架UML详细版](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_7.jpg)
 
 
 
@@ -769,7 +809,7 @@ B、框架本身，实质上就是对JDBC代码进行封装，基本6步：
 
 
 
-![自定义持久层框架项目结构图](https://gitee.com/senlypan/notes/raw/master/images/1_persistence_org.jpg)
+![自定义持久层框架项目结构图](http://www.panshenlian.com/images/post/00_old_article_images/1_persistence_org.jpg)
 
 
 
@@ -1837,23 +1877,23 @@ public interface TokenHandler {
 
 
 
-![引入测试工程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_1.jpg)
+![引入测试工程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_1.jpg)
 
 
 
 由于我已经写好了测试工程，我直接引入即可，效果都一样，创建和引入都以module方式就可以：
 
-![引入测试工程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_2.jpg)
+![引入测试工程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_2.jpg)
 
-![引入测试工程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_3.jpg)
+![引入测试工程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_3.jpg)
 
-![引入测试工程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_4.jpg)
+![引入测试工程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_4.jpg)
 
-![引入测试工程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_5.jpg)
+![引入测试工程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_5.jpg)
 
-![引入测试工程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_6.jpg)
+![引入测试工程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_6.jpg)
 
-![引入测试工程](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_7.jpg)
+![引入测试工程](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_7.jpg)
 
 
 
@@ -2100,7 +2140,7 @@ public class MyPersistenceTest {
 
 7、运行测试类，结果符合预期
 
-![运行测试类](https://gitee.com/senlypan/notes/raw/master/images/1_jdbc_idea_8.jpg)
+![运行测试类](http://www.panshenlian.com/images/post/00_old_article_images/1_jdbc_idea_8.jpg)
 
 
 

@@ -3,20 +3,21 @@ title: Mybatis系列全解（三）：Mybatis简单CRUD使用介绍
 date: 2020-12-01 08:20:00
 tags:
 - Mybatis
+preview: http://www.panshenlian.com/images/post/java/mybatis/title/03-title.jpg
 introduce: |
     上一篇文章《Mybatis系列全解（二）：Mybatis简介与环境搭建》，我们对 Mybatis 做了初步讲解，并搭建了一套基本环境，共同完成了一次查询操作。所以本篇文章我们在此基础上，继续拓展了插入、修改、删除三种操作，把我们的CRUD基础操作进行完善。
 ---
 
 
-![](https://pic2.zhimg.com/v2-7eec74a18a3d77f5008c04f97b283910_r.jpg)
+![](http://www.panshenlian.com/images/post/java/mybatis/title/03-title.jpg)
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_start.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 在理解中执行，在执行中理解，学习技术也循此道。
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_end.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
@@ -28,6 +29,29 @@ introduce: |
 
 上一篇文章 **《Mybatis系列全解（二）：Mybatis简介与环境搭建》** ，我们对 Mybatis 做了初步讲解，并搭建了一套基本环境，共同完成了一次查询操作。所以本篇文章我们在此基础上，继续拓展了插入、修改、删除三种操作，把我们的CRUD基础操作进行完善。
 
+**Mybatis 全解系列脑图全览一直在更新哦**
+
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:100%; height:500px;" src="https://www.processon.com/embed/5fb88348f346fb5f0e298069"></iframe>
+
+
+#### Mybaits系列全解 ( 传送门 )
+
+- [Mybatis系列全解（一）：手写一套持久层框架](/2020/11/16/mybatis-001-hand-write-frame/)
+- [Mybatis系列全解（二）：Mybatis简介与环境搭建](/2020/11/28/mybatis-002-introduct-and-environment-construction/)
+- [Mybatis系列全解（三）：Mybatis简单CRUD使用介绍](/2020/12/01/mybatis-003-usage-for-crud/)
+- [Mybatis系列全解（四）：全网最全！Mybatis配置文件XML全貌详解](/2020/12/10/mybatis-004-xml-config-file/)
+- [Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件](/2020/12/18/mybatis-005-mapping-file/)
+- [Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？](/2021/01/11/mybatis-006-core-api/)
+- [Mybatis系列全解（七）：全息视角看Dao层两种实现方式之传统与代理？](/2021/01/25/mybatis-007-two-impl-of-dao-layer)
+- [Mybatis系列全解（八）：Mybatis的9大动态SQL标签你知道几个？](/2021/03/04/mybatis-008-dynamic-sql)
+- Mybatis系列全解（九）：Mybatis的复杂映射
+- Mybatis系列全解（十）：Mybatis注解开发
+- Mybatis系列全解（十一）：Mybatis缓存全解
+- Mybatis系列全解（十二）：Mybatis插件开发
+- Mybatis系列全解（十三）：Mybatis代码生成器
+- Mybatis系列全解（十四）：Spring集成Mybatis
+- Mybatis系列全解（十五）：SpringBoot集成Mybatis
+- Mybatis系列全解（十六）：Mybatis源码剖析
 
 
 #### 目录
@@ -46,7 +70,7 @@ introduce: |
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/01.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 ####    Mybatis查询操作回顾
 
 
@@ -79,7 +103,7 @@ Mybatis 的查询分为7个步骤：
 
 
 
-![创建maven工程](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_new_maven_project.png)
+![创建maven工程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_new_maven_project.png)
 
 
 
@@ -155,7 +179,7 @@ CREATE TABLE `user` (
 
 
 
-![User表数据](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_db_data.png)
+![User表数据](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_db_data.png)
 
 
 
@@ -341,16 +365,16 @@ public class MybatisTest {
 
 ##### 最终通过 Junit 单元测试，运行结果符合预期：
 
-![Junit单元测试运行结果](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_db_junit_test.png)
+![Junit单元测试运行结果](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_db_junit_test.png)
 
 
 
 ##### 工程结构参考：
 
-![工程结构参考](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_db_project_org.png)
+![工程结构参考](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_db_project_org.png)
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/02.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 #### 插入操作
 
 Mybatis的插入数据操作，我们一共需要两步：
@@ -420,7 +444,7 @@ Mybatis的插入数据操作，我们一共需要两步：
 
 
 
-![插入操作执行成功](C:\Users\Super Man\Desktop\11.png)
+![插入操作执行成功](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/add.jpg)
 
 
 
@@ -438,7 +462,7 @@ Mybatis的插入数据操作，我们一共需要两步：
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/03.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 
 
 
@@ -501,7 +525,7 @@ Mybatis的修改数据操作，同插入操作，也是需要两步：
 
 
 
-![修改操作执行成功](C:\Users\Super Man\Desktop\22.png)
+![修改操作执行成功](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/update.jpg)
 
 
 
@@ -512,7 +536,7 @@ Mybatis的修改数据操作，同插入操作，也是需要两步：
 2、修改操作使用的API是sqlSession.update(“命名空间.id”,实体对象);
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/04.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 #### 删除操作
 
 Mybatis的删除数据操作，同以上插入与修改操作，也是需要两步：
@@ -570,7 +594,7 @@ Mybatis的删除数据操作，同以上插入与修改操作，也是需要两�
 
 
 
-![](C:\Users\Super Man\Desktop\delete.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/delete.jpg)
 
 
 
@@ -588,7 +612,7 @@ Mybatis的删除数据操作，同以上插入与修改操作，也是需要两�
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/06.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
 #### 总结
 
 我们通过本文介绍，基本掌握了 Mybatis 最基础的 CRUD 操作，后续，我们逐步深入。
@@ -600,4 +624,4 @@ Mybatis的删除数据操作，同以上插入与修改操作，也是需要两�
 
 
 
-![](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_the_end.png)
+![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)

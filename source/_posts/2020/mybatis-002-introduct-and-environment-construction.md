@@ -3,6 +3,7 @@ title: Mybatis系列全解（二）：Mybatis简介与环境搭建
 date: 2020-11-28 09:05:09
 tags:
 - Mybatis
+preview: http://www.panshenlian.com/images/post/java/mybatis/title/02-title.jpg
 introduce: |
     Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybatis 的基本全貌，真正从入门到上手，从上手到精通，本文为首篇，我们开始。
 ---
@@ -11,17 +12,17 @@ introduce: |
 
 
 
-![](https://pic2.zhimg.com/v2-7eec74a18a3d77f5008c04f97b283910_r.jpg)
+![](http://www.panshenlian.com/images/post/java/mybatis/title/02-title.jpg)
 
 
 
 
 
-![前言start](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_start.png)
+![前言start](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 Mybatis 是一套持久层框架，灵活易用，特别流行。
 
-![前言start](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/slogan_end.png)
+![前言start](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
@@ -33,7 +34,29 @@ Mybatis 是一套持久层框架，灵活易用，特别流行。
 
 Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybatis 的基本全貌，真正从入门到上手，从上手到精通，本文为首篇，我们开始。
 
+**Mybatis 全解系列脑图全览一直在更新哦**
 
+<iframe id="embed_dom" name="embed_dom" frameborder="0" style="display:block;width:100%; height:500px;" src="https://www.processon.com/embed/5fb88348f346fb5f0e298069"></iframe>
+
+
+#### Mybaits系列全解 ( 传送门 )
+
+- [Mybatis系列全解（一）：手写一套持久层框架](/2020/11/16/mybatis-001-hand-write-frame/)
+- [Mybatis系列全解（二）：Mybatis简介与环境搭建](/2020/11/28/mybatis-002-introduct-and-environment-construction/)
+- [Mybatis系列全解（三）：Mybatis简单CRUD使用介绍](/2020/12/01/mybatis-003-usage-for-crud/)
+- [Mybatis系列全解（四）：全网最全！Mybatis配置文件XML全貌详解](/2020/12/10/mybatis-004-xml-config-file/)
+- [Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映射文件](/2020/12/18/mybatis-005-mapping-file/)
+- [Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？](/2021/01/11/mybatis-006-core-api/)
+- [Mybatis系列全解（七）：全息视角看Dao层两种实现方式之传统与代理？](/2021/01/25/mybatis-007-two-impl-of-dao-layer)
+- [Mybatis系列全解（八）：Mybatis的9大动态SQL标签你知道几个？](/2021/03/04/mybatis-008-dynamic-sql)
+- Mybatis系列全解（九）：Mybatis的复杂映射
+- Mybatis系列全解（十）：Mybatis注解开发
+- Mybatis系列全解（十一）：Mybatis缓存全解
+- Mybatis系列全解（十二）：Mybatis插件开发
+- Mybatis系列全解（十三）：Mybatis代码生成器
+- Mybatis系列全解（十四）：Spring集成Mybatis
+- Mybatis系列全解（十五）：SpringBoot集成Mybatis
+- Mybatis系列全解（十六）：Mybatis源码剖析
 
 #### 目录
 
@@ -55,7 +78,7 @@ Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybati
 
 
 
-![第一](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/01.png)
+![第一](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 
 
 ####    Mybatis是什么
@@ -85,7 +108,7 @@ Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybati
 
 
 
-![02](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/02.png)
+![02](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 
 ####   Mybatis的前世今生
 
@@ -99,7 +122,7 @@ Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybati
 
 
 
-![ORM映射模型](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/02_01_mybatis_orm.png)
+![ORM映射模型](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/02_01_mybatis_orm.png)
 
 
 
@@ -111,7 +134,7 @@ Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybati
 
 
 
-![Hibernate模型开发过程](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/02_01_hiberbate_orm.png)
+![Hibernate模型开发过程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/02_01_hiberbate_orm.png)
 
 
 
@@ -123,7 +146,7 @@ Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybati
 
 
 
-![MybatisLogo](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/mybatis_logo.png)
+![MybatisLogo](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/mybatis_logo.png)
 
 
 
@@ -139,7 +162,7 @@ Mybatis系列全解，我们预计准备10+篇文章，让我们了解到 Mybati
 
 
 
-![03](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/03.png)
+![03](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 
 ####    Mybatis的优势
 
@@ -157,7 +180,7 @@ Mybatis 是一个半自动化的持久层框架，对开发人员开说，核心
 
 
 
-![Mybatis框架应用实例](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/02_01_mybatis_dev.png)
+![Mybatis框架应用实例](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/02_01_mybatis_dev.png)
 
 
 
@@ -181,7 +204,7 @@ Mybatis 是一个半自动化的持久层框架，对开发人员开说，核心
 
 
 
-![04](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/04.png)
+![04](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 
 ####    Mybatis整体架构图
 
@@ -189,13 +212,13 @@ Mybatis 是一个半自动化的持久层框架，对开发人员开说，核心
 
 
 
-![Mybatis整体架构图](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/02_01_mybatis_org.png)
+![Mybatis整体架构图](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/02_01_mybatis_org.png)
 
 
 
 
 
-![05](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/05.png)
+![05](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
 
 ####    环境搭建
 
@@ -229,7 +252,7 @@ Mybatis 开发与环境搭建，我们先入门体验，步骤如下：
 
 
 
-![创建maven工程](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_new_maven_project.png)
+![创建maven工程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_new_maven_project.png)
 
 
 
@@ -307,7 +330,7 @@ CREATE TABLE `user` (
 
 
 
-![User表数据](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_db_data.png)
+![User表数据](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_db_data.png)
 
 
 
@@ -497,31 +520,31 @@ public class MybatisTest {
 
 
 
-![Junit 单元测试](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_start.png)
+![Junit 单元测试](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_start.png)
 
 ##### 最终通过 Junit 单元测试，运行结果符合预期：
 
 
 
-![Junit单元测试运行结果](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_db_junit_test.png)
+![Junit单元测试运行结果](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_db_junit_test.png)
 
 
 
 
 
-![工程结构参考](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_start.png)
+![工程结构参考](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_start.png)
 
 ##### 工程结构参考：
 
 
 
-![工程结构参考](https://gitee.com/senlypan/notes/raw/master/images/Mybatis/project01/01_db_project_org.png)
+![工程结构参考](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project01/01_db_project_org.png)
 
 
 
 
 
-![06](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/06.png)
+![06](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
 
 #### 总结
 
@@ -533,4 +556,4 @@ public class MybatisTest {
 
 
 
-![the end](https://gitee.com/senlypan/notes/raw/master/images/sourceMaterial/article_the_end.png)
+![the end](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
