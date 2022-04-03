@@ -22,9 +22,6 @@ menus:
   '订阅我': /feed
   
 right_menus:
-  'RSS': 
-    target: '_blank'
-    href: 'http://www.panshenlian.com/atom.xml'
   'fork on Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
@@ -40,10 +37,10 @@ widgets:
     markdown: |
       Hi，我是大晚，真名潘深练，英文ID：biglate ，未来想做自由职业者，相信技术，会让生活更有趣。
 
-      * 有一本[《 潘深练的QA手册 》](http://qa.panshenlian.com/) 
-      * 有一本[《 Java并发编程学习文档 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
-      * 有一本[《 Java虚拟机学习手册 》](http://jvm.panshenlian.com/#/)
-      * 有一本[《 Spring框架学习手册 》](http://spring.panshenlian.com/) 
+      * [《 潘深练的QA手册 》](http://qa.panshenlian.com/) 
+      * [《 Java并发编程学习文档 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
+      * [《 Java虚拟机学习手册 》](http://jvm.panshenlian.com/#/)
+      * [《 Spring框架学习手册 》](http://spring.panshenlian.com/) 
 
   -
     markdown: |
