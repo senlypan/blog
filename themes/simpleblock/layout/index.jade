@@ -59,8 +59,12 @@ mixin article(post)
     else 
       .markdown-body!= post.content
 
-    if !page.posts && theme.duoshuo
-      .ds-thread(data-thread-key=commentKey(post), data-title=post.title, data-url=post.permalink)
+    if !page.posts && theme.giscus
+      .giscus
+
+    if page.posts && theme.giscus
+      .giscus-none
+        .giscus
 
   if !page.posts && post.appends
     for append in formatArray(post.appends)

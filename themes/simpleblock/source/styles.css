@@ -42,3 +42,6 @@ div.introduce-center{
 div.preview img{
     width: 100%;
 }
+div.giscus-none{
+    display: none;
+}
