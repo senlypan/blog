@@ -6,7 +6,7 @@ tags:
 - Java
 - 面向对象
 introduce: |
-    【草稿预览，未正式发布】Java 编程语言是一种高级的、面向对象的语言。它正在多个方面迅速发展，以简化和加速现代应用程序的开发。
+    Java 编程语言是一种高级的、面向对象的语言。它正在多个方面迅速发展，以简化和加速现代应用程序的开发。
 reviews:
   -
     author: 大晚
@@ -16,11 +16,6 @@ reviews:
     author: Sim
     body: 安全和性能方面可以展开说说哈。
 ---
-
-
-
-⚡ 草稿预览，未正式发布
-
 
 
 关于 [Java 语言](https://developer.ibm.com/languages/java/) <sup>[1]</sup> ，IBM Developer 网站上这么描述：
