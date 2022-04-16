@@ -17,12 +17,14 @@ menus:
   '简历': /resume
   '在读书单': /booklist
   '在听播客': /podcasts
-  '所有日志': /list
+  '技术日志': /list
   '生活掠影': /live
+  '日常叨叨叨': /happened
   '订阅我': /feed
   
 right_menus:
   '科技周刊': /weekly
+  '产品半月刊': /product
   'fork on Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
@@ -31,13 +33,15 @@ right_menus:
 ## Banners && Widgets
 banners:
   jade: |
-    | 大晚最近在梳理分布式系统设计相关实践，还有一本在读的书 #[a(href='https://book.douban.com/subject/2240482/') 《走在人生边上》] ，#[a(href='https://book.douban.com/author/4503676/') 杨绛先生] 在书里以问答的形式说了很多神鬼、人本性、天命的内容，又强调了人生实苦，每个人都需要修身、锻炼灵魂，实现人生价值，文字很亲近，内容值得思考。
-
+    | 2022-04-16：以往自己大量的阅读，没能形成优质记忆或沉积，最近受到阮一峰老师 #[a(href='https://www.ruanyifeng.com/blog/',target='_blank') 《科技爱好者周刊》]的启示，我已连续发布两期 #[a(href='https://www.panshenlian.com/weekly/',target='_blank') 《无聊科技正经事》]周刊，虽然读者寥寥，但是感触良多，最大的收获就是自己对知识的索取产生更高的要求，并会刻意剖析思考每一个信息源的中心思想、内容表达背后的深意以及未来可能的延伸，毕竟周刊是要对外输出，因此自己必须负有责任，这也会是一个良性的循环。另外，我有一个新的计划，除了写#[a(href='https://www.panshenlian.com/list/',target='_blank') 技术日志] 、发布#[a(href='https://www.panshenlian.com/weekly/',target='_blank') 科技周刊]、#[a(href='https://www.panshenlian.com/live/',target='_blank')记录生活] ，我准备做一个产品半月刊，简单来说，就是每半月研发一个小产品或小功能，结合自己的时间，可能是一个小小Logo的设计升级、可能是一个大的整站改版、也可能是一个临时的突发奇想，然后把实现过程记录成刊，基本是这样。无论如何，我觉得很有趣，我想干这件事，而且也延续科技周刊的命名风格，暂且叫 #[a(href='https://www.panshenlian.com/product',target='_blank') 《无聊产品正经事》] 半月刊，每半月发版，时间不定，可能会浮动几天，先走着，其他情况再说。
+    
 widgets:
   -
     markdown: |
+      <img src="http://www.panshenlian.com/images/post/me/me-in-2019.jpg" alt="大晚" width="100%"> 
       Hi，我是大晚，真名潘深练，英文ID：biglate ，未来想做自由职业者，相信技术，会让生活更有趣。
 
+      * [《 无聊科技正经事周刊》](https://wednesday.zhubai.love) 
       * [《 无聊科技正经事周刊》](https://wednesday.zhubai.love) 
       * [《 潘深练的QA手册 》](http://qa.panshenlian.com/) 
       * [《 Java并发编程学习文档 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
