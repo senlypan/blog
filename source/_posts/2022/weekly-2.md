@@ -4,7 +4,7 @@ date: 2022-04-13 09:55:17
 author: 潘深练
 tags:
 - 科技周刊
-preview: http://weekly.panshenlian.com/_media/images/2022/issue-2/cover-001.webp
+preview: https://weekly.panshenlian.com/_media/images/2022/issue-2/cover-001.webp
 introduce: |
     世界上最大的悍马（悍马 H1 X3 ）让普通的悍马看起来像一辆玩具车。
 ---
@@ -16,7 +16,7 @@ introduce: |
 
 ## 封面图
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/cover-001.webp)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/cover-001.webp)
 
 世界上最大的悍马（悍马 H1 X3 ）让普通的悍马看起来像一辆玩具车。（[via](https://www.odditycentral.com/auto/worlds-largest-hummer-makes-the-regular-one-look-like-a-toy-car.html)）
 
@@ -24,7 +24,7 @@ introduce: |
 
 据 [中国田径协会官方网站](http://www.athletics.org.cn/news/marathon/2020/0501/346438.html) 统计数据显示，2019 年全国范围内共举办马拉松规模赛事 1828 场（800人以上路跑、300人以上越野及徒步活动)，平均每天有 5 场马拉松赛事。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/topic-001.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/topic-001.jpg)
 
 排除疫情影响，按照这个数据增长趋势，2019年之后依然会保持着快速发展，原因可能会有这么几个：
 
@@ -38,7 +38,7 @@ introduce: |
 
 总之，基于国家政策的支持、赛事的成熟运营、媒体的大力推广以及资本和技术的相继助力等等，马拉松赛事已经成为运动热潮。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/topic-002.jpeg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/topic-002.jpeg)
 
 但是很不幸，2019 年爆发了新冠疫情，极大的限制了线下马拉松赛事的开展，大部分计划赛事延期或取消。从 2020 年至今，我们有相当一部分马拉松赛事迁移到了线上举办。
 
@@ -48,7 +48,7 @@ introduce: |
 
 对此，你有何想法，是否接受线上马拉松比赛可以作为马拉松赛事的补充和延展呢？
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/topic-004.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/topic-004.jpg)
 
 反正我是线上线下都报名了，你会参加线上马拉松吗？
 
@@ -56,7 +56,7 @@ introduce: |
 
 1、[认识艾达（Ai-Da），第一个可以像艺术家一样画画的机器人](https://www.theguardian.com/technology/2022/apr/04/mind-blowing-ai-da-becomes-first-robot-to-paint-like-an-artist)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/keji-001.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/keji-001.png)
 
 艾达（Ai-Da）是一个可以创作传统绘画的人形机器人，被誉为世界上第一个超现实机器人艺术家。艾达能够利用她的仿生手和眼睛中的相机通过铅笔等进行创作。
 
@@ -64,21 +64,21 @@ introduce: |
 
 威尼斯双年展是一个以建筑、电影、音乐、舞蹈、戏剧和视觉艺术为特色的国际展览，今年是第 59 届，你可以在 [网站](https://www.labiennale.org/en/art/2022) 上购票。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/keji-003.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/keji-003.png)
 
 而艾达（Ai-Da）也将成为该节日 120 年历史上首位机器人艺术家。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/keji-002.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/keji-002.png)
 
 AI-Da目前3岁了，在 TikTok 或者 [AI-Da官网](https://www.ai-darobot.com/) 都能够看她很多艺术作品。
 
 2、[特斯拉可能会开拓一个新行业：锂矿](https://interestingengineering.com/elon-musk-tesla-lithium-mining)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/keji-004.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/keji-004.jpg)
 
 特斯拉CTO马斯克周五在推特上表示，他的公司可能会直接涉足锂矿开采和精炼业务，因为锂是电动汽车电池制造的关键组成部分，其成本已经变得 “疯狂” 。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/keji-005.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/keji-005.png)
 
 这是过去 20 年中每年每吨锂的平均价格，仅去年一年，锂的涨幅就超过了 480%。
 
@@ -90,7 +90,7 @@ AI-Da目前3岁了，在 TikTok 或者 [AI-Da官网](https://www.ai-darobot.com/
 
 1、[Minecraft 3D CSS 蜜蜂🐝](https://codepen.io/fariati/pen/oNpZRbd)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/linggan-001.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/linggan-001.jpg)
 
 Ibrahim Fariat 使用 CSS 创建了一个令人惊叹的动画场景。
 
@@ -100,7 +100,7 @@ Ibrahim Fariat 使用 CSS 创建了一个令人惊叹的动画场景。
 
 Kickstarter于2009年4月在美国纽约成立，是一个专为具有创意方案的企业筹资的众筹网站平台。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/linggan-002.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/linggan-002.png)
 
 奇幻作家 Brandon Sanderson 刚刚打破了 Kickstarter 上赞助者资助最多的项目纪录，共获得18.5万多赞助者，总额达到4170万美元。
 
@@ -116,7 +116,7 @@ Kickstarter 的前出版主管 Margot Atwell 将 Sanderson 的成功归因于：
 
 3、[Zugzwang 在国际象棋、数学和披萨中的秘密](https://www.quantamagazine.org/zugzwang-in-chess-math-and-pizzas-20220222/#newsletter) （英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/linggan-003.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/linggan-003.jpg)
 
 在大多数两人游戏中，通常最好是先手赢后手输（先发制人的优势）。例如你和某人分享一个比萨，并且想吃更大的份，通常最好先拿第一片，并且先挑一个大的。包括网球比赛也都存在先手优势。
 
@@ -130,7 +130,7 @@ Kickstarter 的前出版主管 Margot Atwell 将 Sanderson 的成功归因于：
 
 1、[第一种面向对象的编程语言是什么？](https://retrocomputing.stackexchange.com/questions/24179/what-was-the-first-object-oriented-programming-language)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-001.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-001.png)
 
 在 stackexchange 上有个热门的问答，关于 “第一种面向对象的编程语言是什么？”。
 
@@ -145,7 +145,7 @@ Kickstarter 的前出版主管 Margot Atwell 将 Sanderson 的成功归因于：
 
 2、[你应该阅读学术计算机科学论文](https://stackoverflow.blog/2022/04/07/you-should-be-reading-academic-computer-science-papers/)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-002.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-002.jpg)
 
 作为一名程序员，你需要不断地学习。可以查看教程、文档、公众号、博客网站、Stack Overflow 问题，或者查看任何可以帮助你编写代码和提升技能的内容。
 
@@ -163,17 +163,17 @@ Kickstarter 的前出版主管 Margot Atwell 将 Sanderson 的成功归因于：
 
 巨无霸于 1967 年由宾夕法尼亚州麦当劳特许经营权所有者 Jim Delligati 创建。它于次年在美国各地推出，如今您可以在 70 多个国家/地区购买。但是，正如巨无霸指数所示，具体支付的价格会根据所在的位置而有所不同。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-003.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-003.jpg)
 
 鉴于麦当劳是世界上最大的公司之一，而且巨无霸在全球范围内广泛使用，这意味着著名的汉堡可以作为大多数国家之间的基本商品比较，并且它也具有相同的投入和分配系统的优势，仅仅在某些地方做了小修改（比如印度是鸡肉饼而不是牛肉）。
 
 使用两个国家的巨无霸价格，该指数可以指示一种货币是否可能被高估或低估。例如，巨无霸在中国售价 24.40 人民币，在美国售价 5.81 美元。通过比较隐含汇率和实际汇率，可以看出人民币是高估还是低估。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-004.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-004.png)
 
 根据巨无霸指数，人民币被低估了34%，即是相对美国卖便宜了，因为实际兑换汇率是6.37。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-005.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-005.png)
 
 当然，它还能显示汉堡价格随时间变化了解通货膨胀情况。
 
@@ -191,21 +191,21 @@ Kickstarter 的前出版主管 Margot Atwell 将 Sanderson 的成功归因于：
 
 4、[探索Web三代技术：Web 1.0、Web 2.0 和 Web 3.0](https://hackernoon.com/a-tour-of-the-web-web-10-web-20-and-web-30-explained)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-006.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-006.jpg)
 
 这些年，无论作为普通用户还是技术研发人员来说，网络都发生了巨大的变化，由于网络的进步，制作更加有吸引力的网站或者应用程序，对各方面技术的要求越来越高，从web1.0的web诞生革命、到web2.0的成熟应用、再到web3.0的未来探索，人们对网络的进步的渴望，以及对技术的追求从未停止。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-008.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-008.jpg)
 
 Web1.0 前身
 
 超文本的概念比万维网早了几十年。1990 年 12 月 ，Tim Berners-Lee 希望开发一个可以跨网络工作的系统，允许个人从一台机器上的一个文件链接到另一台机器上的另一个文件。所以他用 [Objective-C](https://baike.baidu.com/item/Objective-C/8374012) 编写了一个应用程序，并将其命名为 [万维网](https://baike.baidu.com/item/www/109924) ，你可以在 [这里](https://worldwideweb.cern.ch/) 访问第一个万维网的样子。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-007.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-007.jpg)
 
 Web 1.0 是万维网革命的第一阶段，通常被称为 **只读网络**。网站是信息性的，仅包含超链接在一起的静态内容，或者简单地说，没有 CSS、动态链接、交互性（如登录用户、对博客文章的评论等）。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-009.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-009.jpg)
 
 Web 2.0 从 2004 年至今，是万维网革命的第二阶段，通常称为 **读写网络**。重点是用户生成的内容、易用性、参与性文化和互操作性。Web 2.0 带来了根本性的转变，人们可以通过各种在线工具和平台分享他们的观点、意见、想法和经验。
 
@@ -213,7 +213,7 @@ Web 2.0 从 2004 年至今，是万维网革命的第二阶段，通常称为 **
 
 因此，人们开始追求一个去中心化且安全的互联网。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-010.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-010.jpg)
 
 Web 3.0 概念旨在创建一个去中心化但安全的互联网，人们可以在其中安全地交换金钱和信息，而无需中间商或大型科技公司。
 
@@ -221,11 +221,11 @@ Web 3.0 概念旨在创建一个去中心化但安全的互联网，人们可以
 
 5、[一篇很好的讲述Linux信号的文章](https://devopedia.org/linux-signals)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-011.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-011.jpg)
 
 Linux 计算机系统有许多不同状态的进程，这些进程属于用户应用程序或者操作系统。我们需要一种机制让操作系统内核与这些应用程序进程之间进行通信以协同配合。一种方法就是让流程发生一些重要事件时通知其它进程，这就是我们需要设计信号的原因。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/article-012.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/article-012.jpg)
 
 关于 Linux 信号有那些、信号如何影响 Linux 进程、阻塞和解除阻塞信号，以及信号的典型生命周期等问题，你都可以在文章中了解到。
 
@@ -235,29 +235,29 @@ Linux 计算机系统有许多不同状态的进程，这些进程属于用户�
 
 1、[TOONME.COM](https://toonme.com/)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-008.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-008.jpg)
 
 可以在线将上传的照片转换为可爱的卡通图片，在延续了原图造型的基础上，重新利用 AI 绘制出不同风格的卡通形象。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-009.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-009.jpg)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-010.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-010.jpg)
 
 至于网站功能评测，你们自己看效果吧，我简单上传了一张自己的图片（丑图），[TOONME.COM](https://toonme.com/) 给我整得反正挺满意，效果秒杀国内一众卡通软件。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-011.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-011.jpg)
 
 那高颜值的你们，还等什么呢？上手吧。
 
 2、[Avvvatars](https://avvvatars.com/)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-001.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-001.png)
 
 Avvvatars 是一组制作精美的独特头像占位符，可作为 React 包和 Figma 库使用。
 
 3、[Faker](https://fakerjs.dev/)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-002.svg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-002.svg)
 
 一款实用工具，可以生成大量虚拟（但合理）数据，主要用于测试和开发，并加快前端研发效率，基本用途有：单元测试、 性能测试、构建演示，特别是在没有完整后端的情况下前端进行实用。
 
@@ -265,7 +265,7 @@ Faker 支持在Nodejs、Perl、Ruby、Java、Python。
 
 4、[10 个最好的 JavaScript 编辑器](https://www.infoworld.com/article/3195951/review-the-10-best-javascript-editors.html)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-003.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-003.png)
 
 Sublime Text、Visual Studio Code、Brackets 和 Atom 位居榜首，但其他几个也值得考虑。
 
@@ -273,19 +273,19 @@ Sublime Text、Visual Studio Code、Brackets 和 Atom 位居榜首，但其他�
 
 当然，如果你有更高的编程需要，那可能你需要  [《6 款最好的 JavaScript IDE 工具》](https://www.infoworld.com/article/3192844/review-the-6-best-javascript-ides.html)。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-004.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-004.png)
 
 5、[Excalidraw Editor](https://excalidraw.com/)
 
 Excalidraw 是一种流行的在线绘图工具，用于创建“手绘”图表，其最酷的功能之一是能够以 SVG 格式导出，然后在您的页面中无损使用。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-005.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-005.jpg)
 
 目前 VS Code 扩展已经支持，成为官方的 VS Code Excalidraw 扩展插件，如果你也跟我一样使用 VS Code 编辑器，那去这个 [网站地址](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor#excali) 下载 VS Code Excalidraw 扩展插件地址吧。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-006.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-006.png)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/tools-007.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/tools-007.png)
 
 我简单尝试了一下网页版：好用、美观、免费导出。
 
@@ -295,7 +295,7 @@ Excalidraw 是一种流行的在线绘图工具，用于创建“手绘”图表
 
 1、[网络和安全专家的 10 个必备 Linux 工具](https://www.networkworld.com/article/3656629/10-essential-linux-security-tools-for-network-professionals-and-security-practitioners.html)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/source-001.webp)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/source-001.webp)
 
 RedHat 产品安全副总裁 Vincent Danen和其他安全专家，推荐了10款网络安全方面必备的 Linux 安全工具。
 
@@ -303,7 +303,7 @@ RedHat 产品安全副总裁 Vincent Danen和其他安全专家，推荐了10款
 
 2、[开源在线幻灯片平台](https://github.com/pipipi-pikachu/PPTist)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/source-002.png)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/source-002.png)
 
 PPTist： 一个功能丰富的在线幻灯片应用，可基于此搭建自己的在线幻灯片平台。
 
@@ -313,29 +313,29 @@ PPTist： 一个功能丰富的在线幻灯片应用，可基于此搭建自己�
 
 1、[一种罕见的鸽子品种看起来像漫画鸟](https://www.odditycentral.com/animals/this-short-beaked-google-eyed-pigeon-breed-looks-like-a-real-life-bird-caricature.html)（英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/photo-001.webp)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/photo-001.webp)
 
 布达佩斯短脸鸽（Budapest Short Face Tumblers）可以不间断飞行长达 5 小时，飞行距离约为 800 公里。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/photo-002.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/photo-002.jpg)
 
 布达佩斯短脸鸽（Budapest Short Face Tumblers）的耐力是它的象征，但第一次看到它的人并不太关心它的飞行能力，而更关心它的独特外观。小脸和小嘴，与凸出的蛙眼形成鲜明对比，让人既好奇又害怕，但也引起了人们的注意。
 
 2、[不存在的板凳](https://shkspr.mobi/blog/2022/04/this-bench-does-not-exist/) （英文）
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/photo-003.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/photo-003.jpg)
 
 作者通过人工智能生成了数千长椅子，首先让程序模型了解椅子长什么样子，然后经过训练之后生成不同场景下的椅子，虽然有些看起来很魔幻不合逻辑，甚至说是恐怖，但是我们能看出来是一张椅子。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/photo-004.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/photo-004.jpg)
 
 另外还提供了一个 300MB 的 StyleGAN 神经网络 [PKL文件](https://g-75671f.f5dc97.75bc.dn.glob.us/benches/network-snapshot-011000.pkl)，你也可以下载并使用这个模型。
 
 3、[独特的地貌](https://www.instagram.com/geomorphological_landscapes/)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/photo-005.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/photo-005.jpg)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/photo-006.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/photo-006.jpg)
 
 Geomorphological Landscapes 是一个收欢迎的 Ins 帐户，它收集了很多独特的地貌以及组合地形。
 
@@ -343,7 +343,7 @@ Geomorphological Landscapes 是一个收欢迎的 Ins 帐户，它收集了很�
 
 1、[神策数据桑文锋: 如何在SaaS创业中打造组织文化？](https://www.ximalaya.com/sound/395044588)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/boke-001.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/boke-001.jpg)
 
 桑文锋是 [神策数据](https://www.sensorsdata.cn/) 创始人和CEO。神策数据是一家为企业提供大数据分析和营销科技服务的公司，可以简单理解为私有化版本的 Google Analytics 。
 
@@ -357,13 +357,13 @@ Geomorphological Landscapes 是一个收欢迎的 Ins 帐户，它收集了很�
 
 1、[敏捷方法的简史](https://www.infoworld.com/article/3655646/a-brief-history-of-the-agile-methodology.html)
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/post-001.webp)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/post-001.webp)
 
 今天大多数组织都在实践某种形式的敏捷开发，但是你真的了解什么是敏捷吗？要了解敏捷的成功，有必要回顾一下瀑布方法的全盛时期和敏捷宣言的诞生。
 
 如果你对敏捷方法还没有基本的认识，那我推荐你阅读 [敏捷方法的简史](https://www.infoworld.com/article/3655646/a-brief-history-of-the-agile-methodology.html)，文章详细说明了什么是敏捷、敏捷诞生的背景（瀑布方法强规范下暴露的弊端），以及为什么敏捷开发能提供更好的软件与支持。
 
-![](http://weekly.panshenlian.com/_media/images/2022/issue-2/post-002.jpg)
+![](https://weekly.panshenlian.com/_media/images/2022/issue-2/post-002.jpg)
 
 当然，如果暂时没有时间详细阅读，那么你可以先了解《敏捷宣言》的核心思想。
 
