@@ -4,6 +4,8 @@ date: 2022-04-06 08:45:17
 author: 潘深练
 tags:
 - 科技周刊
+- 裁员
+- 焦虑
 preview: http://weekly.panshenlian.com/_media/images/2022/issue-1/cover-001.jpg
 introduce: |
     作品 《 PEACE PLEASE 》 是 Alexey Kulinkovich 最近发布在 Ins 的艺术作品，主题关于乌克兰。

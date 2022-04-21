@@ -87,6 +87,11 @@ tag_map:
   一文读懂: easy-to-read
   潘深练: senlypan
   科技周刊: weekly
+  美团: meituan
+  算法: algorithm
+  马拉松: marathon
+  裁员: layoffs
+  焦虑: anxious
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta

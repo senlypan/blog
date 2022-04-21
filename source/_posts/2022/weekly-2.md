@@ -4,6 +4,7 @@ date: 2022-04-13 09:55:17
 author: 潘深练
 tags:
 - 科技周刊
+- 马拉松
 preview: https://weekly.panshenlian.com/_media/images/2022/issue-2/cover-001.webp
 introduce: |
     世界上最大的悍马（悍马 H1 X3 ）让普通的悍马看起来像一辆玩具车。
