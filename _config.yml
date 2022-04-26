@@ -92,6 +92,8 @@ tag_map:
   马拉松: marathon
   裁员: layoffs
   焦虑: anxious
+  理性: rational
+  人工智能: artificial-intelligence
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
