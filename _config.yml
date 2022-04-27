@@ -72,9 +72,12 @@ tag_map:
   Java: java
   JDK: jdk
   AOP: aop
+  IOC: ioc
   Mybatis: mybatis
+  Spring: spring
   CAS: cas
   volatile: volatile
+  反射: reflect
   异常: exception
   译文集: translation
   多线程: multithreading
