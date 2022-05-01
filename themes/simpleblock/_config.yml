@@ -33,8 +33,7 @@ right_menus:
 ## Banners && Widgets
 banners:
   jade: |
-    | 2022-04-16：以往自己大量的阅读，没能形成优质记忆或沉积，最近受到阮一峰老师 #[a(href='https://www.ruanyifeng.com/blog/',target='_blank') 《科技爱好者周刊》]的启示，我已连续发布两期 #[a(href='https://www.panshenlian.com/weekly/',target='_blank') 《无聊科技正经事》]周刊，虽然读者寥寥，但是感触良多，最大的收获就是自己对知识的索取产生更高的要求，并会刻意剖析思考每一个信息源的中心思想、内容表达背后的深意以及未来可能的延伸，毕竟周刊是要对外输出，因此自己必须负有责任，这也会是一个良性的循环。另外，我有一个新的计划，除了写#[a(href='https://www.panshenlian.com/list/',target='_blank') 技术日志] 、发布#[a(href='https://www.panshenlian.com/weekly/',target='_blank') 科技周刊]、#[a(href='https://www.panshenlian.com/live/',target='_blank')记录生活] ，我准备做一个产品半月刊，简单来说，就是每半月研发一个小产品或小功能，结合自己的时间，可能是一个小小Logo的设计升级、可能是一个大的整站改版、也可能是一个临时的突发奇想，然后把实现过程记录成刊，基本是这样。无论如何，我觉得很有趣，我想干这件事，而且也延续科技周刊的命名风格，暂且叫 #[a(href='https://www.panshenlian.com/product',target='_blank') 《无聊产品正经事》] 半月刊，每半月发版，时间不定，可能会浮动几天，先走着，其他情况再说。
-    
+    | 2022-05-01：二〇二二年四月，匆匆终结，极为丰满，从一号准备孩子的四岁生日会开始，就隐约有种忙碌预感，直到刚刚在公园被疫情防控安保人员撵走，我们一家三口拖着帐篷、书籍、电脑、零食、玩具，顶着三个 26°C 的太阳，走进一家丹尼斯七天地星巴克，坐下，咖啡厅舒缓的音乐，让神经很快松弛，缓过神，想想今天既狼狈又好笑，趁着孩子酣睡，打开电脑，回忆 #[a(href='https://www.panshenlian.com/2022/05/01/live-004-april-day-in-2022/',target='_blank') 四月]。
 widgets:
   -
     markdown: |
