@@ -86,7 +86,7 @@ tag_map:
   并发编程: concurrent-programming
   面向对象: object-oriented
   人生目标: life-goal
-  游记: travel
+  旅游: travel
   动态代理: dynamic-proxy
   一文读懂: easy-to-read
   潘深练: senlypan
@@ -98,6 +98,10 @@ tag_map:
   焦虑: anxious
   理性: rational
   人工智能: artificial-intelligence
+  虚拟现实: vr
+  增强现实: ar
+  假期: vacation
+
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
