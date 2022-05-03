@@ -37,6 +37,10 @@ mixin article(post)
         author.left= '潘深练'
       time.left= post.date.format(config.date_format)
 
+      if page.posts
+      else 
+         img.img-visitor(src="https://visitor-badge.glitch.me/badge?page_id=senlypan.blog."+url_for(post.path),align="left")
+
       if post.categories
         ul.tags.left
           - post.categories.each(function(category) {
