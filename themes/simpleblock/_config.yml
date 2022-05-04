@@ -24,7 +24,7 @@ menus:
   
 right_menus:
   '科技周刊': /weekly
-  '产品半月刊': /product
+  '产品季刊': /product
   'fork on Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
@@ -33,7 +33,8 @@ right_menus:
 ## Banners && Widgets
 banners:
   jade: |
-    | 2022-05-01：二〇二二年四月，匆匆终结，极为丰满，从一号准备孩子的四岁生日会开始，就隐约有种忙碌预感，直到刚刚在公园被疫情防控安保人员撵走，我们一家三口拖着帐篷、书籍、电脑、零食、玩具，顶着三个 26°C 的太阳，走进一家丹尼斯七天地星巴克，坐下，咖啡厅舒缓的音乐，让神经很快松弛，缓过神，想想今天既狼狈又好笑，趁着孩子酣睡，打开电脑，回忆 #[a(href='https://www.panshenlian.com/2022/05/01/live-004-april-day-in-2022/',target='_blank') 四月]。
+    | 2022-05-04：原计划的产品半月刊，恐怕要变更为 #[a(href='https://www.panshenlian.com/product',target='_blank') 季刊] 了。主要有两方面因素：一是时间仓促，精力有限，半月时间不足以输出较为满意的作品；二是目标失焦，手头创思密集，需进一步权衡与聚焦。因此，调整节奏。
+
 widgets:
   -
     markdown: |
