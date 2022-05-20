@@ -88,6 +88,10 @@ html
         gtag('js', new Date());
         gtag('config', '#{theme.google_analytics}');
 
+    if theme.share_card 
+      script(src='https://www.panshenlian.com/scripts/plugin/qrcode.min.js')
+      script(src='https://www.panshenlian.com/scripts/plugin/share-card.js')
+
     if theme.giscus 
       script(src='https://giscus.app/client.js',
         data-repo="senlypan/blog",

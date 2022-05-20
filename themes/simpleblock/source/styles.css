@@ -57,3 +57,22 @@ div.giscus-none{
     position: relative;
     top: 5px;
 }
+share-info .share-card {
+    min-height: 150px;
+    margin: 50px 0px 50px;
+}
+share-info .share-card img {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    margin: auto;   
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.1), 2px 2px 15px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.1), 2px 2px 15px rgba(0,0,0,0.1);
+}
+share-info .share-card p{
+    text-align: center;
+    color: #67757e;
+}
+share-info sharetitle,shareintroduce,author,shareimg{
+    display: none;
+}

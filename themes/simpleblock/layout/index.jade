@@ -64,6 +64,15 @@ mixin article(post)
       .markdown-body!= post.content
 
     if !page.posts && theme.giscus
+      share-info
+        #qrcode
+        .share-card
+        sharetitle=post.title
+        shareintroduce=post.introduce
+        shareimg=post.preview
+        author=post.author 
+
+    if !page.posts && theme.giscus
       .giscus
 
     if page.posts && theme.giscus
