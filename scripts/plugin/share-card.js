@@ -117,7 +117,7 @@
     let canvas = createShareCard({
         title: document.getElementsByTagName('sharetitle')[0].innerHTML,
         intro: document.getElementsByTagName('shareintroduce')[0].innerHTML,
-        url: window.location.pathname,
+        url: window.location.href,
         coverUrl: document.getElementsByTagName('shareimg')[0].innerHTML
     }).then(img => {  
         var _shareCard = document.getElementsByClassName('share-card')[0];      
