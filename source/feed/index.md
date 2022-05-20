@@ -1,6 +1,9 @@
 ---
 title: 订阅我
 date: 2022-02-19 15:24:03
+preview: http://www.panshenlian.com/images/post/me/share/feed.jpg
+introduce: |
+    欢迎订阅我的更新，支持RSS、邮箱，或关注我的微信公众号。
 ---
 
 <img src="http://www.panshenlian.com/images/post/feed/v2.jpg" width="60%" >

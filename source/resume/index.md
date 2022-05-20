@@ -1,6 +1,9 @@
 ---
 title: 简历
 date: 2022-02-14 16:04:12
+preview: http://www.panshenlian.com/images/post/me/share/resume.jpg
+introduce: |
+    我叫潘深练，一名普通程序员，简历平平，甚至极其浅陋，但是这就是真实的我，经历的都在这。
 ---
 
 ## 基本信息

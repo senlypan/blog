@@ -1,6 +1,9 @@
 ---
 title: 所有日志
 date: 2022-02-14 16:04:26
+preview: http://www.panshenlian.com/images/post/me/share/list.jpg
+introduce: |
+    这里记录我的所有技术文章、译文集、架构思考以及关于计算机互联网的探索。
 ---
 
 ### 技术
