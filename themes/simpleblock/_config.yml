@@ -2,6 +2,8 @@
 google_analytics: 'G-XWB09PF43E'
 giscus: 1
 share_card: 1
+biglate_analytics: 1
+biglate_ajax: 1
 
 ## Meta
 rss: http://panshenlian/atom.xml
@@ -66,7 +68,7 @@ widgets:
 
 ## SNS (Work in progress)
 sns:
-  qq: '412560226'
-  mobile: '13276907188'
+  qq: ''
+  mobile: ''
   github: 'senlypan'
 

@@ -100,6 +100,14 @@
     }
 
     function createShareCard ({ title, intro, url, coverUrl }) {
+        // 数据有效性
+        if(!document.getElementsByClassName('share-card')[0]){
+            return Promise.all([
+                // 非详情页
+            ]).then(() => {
+                // 跳过
+            })
+        }
         // 构建页脚图片
         let footerDataUrl = buildFooterImageDataUrl(title, intro)
         return Promise.all([
@@ -114,13 +122,26 @@
         })
     }
 
+    // 获取指定元素文本
+    const innerHTML = (_element,i) => {
+        let _text = ''
+        if (_element){
+            if (_element[i]){
+                _text = _element[i].innerHTML
+            }
+        }
+        return _text
+    }
+
     let canvas = createShareCard({
-        title: document.getElementsByTagName('sharetitle')[0].innerHTML,
-        intro: document.getElementsByTagName('shareintroduce')[0].innerHTML,
+        title: innerHTML(document.getElementsByTagName('sharetitle'),0),
+        intro: innerHTML(document.getElementsByTagName('shareintroduce'),0),
         url: window.location.href,
-        coverUrl: document.getElementsByTagName('shareimg')[0].innerHTML
+        coverUrl: innerHTML(document.getElementsByTagName('shareimg'),0)
     }).then(img => {  
-        var _shareCard = document.getElementsByClassName('share-card')[0];      
-        _shareCard.appendChild(img)
+        var _shareCard = document.getElementsByClassName('share-card')[0];  
+        if (_shareCard){
+            _shareCard.appendChild(img)
+        }    
     })
 })();

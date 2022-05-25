@@ -88,6 +88,13 @@ html
         gtag('js', new Date());
         gtag('config', '#{theme.google_analytics}');
 
+    if theme.biglate_ajax 
+      script(src='https://www.panshenlian.com/scripts/plugin/biglate-ajax.js')
+
+    if theme.biglate_analytics 
+      script(src='https://www.panshenlian.com/scripts/plugin/jquery-3.6.0.min.js')
+      script(src='https://www.panshenlian.com/scripts/plugin/biglate-analytics.js')
+
     if theme.share_card 
       script(src='https://www.panshenlian.com/scripts/plugin/qrcode.min.js')
       script(src='https://www.panshenlian.com/scripts/plugin/share-card.js')
