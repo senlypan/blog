@@ -80,7 +80,7 @@ Java 语言是一门面向对象的编程（OOP, Object-Oriented Programming）�
 
 
 
-![platform independent java](http://www.panshenlian.com/images/post/java/platform-independent-java.png)
+![platform independent java](https://www.panshenlian.com/images/post/java/platform-independent-java.png)
 
 
 
@@ -96,7 +96,7 @@ Java 比其他传统的解释型编程语言更快，因为 Java 字节码接近
 
 
 
-![java security](http://www.panshenlian.com/images/post/java/java-security.png)
+![java security](https://www.panshenlian.com/images/post/java/java-security.png)
 
 
 

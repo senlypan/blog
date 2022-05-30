@@ -7,16 +7,16 @@ tags:
 - 并发编程
 - 多线程
 - 并行
-preview: http://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/title.jpg
+preview: https://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/title.jpg
 introduce: |
     并发性和并行性通常用于与多线程程序相关的，最早并发性和并行性似乎指的是相同的概念，但其实并发和并行实际上有不同的含义。在这个并发与并行教程中，我将解释这些概念的含义。
 ---
 
-![translation-004-concurrency-vs-parallelism.md#title.jpg](http://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/title.jpg)
+![translation-004-concurrency-vs-parallelism.md#title.jpg](https://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/title.jpg)
 
 > 作者: 雅各布·詹科夫
 > 原文: http://tutorials.jenkov.com/java-concurrency/concurrency-vs-parallelism.html
-> 翻译: [潘深练的个人网站](http://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
+> 翻译: [潘深练的个人网站](https://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
 > 更新: 2022-02-23
 
 并发性和并行性通常用于与多线程程序相关的，最早并发性和并行性似乎指的是相同的概念，但其实并发和并行实际上有不同的含义。在这个并发与并行教程中，我将解释这些概念的含义。
@@ -27,7 +27,7 @@ introduce: |
 
 如果您喜欢视频，这里有本教程对应的视频版本: [并发与并行教程视频](https://www.youtube.com/watch?v=Y1pgpn2gOSg&list=PLL8woMHwr36EDxjUoCzboZjedsnhLP1j4&index=9)
 
-![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-video-screenshot.png](http://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-video-screenshot.png)
+![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-video-screenshot.png](https://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-video-screenshot.png)
 
 ## 什么是并发
 
@@ -35,19 +35,19 @@ introduce: |
 
 如果计算机只有一个CPU，应用程序可能不会在同一时间完成多个任务，但在应用程序内部一次完成多个任务。要同时在多个任务上取得进展，CPU会在执行期间在不同的任务之间切换。如下图所示：
 
-![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-1.png](http://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-1.png)
+![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-1.png](https://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-1.png)
 
 ## 什么是并行执行
 
 并行执行是指计算机具有多个 CPU 或 CPU 内核，并同时在多个任务上取得进展。但是，并行执行并不是指与并行性相同的现象 。稍后我将回到并行性。并行执行如下图所示：
 
-![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-2.png](http://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-2.png)
+![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-2.png](https://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-2.png)
 
 ## 并行并发执行
 
 可以进行并行并发执行，其中线程分布在多个 CPU 中。因此，在同一个 CPU 上执行的线程是并发执行的，而在不同 CPU 上执行的线程是并行执行的。下图说明了并行并发执行。
 
-![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-3.png](http://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-3.png)
+![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-3.png](https://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-3.png)
 
 ## 理解并行性
 
@@ -57,7 +57,7 @@ introduce: |
 
 下图显示了一个更大的任务，它被分为4个子任务。这4个子任务由4个不同的线程执行，它们运行在2个不同的CPU上。这意味着，这些子任务的部分是并行执行的（在同一CPU上执行的），而部分是并行执行的（在不同CPU上执行的）。
 
-![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-4.png](http://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-4.png)
+![01-Concurrency-vs-Parallelism#concurrency-vs-parallelism-4.png](https://www.panshenlian.com/images/post/java/concurrency/concurrency-vs-parallelism/concurrency-vs-parallelism-4.png)
 
 如果这4个子任务由4个线程在各自的CPU上执行（总共4个CPU），那么任务的执行将是完全并行的。然而，要将一个任务分解成与可用CPU数量一样多的子任务并不总是那么容易。通常，将一个任务分解为多个子任务更容易，这些子任务与手头的任务自然匹配，然后让线程调度器负责在可用CPU之间分配线程。
 
@@ -93,5 +93,5 @@ introduce: |
 
 > 作者: 雅各布·詹科夫  
 > 原文: http://tutorials.jenkov.com/java-concurrency/concurrency-vs-parallelism.html
-> 翻译: [潘深练的个人网站](http://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
+> 翻译: [潘深练的个人网站](https://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
 > 更新: 2022-02-23

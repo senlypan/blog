@@ -1,7 +1,7 @@
 ---
 title: 简历
 date: 2022-02-14 16:04:12
-preview: http://www.panshenlian.com/images/post/me/share/resume.jpg
+preview: https://www.panshenlian.com/images/post/me/share/resume.jpg
 introduce: |
     我叫潘深练，一名普通程序员，简历平平，甚至极其浅陋，但是这就是真实的我，经历的都在这。
 ---
@@ -18,7 +18,7 @@ introduce: |
 ## 联系方式
 
 * Github：[senlypan](https://github.com/senlypan)
-* 个人网站：[www.panshenlian.com](http://www.panshenlian.com/)
+* 个人网站：[www.panshenlian.com](https://www.panshenlian.com/)
 * 联系邮箱：[panshenlian@gmail.com](mailto:panshenlian@gmail.com)，邮件中请先进行自我介绍或提供社交网络、博客、产品链接，否则不回复。
 
 

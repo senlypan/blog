@@ -3,22 +3,22 @@ title: Mybatis系列全解（五）：全网最全！详解Mybatis的Mapper映�
 date: 2020-12-18 08:20:00
 tags:
 - Mybatis
-preview: http://www.panshenlian.com/images/post/java/mybatis/title/05-title.jpg
+preview: https://www.panshenlian.com/images/post/java/mybatis/title/05-title.jpg
 introduce: |
     Mybatis 真正强大就在于它的语句映射，这是它的魔力所在，也是基石。由于它异常强大，映射器的 XML 文件就显得相对简单。如果拿它跟具有相同功能的 JDBC 代码进行对比，你会立即发现省掉了将近 95% 的代码（ 95% 是Mybatis 官网的说法 ，我也就引入一下 ），MyBatis 致力于减少使用成本，让用户能更专注于 SQL 代码。
 ---
 
 
 
-![](http://www.panshenlian.com/images/post/java/mybatis/title/05-title.jpg)
+![](https://www.panshenlian.com/images/post/java/mybatis/title/05-title.jpg)
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 若不是生活所迫，谁愿意背负一身才华。
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
@@ -28,7 +28,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/time.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/time.png)
 
 
 
@@ -92,7 +92,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 
 #### mapper 映射器顶级元素全貌 
 
@@ -102,7 +102,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/Mapper.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/Mapper.png)
 
 
 
@@ -130,7 +130,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/mapper01.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/mapper01.png)
 
 
 
@@ -143,7 +143,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 
 #### namespace 命名空间 
 
@@ -157,7 +157,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/namespace01.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/namespace01.png)
 
 
 
@@ -166,7 +166,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 
 #### select 查询 
 
@@ -226,7 +226,7 @@ ps.setInt(1,id);
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql01.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql01.png)
 
 
 
@@ -323,7 +323,7 @@ select * from t_user where id = 1
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/goods.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/goods.png)
 
 
 
@@ -413,7 +413,7 @@ rs.previous();
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 
 #### insert / update / delete 增删改 
 
@@ -563,7 +563,7 @@ selectKey 中的 order 属性有2个选择：BEFORE 和 AFTER 。
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
 
 #### cache 缓存 
 
@@ -654,7 +654,7 @@ selectKey 中的 order 属性有2个选择：BEFORE 和 AFTER 。
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/huazhongdian2.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/huazhongdian2.png)
 
 
 
@@ -666,7 +666,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
 
 #### cache-ref 引用缓存 
 
@@ -681,7 +681,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/07.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/07.png)
 
 #### sql 语句块 
 
@@ -689,7 +689,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql05.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql05.png)
 
 
 
@@ -724,7 +724,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql06.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/sql06.png)
 
 
 
@@ -751,7 +751,7 @@ Mybatis 的缓存包括一级缓存（sqlSession 级别）和二级缓存（mapp
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/08.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/08.png)
 
 #### parameterMap 参数映射
 
@@ -759,12 +759,12 @@ parameterMap 元素官方已经不建议使用，并且再后续版本会退出�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/parameterMap.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project03/parameterMap.png)
 
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/09.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/09.png)
 
 #### 总结
 
@@ -777,11 +777,11 @@ parameterMap 元素官方已经不建议使用，并且再后续版本会退出�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png)
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
 
 
 

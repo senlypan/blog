@@ -1,7 +1,7 @@
 ---
 title: 日常叨叨叨
 date: 2022-04-16 11:27:32
-preview: http://www.panshenlian.com/images/post/me/share/happened.jpg
+preview: https://www.panshenlian.com/images/post/me/share/happened.jpg
 introduce: |
     这里记录我个人的日常动态、碎碎念、一点思考，或是突然窜出来的脑洞。
 ---

@@ -1,7 +1,7 @@
 ---
 title: 关于大晚
 date: 2022-02-14 16:04:03
-preview: http://www.panshenlian.com/images/post/me/me-in-2019.jpg
+preview: https://www.panshenlian.com/images/post/me/me-in-2019.jpg
 introduce: |
     我叫潘深练，网名大晚，是一名普通的程序员，几乎每周都会更新博客，记录我的成长和价值观的变化，以及最重要的是分享技术上的探索历程。
 ---
@@ -10,7 +10,7 @@ Hi 👋🏼
 
 我是一名普通的程序员，在河南一家伟大的房企上班，帮助企业研发和维护 ToC、ToB、SAAS、CDP 等产品，几乎每周我都会更新博客，记录我的成长和价值观的变化，以及最重要的是分享技术上的探索历程。
 
-<!-- <div style="width:100%;margin:auto;text-align:center;"><img src="http://www.panshenlian.com/images/post/me/me-in-2019.jpg" width="40%" ></div>-->
+<!-- <div style="width:100%;margin:auto;text-align:center;"><img src="https://www.panshenlian.com/images/post/me/me-in-2019.jpg" width="40%" ></div>-->
 
 ## 观点
 

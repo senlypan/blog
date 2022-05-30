@@ -5,20 +5,20 @@ tags:
 - 译文集
 - 异常
 - Java
-preview: http://www.panshenlian.com/images/post/java/exception/top10/title.jpg
+preview: https://www.panshenlian.com/images/post/java/exception/top10/title.jpg
 introduce: |
     本文总结了有关Java异常的十大常见问题。
 ---
 
 
-![](http://www.panshenlian.com/images/post/java/exception/top10/title.jpg)
+![](https://www.panshenlian.com/images/post/java/exception/top10/title.jpg)
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 知彼知己，方能百战不殆。
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
@@ -56,7 +56,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 ##### 检查型异常（checked） vs.  非检查型异常（Unchecked）
 
 
@@ -69,16 +69,16 @@ introduce: |
 
 
 
-![Java异常的层次结构图](http://www.panshenlian.com/images/post/00_old_article_images/Exception-Hierarchy-Diagram.jpg)
+![Java异常的层次结构图](https://www.panshenlian.com/images/post/00_old_article_images/Exception-Hierarchy-Diagram.jpg)
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 ##### 异常管理的最佳实践箴言
 
 如果可以正确处理异常，则应将其捕获并处理，否则应将其抛出。
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 ##### 为什么在try代码块中声明的变量不能在catch或者finally中被引用？
 
 看下面这段代码，在try代码块中声明的 **String s** 就不能在catch中被引用， 这段代码在编译期是通不过的。
@@ -98,7 +98,7 @@ try {
 
 原因是你不知道在try代码块中哪个位置会引发异常， 很有可能在声明对象之前就引发了异常。对于这个特定的示例，是正确的。
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 ##### 为什么 Double.parseDouble(null) 和 Integer.parseInt(null) 抛出的异常不一样呢？
 
 它俩抛出的异常确实不同，但这是JDK的问题，当时开发这两个接口的开发人员不是同一波，所以我们没必要去纠结这个问题。
@@ -113,7 +113,7 @@ Double.parseDouble(null);
 
 ```
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
 ##### Java中经常使用的运行时异常
 
 这里列举一部分：
@@ -129,7 +129,7 @@ if (obj == null) {
 
 ```
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/06.png)
 ##### 我们可以在同一个catch子句中捕获多个异常吗？
 
 答案是当然可以，不过如果在同一个catch子句中捕获的这些异常都直接或间接继承自同一父类，那么就只能在catch子句中捕获父类了。
@@ -159,12 +159,12 @@ catch(AException | BException | CException ex){
 
 > 补充说明 : 其实是这样，在 Java7 就开始支持catch子句捕获多个异常，多个异常使用 **XOR符号（I）**连接，异常的发生有可能是 A | B，但不能同时出现，相当于这些异常不能是间接或直接继承自同一个父类，因为如果AB都继承同一父类，那就不能 A|B 都写上，这也是继承原则。
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/07.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/07.png)
 ##### 在 Java 中构造方法能抛出异常吗？
 
 答案是当然可以，构造方法仅是一种特殊方法而已。可以参考这个[示例](https://www.programcreek.com/2013/01/constructor-can-throw-exceptions-in-java/)。
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/08.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/08.png)
 ##### 在 final 代码块中抛出异常
 
 下面这个写法是合法的：
@@ -215,7 +215,7 @@ public static void main(String[] args) {
 ```
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/09.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/09.png)
 ##### try语句有return那么finally还会执行吗？
 
 答案是肯定会执行。
@@ -225,7 +225,7 @@ public static void main(String[] args) {
 意思就是 ” 只要存在try代码块，finally代码块就一定会执行 ” ，这种特性可以让程序员避免在try语句中使用return, continue或者break关键字而忽略了关闭相关资源的操作等。
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/10.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/10.png)
 ##### 为何有些开发人员对异常置之不理？
 
 很多时候会见到下面这种代码写法。允许的情况下尽可能捕获异常并且进行处理，不知道为什么很多开发人员就是这么干？
@@ -255,4 +255,4 @@ try {
 
 > 译文完，由于个人理解能力和知识宽度有限，译文中存在失误之处，还请见谅，欢迎指正。
 
-![the end](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
+![the end](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)

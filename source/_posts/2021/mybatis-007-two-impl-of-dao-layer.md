@@ -3,7 +3,7 @@ title: Mybatis系列全解（七）：全息视角看Dao层两种实现方式之
 date: 2021-01-25 08:20:00
 tags:
 - Mybatis
-preview: http://www.panshenlian.com/images/post/java/mybatis/title/07-title.jpg
+preview: https://www.panshenlian.com/images/post/java/mybatis/title/07-title.jpg
 introduce: |
     上节我们介绍了《 Mybatis系列全解（六）：Mybatis最硬核的API你知道几个？》一文，详细解读了 Mybatis 框架核心设计和 API ，图文并茂，干货满满，感兴趣的朋友可以往下翻目录找到文章的链接传送门进行阅读，文章发布之后被很多网站推荐阅读，以致于持续至今依然会收到读者朋友们的点赞评论关注、还有催更，阅读量日日攀升，当然我甚是开心，一来是两周梳理的成果能得到认同，二来也是发觉坚持做自己喜欢的事还能给大家带来一些知识体验，总之很欣慰。回到本篇文章计划讲解内容，我们还是继续沿用以往的文章风格，对 Mybatis 框架在实际开发应用过程中，Dao 层的实现原理和方式进行解读，开篇也简单从 Mybatis 执行 SQL 语句的流程切入，引出我们研究的内容，再与大家一同以全息视角知其然并知其所以然，下面我们一起探索吧。
 ---
@@ -11,11 +11,11 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/java/mybatis/title/07-title.jpg)
+![](https://www.panshenlian.com/images/post/java/mybatis/title/07-title.jpg)
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 一直以来
 
@@ -55,7 +55,7 @@ introduce: |
 
 其他都只是锦上添花吗
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
@@ -65,7 +65,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/learning.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/learning.png)
 
 
 
@@ -109,7 +109,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 ##### 1、Mybatis 是如何找到 SQL 语句的  ？
 通过前面的学习，我们已经对 Mybatis 的架构设计以及核心数据层执行流程都非常了解，其实对于我们应用层的研发用户来说，使用 Mybatis 框架的目的很简单，就是希望通过它来消除原有 JDBC 的冗余代码逻辑、减轻我们开发工作量、提升研发效率、以便于我们能够专注于 SQL 的编写。所以说到底，是我们写 SQL，Mybatis 帮我们执行 SQL ，跟数据库做交互，更简单来说，我们和 Mybatis 的配合就5步：
 
@@ -128,7 +128,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/executeSQL.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/executeSQL.png)
 
 
 
@@ -150,7 +150,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/findSQL.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/findSQL.png)
 
 
 
@@ -220,7 +220,7 @@ public class UserDao {
 
 
 
-![SQL语句集合池](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mappedstatement.png)
+![SQL语句集合池](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mappedstatement.png)
 
 
 
@@ -266,7 +266,7 @@ public class Configuration{
 
 
 
-![SQL语句兑现解析过程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mappedstatement_process.png)
+![SQL语句兑现解析过程](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mappedstatement_process.png)
 
 
 
@@ -274,7 +274,7 @@ public class Configuration{
 
 
 
-![好奇的小脑袋](http://www.panshenlian.com/images/post/00_old_article_images/emoji/questionNEW.png)
+![好奇的小脑袋](https://www.panshenlian.com/images/post/00_old_article_images/emoji/questionNEW.png)
 
 
 
@@ -305,7 +305,7 @@ SqlSessionFactory f =
 
 
 
-![Mybatis的SQL语句是怎么构建成对象的](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/sql_process.png)
+![Mybatis的SQL语句是怎么构建成对象的](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/sql_process.png)
 
 
 
@@ -382,7 +382,7 @@ public class Configuration {
 
 
 
-![先卖个关子](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/saleGZ.png)
+![先卖个关子](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/saleGZ.png)
 
 
 
@@ -392,7 +392,7 @@ public class Configuration {
 
 
 
-![代理方式](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/proxy.png)
+![代理方式](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/proxy.png)
 
 
 
@@ -402,13 +402,13 @@ public class Configuration {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 ##### 2、为什么有 Dao 层 ？
 在软件开发中，为了方便应用程序的研发与维护，一般我们都会使用清晰合理的框架模式来规范开发行为，提高同模块内聚性，减低异模块耦合性，例如 MVC、MVP、MVVM 等，而其中 **MVC（Model-View-Controller）** 则是 Java 语言中应用最广泛的分层框架模式。
 
 
 
-![MVC框架模式](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mvc.png)
+![MVC框架模式](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mvc.png)
 
 
 
@@ -422,7 +422,7 @@ public class Configuration {
 
 
 
-![MVC框架模式模型/视图转移过程](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mvc2.png)
+![MVC框架模式模型/视图转移过程](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/mvc2.png)
 
 
 
@@ -434,7 +434,7 @@ public class Configuration {
 
 
 
-![必须有关系](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/kenan.jpg)
+![必须有关系](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/kenan.jpg)
 
 
 
@@ -444,7 +444,7 @@ public class Configuration {
 
 
 
-![Dao](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/Dao.png)
+![Dao](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/Dao.png)
 
 
 
@@ -456,13 +456,13 @@ public class Configuration {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 ##### 3、Dao 层的两种实现方式：传统与代理
 有了前面两点作为基础，我们的第三个主题《 Dao 层的两种实现方式：传统与代理 》的内容讲解会让大家很容易接受，因为我们在第一部分主题中花大篇幅阐明 Mybatis 是如何找到 SQL 语句的，让大家对于 SQL 语句的寻找有了全面的了解，所以我在此处先提前跟大家剧透：Dao 层的两种实现方式：传统与代理 ，可以粗糙的理解为他两仅仅在SQL 语句的 **寻找方式** 和 **执行对象** 上存在区别而已。
 
 
 
-![Dao层两种实现方式](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/dao_execute.png)
+![Dao层两种实现方式](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/dao_execute.png)
 
 
 
@@ -470,7 +470,7 @@ public class Configuration {
 
 
 
-![packages](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/project_packages.png)
+![packages](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/project_packages.png)
 
 
 
@@ -557,7 +557,7 @@ public void tesDaoMethod(){
 
 以上调用结果可以获取到所有 User 记录，这种通过在 Dao层定义接口、并创建 Dao 层接口实现类的方式，我们一般称之为 **Dao 层的传统实现方式**，此方式会构建一个接口实现类去作为 Dao 层的执行对象，并且对于 SQL 语句的找寻方式特别简单直接，**直接指定唯一语句标识，Java 文件中存在硬编码**, 例如本示例中的 SQL 语句唯一标识为： dao.UserDao.findAll。
 
- ![dao1](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/dao1.png)
+ ![dao1](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/dao1.png)
 
 
 
@@ -580,7 +580,7 @@ public void tesDaoMethod(){
 
 
 
-![dao1](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/dao2.png)
+![dao1](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/dao2.png)
 
 
 
@@ -655,7 +655,7 @@ public void tesDaoMethod(){
 
 
 
-![Dao 代理开发实现方式](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/proxy_interface_process.png)
+![Dao 代理开发实现方式](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project07/proxy_interface_process.png)
 
 
 
@@ -686,14 +686,14 @@ public class MapperMethod{
 
  
 
-![一文读懂Java动态代理](http://www.panshenlian.com/images/post/00_old_article_images/oneKnow/01/java_proxy_cover.jpg)
+![一文读懂Java动态代理](https://www.panshenlian.com/images/post/00_old_article_images/oneKnow/01/java_proxy_cover.jpg)
 
 
 
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 #### 总结
 本篇文章主要围绕 Dao 层的两种实现方式展开讨论，首先铺垫一些基础认识例如 Mybatis 是如何找到 SQL 语句的、以及为什么有 Dao 层，然后我们集合代码实现了解了传统开发方式与代理开发方式实现 Dao 层的区别，无非就是传统方式是通过实现接口构建实现类，而代理模式是通过会话创建代理对象，不过他们只是执行对象不同，其实最终执行 SQL 语句还是需要从 SQL 语句集合池中匹配查找，并最终还是通过 SqlSession 去执行增删改查。
 
@@ -706,7 +706,7 @@ public class MapperMethod{
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png)
 
 
 
@@ -724,4 +724,4 @@ public class MapperMethod{
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/love.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/love.png)

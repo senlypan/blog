@@ -4,7 +4,7 @@ date: 2022-03-02 08:49:17
 author: 潘深练
 tags:
 - 人生目标
-preview: http://www.panshenlian.com/images/post/live/37/title.jpg
+preview: https://www.panshenlian.com/images/post/live/37/title.jpg
 introduce: |
     以下是我希望在年满37岁之前（2026.1）做到的37件事。有些是目标，有些是体验类的，受陈成老师、Mike Crittenden启发，遂而计划，暂时只梳理出一部分，后续会慢慢补充到37个 ...
 ---

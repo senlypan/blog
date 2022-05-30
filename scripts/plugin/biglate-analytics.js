@@ -3,6 +3,66 @@
  * https://github.com/SunQQQ/SunQBlog-UserSide
  */
 class BiglateAnalytics {
+    
+    _LOCATION_COOKIE = '_wwwpanshenliancom_location'
+
+    /**
+     * 获取当前时间
+     * @returns {string:YYYY-MM-DD hh:mm:ss}
+     */
+    getTime() {
+        let dateObject = new Date(),
+        year = dateObject.getFullYear(),
+        month = dateObject.getMonth() + 1,
+        day = dateObject.getDate(),
+        hour = dateObject.getHours(),
+        min = dateObject.getMinutes(),
+        second = dateObject.getSeconds(),
+        result = '';
+
+        if (month < 10) month = '0' + month;
+        if (day < 10) day = '0' + day;
+        if (hour < 10) hour = '0' + hour;
+        if (min < 10) min = '0' + min;
+        if (second < 10) second = '0' + second;
+
+        result = '' + year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + second;
+        return result;
+    }
+
+    /**
+     * 设置cookie
+     * @param key cookie名称
+     * @param value cookie值
+     * @param exHour 过期时间,单位小时
+     */
+    setCookie(key, value, exHour) {
+        var d = new Date()
+        d.setTime(d.getTime() + exHour * 60 * 60 * 1000)
+        var expires = 'expires=' + d.toGMTString() // cookie的语法要求是这个标志，和这个时间格式
+        document.cookie = key + '=' + value + '; ' + expires
+    }
+
+    /**
+     * 获取cookie
+     * @param key cookie的名称
+     */
+    getCookie(key) {
+        let name = key + '=',
+            cookies = document.cookie.split(';')
+        for (let i = 0; i < cookies.length; i++) {
+            let cleanItem = cookies[i].trim()
+            if (cleanItem.indexOf(name) == 0) {
+                return cleanItem.substring(name.length, cookies[i].length)
+            }
+        }
+        return ''
+    }
+
+    removeCookie(key){
+        var that = this
+        that.setCookie(key, '', 0)
+    }
 
     client() {
         var that = this
@@ -61,40 +121,63 @@ class BiglateAnalytics {
         }
     }
 
-    createLog(log) {
+    getLocation(callback) {
+        let that = this,
+          locationCookie = this.getCookie(that._LOCATION_COOKIE);
+        if(locationCookie){
+            let locationCookieData = JSON.parse(locationCookie)
+            callback(locationCookieData);
+        }else {
+            new AjaxRequest({
+                type: "get",
+                url: "https://api.map.baidu.com/location/ip",
+                param: {
+                    ak: '6zR1Pk0LoCMv9NYFICGNSNHT2Qgrc9HF'
+                },
+                isShowLoader: true,
+                dataType: "JSONP",
+                callBack: function (locationData) {
+                    callback(locationData);
+                    // 相隔6小时同一浏览器再次访问时会重新定位
+                    let jsonStr = JSON.stringify(locationData)
+                    that.setCookie(that._LOCATION_COOKIE,jsonStr,6); 
+                }
+            })
+        }
+    }
+
+    doCreateLog(location, log) {
         var that = this
         var data = {
+            clientTime: that.getTime(),
             module: log.module,
             operateType: log.operateType,
             title: log.title,
             intro: log.intro,
             fromUrl: document.referrer,
             localUrl: document.location.href,
+            location: location,
             client: that.client(),
         }
         console.log(data)
     }
 
-    demo() {
+    createLog(log) {
         var that = this
-        that.createLog({
-            module: 'page',
-            operateType: 'view',
-            title: '主页',
-            intro: '潘深练的个人网站'
-        })
-
-        new AjaxRequest({
-            type: "get",
-            url: "https://api.map.baidu.com/location/ip",
-            param: {
-                ak: '9b055a31453d34f3f7bdde1590735347'
-            },
-            isShowLoader: true,
-            dataType: "",
-            callBack: function(res){
-                console.log(res);
-            }    
-        });
-    }
+        that.getLocation(
+            function(location){
+                that.doCreateLog(location,log)
+            }
+        )
+    } 
 }
+
+// demo
+new BiglateAnalytics().createLog(
+    {
+        module : 'page', 
+        operateType : 'view', 
+        title : document.getElementsByTagName('title')[0].innerHTML, 
+        intro : document.location.href
+    }
+)

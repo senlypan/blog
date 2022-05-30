@@ -3,25 +3,25 @@ title: Mybatis系列全解（八）：Mybatis的9大动态SQL标签你知道几�
 date: 2021-03-04 08:20:00
 tags:
 - Mybatis
-preview: http://www.panshenlian.com/images/post/java/mybatis/title/08-title.jpg
+preview: https://www.panshenlian.com/images/post/java/mybatis/title/08-title.jpg
 introduce: |
     本节我们介绍 Mybatis 的强大特性之一：动态 SQL ，从动态 SQL 的诞生背景与基础概念，到动态 SQL 的标签成员及基本用法，我们徐徐道来，再结合框架源码，剖析动态 SQL （标签）的底层原理，最终在文末吐槽一下：在无动态 SQL 特性（标签）之前，我们会常常掉进哪些可恶的坑吧~
 ---
 
 
 
-![](http://www.panshenlian.com/images/post/java/mybatis/title/08-title.jpg)
+![](https://www.panshenlian.com/images/post/java/mybatis/title/08-title.jpg)
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_start.png)
 
 2021年，仰望天空，脚踏实地。
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/slogan_end.png)
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/wechat_newyear.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/wechat_newyear.png)
 
 
 
@@ -42,7 +42,7 @@ introduce: |
 本节我们介绍 Mybatis 的强大特性之一：**动态 SQL** ，从动态 SQL 的诞生背景与基础概念，到动态 SQL 的标签成员及基本用法，我们徐徐道来，再结合框架源码，剖析动态 SQL （标签）的底层原理，最终在文末吐槽一下：在无动态 SQL 特性（标签）之前，我们会常常掉进哪些可恶的坑吧~
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/d1.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/d1.png)
 
 **Mybatis 全解系列脑图全览一直在更新哦**
 
@@ -82,7 +82,7 @@ introduce: |
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/01.png)
 #### 1、什么是动态SQL  ？
 
 关于动态 SQL ，允许我们理解为 “ **动态的 SQL** ”，其中 “ 动态的 ” 是形容词，“ SQL ” 是名词，那显然我们需要先理解名词，毕竟形容词仅仅代表它的某种形态或者某种状态。
@@ -96,13 +96,13 @@ SQL 的全称是：
 SQL 本身好说，我们小学时候都学习过了，无非就是 CRUD 嘛，而且我们还知道它是一种 **语言**，语言是一种存在于对象之间用于交流表达的 **能力**，例如跟中国人交流用汉语、跟英国人交流用英语、跟火星人交流用火星语、跟小猫交流用喵喵语、跟计算机交流我们用机器语言、跟数据库管理系统（DBMS）交流我们用 SQL。
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_talk.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_talk.png)
 
 
 想必大家立马就能明白，想要与某个对象交流，必须拥有与此对象交流的语言能力才行！所以无论是技术人员、还是应用程序系统、或是某个高级语言环境，想要访问/操作数据库，都必须具备 SQL 这项能力；因此你能看到像 Java ，像 Python ，像 Go 等等这些高级语言环境中，都会嵌入（支持） SQL 能力，达到与数据库交互的目的。 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_connect.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_connect.png)
 
 很显然，能够学习 Mybatis 这么一门高精尖（ru-men）持久层框架的编程人群，对于 SQL 的编写能力肯定已经掌握得 ss 的，平时各种 SQL 编写那都是信手拈来的事， 只不过对于 **动态SQL** 到底是个什么东西，似乎还有一些朋友似懂非懂！但是没关系，我们百度一下。
 
@@ -115,7 +115,7 @@ SQL 本身好说，我们小学时候都学习过了，无非就是 CRUD 嘛，�
 很容易理解，随外部条件动态组合的 SQL 语句块！我们先针对动态 SQL 这个词来剖析，世间万物，有动态那就相对应的有静态，那么他们的边界在哪里呢？又该怎么区分呢？
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/dong_jing.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/dong_jing.jpg)
 
 
 其实，上面我们已经介绍过，在例如 Java 高级语言中，都会嵌入（支持）SQL 能力，一般我们可以直接在代码或配置文件中编写 SQL 语句，如果一个 SQL 语句在 “编译阶段” 就已经能确定 **主体结构**，那我们称之为静态 SQL，如果一个 SQL 语句在编译阶段无法确定主体结构，需要等到程序真正 “运行时” 才能最终确定，那么我们称之为动态 SQL，举个例子：
@@ -175,7 +175,7 @@ sqlSession.select("dao.selectAll",user2);  // 无 id
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_process.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_process.png)
 
 
 
@@ -211,16 +211,16 @@ sqlSession.select("dao.selectAll",user1);  // 有 id
 
 至此，我们对于动态 SQL 和静态 SQL 的区别已经有了一个基础认知，但是有些好奇的朋友又会思考另一个问题：动态 SQL 是 Mybatis 独有的吗？
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/thinking.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/thinking.png)
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/02.png)
 #### 2、动态SQL的诞生记
 
 我们都知道，SQL 是一种伟大的数据库语言 **标准**，在数据库管理系统纷争的时代，它的出现统一规范了数据库操作语言，而此时，市面上的数据库管理软件百花齐放，我最早使用的 SQL Server 数据库，当时用的数据库管理工具是 SQL Server Management Studio，后来接触 Oracle 数据库，用了 PL/SQL Developer，再后来直至今日就几乎都在用 MySQL 数据库（这个跟各种云厂商崛起有关），所以基本使用 Navicat 作为数据库管理工具，当然如今市面上还有许多许多，数据库管理工具嘛，只要能便捷高效的管理我们的数据库，那就是好工具，duck 不必纠结选择哪一款！
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/dbphoto.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/dbphoto.jpg)
 
 那这么多好工具，都提供什么功能呢？相信我们平时接触最多的就是接收执行 SQL 语句的输入界面（也称为查询编辑器），这个输入界面几乎支持所有 SQL 语法，例如我们编写一条语句查询 id 等于15 的用户数据记录：
 
@@ -236,14 +236,14 @@ select * from user where id = 15 ;
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/mysql_navicate.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/mysql_navicate.jpg)
 
 
 
 很显然，在这个输入界面内输入的任何 SQL 语句，对于数据库管理工具来说，都是 **动态 SQL**！因为工具本身并不可能提前知道用户会输入什么 SQL 语句，只有当用户执行之后，工具才接收到用户实际输入的 SQL 语句，才能最终确定 SQL 语句的主体结构，当然！即使我们不通过可视化的数据库管理工具，也可以用数据库本身自带支持的命令行工具来执行 SQL 语句。但无论用户使用哪类工具，输入的语句都会被工具认为是 **动态 SQL**！
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/tools_sql.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/tools_sql.jpg)
 
 这么一说，动态 SQL 原来不是 Mybatis 独有的特性！其实除了以上介绍的数据库管理工具以外，在纯 JDBC 时代，我们就经常通过字符串来动态的拼接 SQL 语句，这也是在高级语言环境（例如 Java 语言编程环境）中早期常用的动态 SQL 构建方式！
 
@@ -272,27 +272,27 @@ connection.prepareStatement(sql);
 只不过，这种构建动态 SQL 的方式，存在很大的安全问题和异常风险（我们第5点会详细介绍），所以不建议使用，后来 Mybatis 入世之后，在对待动态 SQL 这件事上，就格外上心，它默默发誓，一定要为使用 Mybatis 框架的用户提供一套棒棒的方案（标签）来灵活构建动态 SQL！
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_dongtai.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_dongtai.jpg)
 
 于是乎，Mybatis 借助 OGNL 的表达式的伟大设计，可算在动态 SQL 构建方面提供了各类功能强大的辅助标签，我们简单列举一下有：if、choose、when、otherwise、trim、where、set、foreach、bind等，我随手翻了翻我电脑里头曾经保存的学习笔记，我们一起在第3节中温故知新，详细的讲一讲吧~
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_all.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_all.jpg)
 
 
 
 另外，需要纠正一点，就是我们平日里在 Mybatis 框架中常说的动态 SQL ，其实特指的也就是 Mybatis 框架中的这一套动态 SQL **标签**，或者说是这一 **特性**，而并不是在说动态 SQL 本身。
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/03.png)
 #### 3、动态SQL标签的9大标签 
 
 很好，可算进入我们动态 SQL 标签的主题，根据前面的铺垫，其实我们都能发现，很多时候静态 SQL 语句并不能满足我们复杂的业务场景需求，所以我们需要有适当灵活的一套方式或者能力，来便捷高效的构建动态 SQL 语句，去匹配我们动态变化的业务需求。举个栗子，在下面此类多条件的场景需求之下，动态 SQL 语句就显得尤为重要（先登场 if 标签）。
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/es_sql.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/es_sql.jpg)
 
 
 
@@ -375,7 +375,7 @@ if 标签，绝对算得上是一个伟大的标签，任何不支持流程控�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_if.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_if.jpg)
 
 有些心细的朋友可能就发现一个问题，为什么 where 语句会添加一个 1=1 呢？其实我们是为了方便拼接后面符合条件的 if 标签语句块，否则没有 1=1 的话我们拼接的 SQL 就会变成 select * from user where and age > 0 , 显然这不是我们期望的结果，当然也不符合 SQL 的语法，数据库也不可能执行成功，所以我们投机取巧添加了 1=1 这个语句，但是始终觉得多余且没必要，Mybatis 也考虑到了，所以等会我们讲 where 标签，它是如何完美解决这个问题的。
 
@@ -421,7 +421,7 @@ if 标签，绝对算得上是一个伟大的标签，任何不支持流程控�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_choose.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_choose.jpg)
 
 很明显，choose 标签作为多分支条件判断，提供了更多灵活的流程控制，同时 otherwise 的出现也为程序流程控制兜底，有时能够避免部分系统风险、过滤部分条件、避免当程序没有匹配到条件时，把整个数据库资源全部查询或更新。
 
@@ -453,7 +453,7 @@ if 标签，绝对算得上是一个伟大的标签，任何不支持流程控�
 
 如果是你来设计支持 Mybatis 的这一类集合/列表遍历场景，你会提供什么能力的标签来辅助构建你的 SQL 语句从而去满足此类业务场景呢？
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_foreach1.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_foreach1.jpg)
 
 
 
@@ -461,7 +461,7 @@ if 标签，绝对算得上是一个伟大的标签，任何不支持流程控�
 
 那如果一定要用 Mybatis 框架呢？
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_foreach2.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_foreach2.jpg)
 
 没错，确实 Mybatis 提供了 foreach 标签来处理这几类需要遍历集合的场景，foreach 标签作为一个循环语句，他能够很好的支持数组、Map、或实现了 Iterable 接口（List、Set）等，尤其是在构建 in 条件语句的时候，我们常规的用法都是 id in (1,2,3,4,5 ... 100) ，理论上我们可以在程序代码中拼接字符串然后通过 ${ ids } 方式来传值获取，但是这种方式不能防止 SQL 注入风险，同时也特别容易拼接错误，所以我们此时就需要使用 #{} + foreach 标签来配合使用，以满足我们实际的业务需求。譬如我们传入一个 List 列表查询 id 在 1 ~ 100 的用户记录：
 
@@ -629,7 +629,7 @@ sqlSession.selectList("findAll",map1);
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_foreach.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_foreach.jpg)
 
 
 
@@ -675,7 +675,7 @@ sqlSession.selectList("findAll",map2);
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/_paramter.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/_paramter.jpg)
 
 
 
@@ -741,7 +741,7 @@ sqlSession.selectList("findAll",map2);
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/foreach_empty.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/foreach_empty.jpg)
 
 
 
@@ -761,7 +761,7 @@ sqlSession.selectList("findAll",map2);
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/where_set_trim.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/where_set_trim.jpg)
 
 
 
@@ -813,7 +813,7 @@ sqlSession.selectList("findAll",map2);
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_where_1.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_where_1.jpg)
 
 
 
@@ -893,7 +893,7 @@ name like concat('潘%')
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_where_2.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_where_2.jpg)
 
 
 
@@ -923,7 +923,7 @@ name like concat('潘%')
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_set.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_set.jpg)
 
 
 
@@ -999,7 +999,7 @@ update user ;  ( oh~ no!)
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_set_2.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_set_2.jpg)
 
 
 
@@ -1026,7 +1026,7 @@ update user ;  ( oh~ no!)
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/trim_set_where.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/trim_set_where.jpg)
 
 
 
@@ -1152,7 +1152,7 @@ public class WhereSqlNode extends TrimSqlNode {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/kaokaoyou.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/kaokaoyou.jpg)
 
 
 
@@ -1228,7 +1228,7 @@ sql 标签与 include 标签组合使用，用于 SQL 语句的复用，日常�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_include_1.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_include_1.jpg)
 
 
 
@@ -1306,7 +1306,7 @@ sql 标签与 include 标签组合使用，用于 SQL 语句的复用，日常�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_include_2.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_include_2.jpg)
 
 
 
@@ -1339,16 +1339,16 @@ sql 标签与 include 标签组合使用，用于 SQL 语句的复用，日常�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_how.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_how.jpg)
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/04.png)
 #### 4、动态SQL的底层原理
 
 想了解 Mybatis 究竟是如何解析与构建动态 SQL ？首先推荐的当然是读源码，而读源码，是一个技术钻研问题，为了借鉴学习，为了工作储备，为了解决问题，为了让自己在编程的道路上跑得明白一些... 而希望通过读源码，去了解底层实现原理，切记不能脱离了整体去读局部，否则你了解到的必然局限且片面，从而轻忽了真核上的设计。如同我们读史或者观宇宙一样，最好的办法都是从整体到局部，不断放大，前后延展，会很舒服通透。所以我准备从 Mybatis 框架的核心主线上去逐步放大剖析。
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/yuanma_line.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/yuanma_line.jpg)
 
 
 
@@ -1356,13 +1356,13 @@ sql 标签与 include 标签组合使用，用于 SQL 语句的复用，日常�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/Mybatis_key.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/Mybatis_key.jpg)
 
 我们的动态 SQL 解析部分就发生在 SQL 语句对象 MappedStatement 构建时（**上左高亮橘色**部分，注意观察其中 SQL 语句对象与 SqlSource 、 BoundSql 的关系，在动态 SQL 解析流程特别关键）。我们再拉近一点，可以看到无论是使用 XML 配置 SQL 语句或是使用注解方式配置 SQL 语句，框架最终都会把解析完成的 SQL 语句对象存放到 MappedStatement 语句集合池子。
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/MappedStatement_key.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/MappedStatement_key.jpg)
 
 
 
@@ -1372,7 +1372,7 @@ sql 标签与 include 标签组合使用，用于 SQL 语句的复用，日常�
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/xml_dysql.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/xml_dysql.jpg)
 
 
 
@@ -1413,7 +1413,7 @@ public class XMLStatementBuilder {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/anno_dysql.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/anno_dysql.jpg)
 
 大家会发现注解配置方式的 SQL 语句解析过程，与 XML 方式极为相像，唯一不同点就在于解析注解 SQL 语句时，使用了 MapperAnnotationBuilder  构建器，其中关于每一个语句对象 (@Select,@Insert,@Update,@Delete等) 的解析，又都会通过一个关键解析方法 parseStatement（），即上图**橘红色高亮**部分，此方法内部同样的出现了一个处理动态 SQL 的核心节点。
 
@@ -1450,7 +1450,7 @@ public class MapperAnnotationBuilder {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/mappedStatement_zone.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/mappedStatement_zone.jpg)
 
 
 
@@ -1497,7 +1497,7 @@ public final class MappedStatement {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSource_all.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project06/sqlSource_all.jpg)
 
 
 
@@ -1539,7 +1539,7 @@ public interface SqlSource {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_life.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/sql_life.jpg)
 
 
 
@@ -1576,7 +1576,7 @@ public class BoundSql {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/StatementHandler.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/StatementHandler.jpg)
 
 
 
@@ -1607,7 +1607,7 @@ public interface LanguageDriver {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/languageDriver.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/languageDriver.jpg)
 
 
 
@@ -1740,7 +1740,7 @@ public class VelocitySqlSource implements SqlSource {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/init_sqlsource.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/init_sqlsource.jpg)
 
 
 
@@ -1845,7 +1845,7 @@ public class MixedSqlNode implements SqlNode {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/SqlNode2.jpg)
+![](https://www.panshenlian.com/images/post/00_old_article_images/Mybatis/project8/SqlNode2.jpg)
 
 
 
@@ -1979,7 +1979,7 @@ public class StaticTextSqlNode implements SqlNode {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
 ### 总结
 
 不知不觉中，我又是这么巨篇幅的讲解剖析，确实不太适合碎片化时间阅读，不过话说回来，毕竟此文属于 Mybatis 全解系列，作为学研者还是建议深谙其中，对往后众多框架技术的学习必有帮助。本文中我们很多动态 SQL 的介绍基本都使用 XML 配置方式，当然注解方式配置动态 SQL 也是支持的，动态 SQL 的语法书写同 XML 方式，但是需要在字符串前后添加 script 标签申明该语句为动态 SQL ，例如：
@@ -2020,11 +2020,11 @@ public class UserDao {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/next.png)
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/article_the_end.png)
 
 
 
@@ -2037,4 +2037,4 @@ public class UserDao {
 
 
 
-![](http://www.panshenlian.com/images/post/00_old_article_images/emoji/love.png)
+![](https://www.panshenlian.com/images/post/00_old_article_images/emoji/love.png)

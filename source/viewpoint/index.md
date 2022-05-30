@@ -1,7 +1,7 @@
 ---
 title: 思想银行
 date: 2022-04-28 09:37:08
-preview: http://www.panshenlian.com/images/post/me/share/viewpoint.jpg
+preview: https://www.panshenlian.com/images/post/me/share/viewpoint.jpg
 introduce: |
     在我有限的阅读空间里，幸好有可以分享的金句、段落、干货、观点、有趣故事、精彩案例。
 ---

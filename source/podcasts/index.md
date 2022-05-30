@@ -1,7 +1,7 @@
 ---
 title: 在听播客
 date: 2022-03-16 15:34:18
-preview: http://www.panshenlian.com/images/post/me/share/podcasts.jpg
+preview: https://www.panshenlian.com/images/post/me/share/podcasts.jpg
 introduce: |
     工作之余、生活之余，我最爱听博客，这里有很多趣谈、访谈，也聊科技、产品，甚至八卦。
 ---

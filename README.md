@@ -1,9 +1,9 @@
 # blog
 
 #### 介绍
-这里是 [大晚的博客](http://www.panshenlian.com) 的源代码，该博客使用基于 [Hexo](http://hexo.io) 的 [simpleblock](https://github.com/jysperm/hexo-theme-simpleblock) 主题。
+这里是 [大晚的博客](https://www.panshenlian.com) 的源代码，该博客使用基于 [Hexo](http://hexo.io) 的 [simpleblock](https://github.com/jysperm/hexo-theme-simpleblock) 主题。
 
-文本内容和图片使用 [CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/3.0/cn/) 授权发布。即，任何人可以自由阅读、复制、发行，或通过信息网络传播本作品，但必须 **保留作者署名** （潘深练），以及指向该原文（<http://www.panshenlian.com>）的 **链接** ，并 **不可用于商业用途**。
+文本内容和图片使用 [CC BY-NC-ND](https://creativecommons.org/licenses/by-nc-nd/3.0/cn/) 授权发布。即，任何人可以自由阅读、复制、发行，或通过信息网络传播本作品，但必须 **保留作者署名** （潘深练），以及指向该原文（<https://www.panshenlian.com>）的 **链接** ，并 **不可用于商业用途**。
 
 
 - `images` 目录包含了博客图片资源。

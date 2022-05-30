@@ -1,7 +1,7 @@
 ---
 title: 无聊科技正经事【周刊】
 date: 2022-04-06 13:46:18
-preview: http://www.panshenlian.com/images/post/me/share/weekly.jpg
+preview: https://www.panshenlian.com/images/post/me/share/weekly.jpg
 introduce: |
     以往自己大量的阅读，没能形成优质记忆或沉积，受阮一峰老师《科技爱好者周刊》影响，于是乎有了潘深练版的《无聊科技正经事》周刊，每周三发布。
 ---

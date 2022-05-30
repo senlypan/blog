@@ -6,7 +6,7 @@ tags:
 - Java
 - 并发编程
 - volatile
-preview: http://www.panshenlian.com/images/post/java/concurrency/volatile/title.jpg
+preview: https://www.panshenlian.com/images/post/java/concurrency/volatile/title.jpg
 introduce: |
     Java 的 volatile 关键字用于将 Java 变量标记为 “存储在主内存中”。更准确地说，每次对 volatile 变量的读取都将从计算机主内存中读取，而不是从CPU缓存中读取，并且每次对 volatile 变量的写入都将写入主内存，而不仅仅写在 CPU 缓存。
 ---
@@ -15,7 +15,7 @@ introduce: |
 
 > 作者: 雅各布·詹科夫  
 > 原文: http://tutorials.jenkov.com/java-concurrency/volatile.html
-> 翻译: [潘深练](http://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
+> 翻译: [潘深练](https://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
 > 更新: 2022-02-24
 
 Java的`volatile`关键字用于将Java变量标记为“存储在主内存中”。更准确地说，每次对`volatile`变量的读取都将从计算机主内存中读取，而不是从CPU缓存中读取，并且每次对`volatile`变量的写入都将写入主内存，而不仅仅写在CPU缓存。
@@ -235,4 +235,4 @@ public void update(int years, int months, int days){
 
 （本篇完）
 
-> ✨ 译文来源：[潘深练](http://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
+> ✨ 译文来源：[潘深练](https://www.panshenlian.com) 如您有更好的翻译版本，欢迎 ❤️ 提交 [issue](https://github.com/senlypan/concurrent-programming-docs/issues) 或投稿哦~
