@@ -69,8 +69,26 @@ class BiglateAnalytics {
         var _client = {
             browser: that.blowser(),
             screen: screen.width + "*" + window.screen.height,
+            userAgent:navigator.userAgent,
         }
         return _client
+    }
+
+    isPhone() {
+        var isPhone = 0;
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            isPhone = 1;
+        } 
+        return isPhone;
     }
 
     blowser() {
@@ -154,12 +172,15 @@ class BiglateAnalytics {
             operateType: log.operateType,
             title: log.title,
             intro: log.intro,
-            fromUrl: document.referrer,
+            referrer: document.referrer,
             localUrl: document.location.href,
+            pathName: document.location.pathname,
             location: location,
+            isPhone: that.isPhone(),
             client: that.client(),
         }
         console.log(data)
+        console.log(JSON.stringify(data))
     }
 
     createLog(log) {
