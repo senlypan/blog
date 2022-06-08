@@ -164,6 +164,18 @@ class BiglateAnalytics {
         }
     }
 
+    push(data) { 
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: "https://open.panshenlian.com/app/data/analy/client/push",
+            data: JSON.stringify(data),
+            success: function(res){
+                //console.log("push finished >>> " + JSON.stringify(res))
+            }
+        });
+    }
+
     doCreateLog(location, log) {
         var that = this
         var data = {
@@ -179,8 +191,7 @@ class BiglateAnalytics {
             isPhone: that.isPhone(),
             client: that.client(),
         }
-        console.log(data)
-        console.log(JSON.stringify(data))
+        that.push(data) 
     }
 
     createLog(log) {
