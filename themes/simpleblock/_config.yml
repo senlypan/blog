@@ -28,9 +28,7 @@ menus:
 right_menus:
   '科技周刊': /weekly
   '产品季刊': /product
-  '开往': 
-    target: '_blank'
-    href: 'https://travellings.link'
+  '访问统计': /visit
   'Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
