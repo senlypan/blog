@@ -15,13 +15,13 @@ introduce: |
 
 ### 2022年 
 
-
 |书名|类别|进度|历时|豆瓣|感受|推荐|
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |《从零开始学写作/个人增值的有效方法》|写作|已读|10天|[7.5](https://book.douban.com/subject/30266255/)|清晰实用|**★★★**|
-|《走在人生边上》|文学|已读|16天|[8.3](https://book.douban.com/subject/26855800/)|适合思考|**★★**|
+|《走在人生边上》|文学|已读|16天|[8.3](https://book.douban.com/subject/26855800/)|回望人生|**★★**|
 |《当我谈跑步时我谈些什么》|文学|已读|11天|[8.2](https://book.douban.com/subject/3369600/)|跑者能量|**★★★**|
 |《坚持，一种可以养成的习惯》|习惯养成|已读|1天|[7.8](https://book.douban.com/subject/26771587/)|坚持技巧|**★★**|
+|《暗时间》|心理学|已读||[8.4](https://book.douban.com/subject/6709809/)|跨界思维|**★★★**|
 |《数据密集型应用系统设计》|计算机|在读中..||[9.7](https://book.douban.com/subject/30329536/)|干货密集|**★★★★**|
 |《Java并发编程的艺术》|计算机|备读库||[7.4](https://book.douban.com/subject/26591326/)|解析透彻|**★★★**|
 |《深入理解Java虚拟机（第3版）》|计算机|备读库||[9.5](https://book.douban.com/subject/34907497/)|经典实践|**★★★**|
@@ -32,5 +32,4 @@ introduce: |
 |《原则》|管理学|备读库||[8.3](https://book.douban.com/subject/27608239/)|/||
 |《硅谷钢铁侠 埃隆·马斯克的冒险人生》|创业|备读库||[8.0](https://book.douban.com/subject/26759508/)|/||
 |《黑客与画家》|文学|备读库||[8.7](https://book.douban.com/subject/6021440/)|/||
-|《暗时间》|心理学|备读库||[8.4](https://book.douban.com/subject/6709809/)|/||
 |《Java虚拟机规范（Java SE 8版）》|计算机|备读库||[8.4](https://book.douban.com/subject/26418340/)|/||
