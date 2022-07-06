@@ -6,6 +6,38 @@ class BiglateAnalytics {
     
     _LOCATION_COOKIE = '_wwwpanshenliancom_location'
 
+    _OPEN_API_ = 'https://open.panshenlian.com'
+
+    _ANALY_ = '/app/data/analy/client'
+
+    init(){ 
+        var that = this
+        that.createLog(
+            {
+                module : 'page', 
+                operateType : 'view', 
+                title : document.getElementsByTagName('title')[0].innerHTML, 
+                intro : document.location.href
+            }
+        )
+        if ( "/visit/" == document.location.pathname ){
+            that.buildTrack(1)
+        }
+    }
+
+    buildTrack(ds){
+        console.log("buildTrack >>> ds: " + ds)
+        var that = this
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: that._OPEN_API_ + that._ANALY_ + "/track/"+ds,
+            success: function(res){ 
+                console.log("buildTrack >>> res:" + JSON.stringify(res))
+            }
+        });
+    }
+
     /**
      * 获取当前时间
      * @returns {string:YYYY-MM-DD hh:mm:ss}
@@ -165,10 +197,11 @@ class BiglateAnalytics {
     }
 
     push(data) { 
+        var that = this
         $.ajax({
             type: "POST",
             contentType: "application/json",
-            url: "https://open.panshenlian.com/app/data/analy/client/push",
+            url: that._OPEN_API_ + that._ANALY_ + "/push",
             data: JSON.stringify(data),
             success: function(res){
                 //console.log("push finished >>> " + JSON.stringify(res))
@@ -204,12 +237,5 @@ class BiglateAnalytics {
     } 
 }
 
-// demo
-new BiglateAnalytics().createLog(
-    {
-        module : 'page', 
-        operateType : 'view', 
-        title : document.getElementsByTagName('title')[0].innerHTML, 
-        intro : document.location.href
-    }
-)
+// init
+new BiglateAnalytics().init()
