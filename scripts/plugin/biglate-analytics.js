@@ -2,12 +2,14 @@
  * CopyRight 
  * https://github.com/SunQQQ/SunQBlog-UserSide
  */
+
+var _userTrackVue
+
 class BiglateAnalytics {
     
     _LOCATION_COOKIE = '_wwwpanshenliancom_location'
-
     _OPEN_API_ = 'https://open.panshenlian.com'
-
+    _DNS_API_ = 'https://dns.panshenlian.com/npm'
     _ANALY_ = '/app/data/analy/client'
 
     init(){ 
@@ -20,8 +22,11 @@ class BiglateAnalytics {
                 intro : document.location.href
             }
         )
-        if ( "/visit/" == document.location.pathname ){
-            that.buildTrack(1)
+        if ( "/visit/" == document.location.pathname ){ 
+            that.loadScript( that._DNS_API_ +  '/vue@2/dist/vue.js', {async: true}).then(res => {
+                console.log(res)
+                that.buildTrack(7)
+            })
         }
     }
 
@@ -34,8 +39,47 @@ class BiglateAnalytics {
             url: that._OPEN_API_ + that._ANALY_ + "/track/"+ds,
             success: function(res){ 
                 console.log("buildTrack >>> res:" + JSON.stringify(res))
+                that.buildTrackVue(res)
             }
         });
+    }
+
+    buildTrackVue(res){
+        if (res && res.code == 200){
+            document.getElementById("visit-user-track").innerHTML =   
+                    '<table id="example-1"  class="table table-striped" > \
+                        <thead style="font-size:16px;color: #BBB;" > \
+                            <tr> \
+                                <th width="15%" >访问IP</th> \
+                                <th width="30%" >操作内容</th> \
+                                <th width="20%" >访问来源</th> \
+                                <th width="10%" >访问设备</th> \
+                                <th width="20%" >访问时间</th> \
+                            </tr> \
+                        </thead> \
+                        <tbody style="font-size:14px;"> \
+                            <tr v-for="item in items" style="vertical-align:middle"> \
+                                <td >{{item.ci}}</td> \
+                                <td> \
+                                    <span v-for="vtlItem in item.vtl"> \
+                                        · {{vtlItem.tl}} </br>\
+                                    <span>\
+                                </td> \
+                                <td>{{item.la}}</td> \
+                                <td> \
+                                {{item.st}}</br>{{item.cbt}}</br>{{item.cs}}  \
+                                </td> \
+                                <td>{{item.ct}}</td> \
+                            </tr> \
+                        </tbody> \
+                    </table>' 
+            _userTrackVue = new Vue({
+                el: '#example-1',
+                data: {
+                    items: res.data
+                }
+            })
+        }
     }
 
     /**
@@ -60,6 +104,30 @@ class BiglateAnalytics {
 
         result = '' + year + '-' + month + '-' + day + ' ' + hour + ':' + min + ':' + second;
         return result;
+    } 
+    
+    /**
+     * 动态加载函数
+     * @param src cookie名称
+     * @param attrs cookie值
+     */
+    loadScript(src,attrs) {
+        return new Promise((resolve, reject) => {
+            try {
+                let scriptEle = document.createElement('script')
+                scriptEle.type = 'text/javascript'
+                scriptEle.src = src
+                for (let key in attrs) {
+                    scriptEle.setAttribute(key, attrs[key])
+                }
+                scriptEle.addEventListener('load', function () {
+                    resolve('load "'+ src +'" successful.')
+                })
+                document.body.appendChild(scriptEle)
+            } catch (err) {
+                reject(err)
+            }
+        })
     }
 
     /**

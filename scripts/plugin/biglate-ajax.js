@@ -13,7 +13,7 @@
         //初始化
         init: function(){
             this.sendRequest();
-        },
+        }, 
         //渲染loader
         showLoader: function(){
             if(this.isShowLoader){

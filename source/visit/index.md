@@ -6,8 +6,12 @@ introduce: |
     统计潘深练个人网站的访问流量趋势、用户轨迹、访客来源等。
 ---
 
-## 用户轨迹
+<link href="https://dns.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
 ## 访客来源
 
+## 流量趋势
+
 ## 用户轨迹
+
+<div id="visit-user-track"></div>
