@@ -3,7 +3,7 @@
  * https://github.com/SunQQQ/SunQBlog-UserSide
  */
 
-var _userTrackVue
+var _BIGLATE_ANALYTICS
 
 class BiglateAnalytics {
     
@@ -22,39 +22,80 @@ class BiglateAnalytics {
                 intro : document.location.href
             }
         )
-        if ( "/visit/" == document.location.pathname ){ 
-            that.loadScript( that._DNS_API_ +  '/vue@2/dist/vue.js', {async: true}).then(res => {
-                console.log(res)
-                that.buildTrack(7)
+        if ( "/visit/" == document.location.pathname ){  
+            that.loadScript( 
+                [
+                    that._DNS_API_ +  '/vue@2/dist/vue.js',
+                    that._DNS_API_ +  '/echarts@5.3.3/dist/echarts.min.js'
+                ], 
+                {async: true}).then(res => {
+                 
+                that.buildTrack(2)
+                that.buildTrend(7)
+                that.buildSource(1)
             })
         }
     }
 
-    buildTrack(ds){
-        console.log("buildTrack >>> ds: " + ds)
+    buildTrack(_ds){
         var that = this
         $.ajax({
             type: "POST",
             contentType: "application/json",
-            url: that._OPEN_API_ + that._ANALY_ + "/track/"+ds,
+            url: that._OPEN_API_ + that._ANALY_ + "/track/"+_ds,
             success: function(res){ 
-                console.log("buildTrack >>> res:" + JSON.stringify(res))
-                that.buildTrackVue(res)
+                that.buildTrackVue(res,_ds)
             }
         });
     }
 
-    buildTrackVue(res){
+    buildTrend(_ds){
+        var that = this
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: that._OPEN_API_ + that._ANALY_ + "/trend/"+_ds,
+            success: function(res){ 
+                that.buildTrendVue(res,_ds)
+            }
+        });
+    }
+
+    buildSource(_ds){
+        var that = this
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: that._OPEN_API_ + that._ANALY_ + "/source/"+_ds,
+            success: function(res){ 
+                that.buildSourceVue(res,_ds)
+            }
+        });
+    }
+
+    buildTrackVue(res,_ds){
+        var that = this
         if (res && res.code == 200){
             document.getElementById("visit-user-track").innerHTML =   
-                    '<table id="example-1"  class="table table-striped" > \
-                        <thead style="font-size:16px;color: #BBB;" > \
+                    '<div style="margin-bottom:10px;"> \
+                        <div v-for="nav in navs" style="display:inline-block;"> \
+                            <span v-bind:class="[nav.btnClass]" v-on:click="_BIGLATE_ANALYTICS.buildTrack(nav.ds)"> \
+                                {{nav.title}} \
+                            </span>  \
+                            <span v-if="nav.split === true" >&nbsp;&nbsp;|&nbsp;&nbsp;</span>\
+                        </div>  \
+                        <div style="display:inline-block;float:right;"> \
+                            轨迹总数：{{items.length}} \
+                        </div>  \
+                    </div> \
+                    <table class="table table-striped" > \
+                        <thead> \
                             <tr> \
-                                <th width="15%" >访问IP</th> \
-                                <th width="30%" >操作内容</th> \
-                                <th width="20%" >访问来源</th> \
-                                <th width="10%" >访问设备</th> \
-                                <th width="20%" >访问时间</th> \
+                                <th width="15%" style="font-weight:100;" >访问IP</th> \
+                                <th width="30%" style="font-weight:100;" >操作内容</th> \
+                                <th width="20%" style="font-weight:100;" >访问来源</th> \
+                                <th width="10%" style="font-weight:100;" >访问设备</th> \
+                                <th width="20%" style="font-weight:100;" >访问时间</th> \
                             </tr> \
                         </thead> \
                         <tbody style="font-size:14px;"> \
@@ -73,12 +114,148 @@ class BiglateAnalytics {
                             </tr> \
                         </tbody> \
                     </table>' 
-            _userTrackVue = new Vue({
-                el: '#example-1',
+            var _userTrackVue = new Vue({
+                el: '#visit-user-track',
                 data: {
+                    navs:[
+                        {title:'今天',ds:1,split:true,btnClass:(1==_ds?'':'btn-link')},
+                        {title:'最近2天',ds:2,split:true,btnClass:(2==_ds?'':'btn-link')},
+                        {title:'最近3天',ds:3,split:false,btnClass:(3==_ds?'':'btn-link')},
+                    ],
                     items: res.data
                 }
             })
+        }
+    }
+
+    buildTrendVue(res,_ds){
+        var that = this
+        if (res && res.code == 200){
+            document.getElementById("visit-user-trend").innerHTML =   
+                    '<div style="margin-bottom:10px;"> \
+                        <div v-for="nav in navs" style="display:inline-block;"> \
+                            <span v-bind:class="[nav.btnClass]" v-on:click="_BIGLATE_ANALYTICS.buildTrend(nav.ds)"> \
+                                {{nav.title}} \
+                            </span>  \
+                            <span v-if="nav.split === true" >&nbsp;&nbsp;|&nbsp;&nbsp;</span>\
+                        </div>  \
+                    </div> '
+            var _userTrendVue = new Vue({
+                el: '#visit-user-trend',
+                data: {
+                    navs:[
+                        {title:'最近7天',ds:7,split:true,btnClass:(7==_ds?'':'btn-link')},
+                        {title:'最近14天',ds:14,split:true,btnClass:(14==_ds?'':'btn-link')},
+                        {title:'最近30天',ds:30,split:true,btnClass:(30==_ds?'':'btn-link')},
+                        {title:'最近60天',ds:60,split:false,btnClass:(60==_ds?'':'btn-link')},
+                    ]
+                }
+            })
+            // casvas
+            $('#visit-user-trend-chart').remove();
+            $("#visit-user-trend").append('<div id="visit-user-trend-chart" style="width: 600px;height:400px;"></div>');
+            var myChart = echarts.init(document.getElementById('visit-user-trend-chart'));
+            // data
+            var dts=new Array()
+            var rns=new Array()
+            var ins=new Array()
+            res.data.forEach((item,index) => {
+                dts.push(item.dt)
+                rns.push(item.rn)
+                ins.push(item.in)
+            })
+            // option
+            var option = {
+                tooltip: {},
+                xAxis: {
+                    data: dts
+                },
+                yAxis: {},
+                series: [
+                    {
+                        name: '独立IP数',
+                        type: 'line',
+                        data: ins
+                    },
+                    {
+                        name: '浏览量',
+                        type: 'line',
+                        data: rns
+                    }
+                ]
+            }
+            // 绘制图表
+            myChart.setOption(option);
+        }
+    }
+
+    buildSourceVue(res,_ds){
+        var that = this
+        if (res && res.code == 200){
+            document.getElementById("visit-user-source").innerHTML =   
+                    '<div style="margin-bottom:10px;"> \
+                        <div v-for="nav in navs" style="display:inline-block;"> \
+                            <span v-bind:class="[nav.btnClass]" v-on:click="_BIGLATE_ANALYTICS.buildSource(nav.ds)"> \
+                                {{nav.title}} \
+                            </span>  \
+                            <span v-if="nav.split === true" >&nbsp;&nbsp;|&nbsp;&nbsp;</span>\
+                        </div>  \
+                    </div> '
+            var _userSourceVue = new Vue({
+                el: '#visit-user-trend',
+                data: {
+                    navs:[
+                        {title:'今天',ds:1,split:true,btnClass:(1==_ds?'':'btn-link')},
+                        {title:'最近7天',ds:7,split:true,btnClass:(7==_ds?'':'btn-link')},
+                        {title:'最近14天',ds:14,split:true,btnClass:(14==_ds?'':'btn-link')},
+                        {title:'最近30天',ds:30,split:true,btnClass:(30==_ds?'':'btn-link')},
+                        {title:'最近60天',ds:60,split:false,btnClass:(60==_ds?'':'btn-link')},
+                    ]
+                }
+            })
+            // casvas
+            $('#visit-user-source-chart').remove();
+            $("#visit-user-source").append('<canvas id="visit-user-source-chart"></canvas>');
+            const ctx = document.getElementById('visit-user-source-chart').getContext('2d');
+            // data
+            var dts=new Array()
+            var rns=new Array()
+            var ins=new Array()
+            res.data.forEach((item,index) => {
+                dts.push(item.dt)
+                rns.push(item.rn)
+                ins.push(item.in)
+            })
+            // config
+            var vchart = new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: dts,
+                    datasets: [
+                      {
+                        label: '独立IP数',
+                        data: ins,
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                      },
+                      {
+                        label: '浏览量',
+                        data: rns,
+                        borderColor: 'rgba(255,99,132,1)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                      }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    showLines: false,
+                    plugins: {
+                      legend: {
+                        position: 'top',
+                      }
+                    }
+                }
+            });
         }
     }
 
@@ -111,19 +288,21 @@ class BiglateAnalytics {
      * @param src cookie名称
      * @param attrs cookie值
      */
-    loadScript(src,attrs) {
+    loadScript(srcArray,attrs) {
         return new Promise((resolve, reject) => {
             try {
-                let scriptEle = document.createElement('script')
-                scriptEle.type = 'text/javascript'
-                scriptEle.src = src
-                for (let key in attrs) {
-                    scriptEle.setAttribute(key, attrs[key])
+                for(let src of srcArray){
+                    let scriptEle = document.createElement('script')
+                    scriptEle.type = 'text/javascript'
+                    scriptEle.src = src
+                    for (let key in attrs) {
+                        scriptEle.setAttribute(key, attrs[key])
+                    }
+                    scriptEle.addEventListener('load', function () {
+                        resolve('load "'+ src +'" successful.')
+                    })
+                    document.body.appendChild(scriptEle)
                 }
-                scriptEle.addEventListener('load', function () {
-                    resolve('load "'+ src +'" successful.')
-                })
-                document.body.appendChild(scriptEle)
             } catch (err) {
                 reject(err)
             }
@@ -306,4 +485,5 @@ class BiglateAnalytics {
 }
 
 // init
-new BiglateAnalytics().init()
+_BIGLATE_ANALYTICS = new BiglateAnalytics()
+_BIGLATE_ANALYTICS.init()
