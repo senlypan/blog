@@ -22,18 +22,10 @@ class BiglateAnalytics {
                 intro : document.location.href
             }
         )
-        if ( "/visit/" == document.location.pathname ){  
-            that.loadScript( 
-                [
-                    that._DNS_API_ +  '/vue@2/dist/vue.js',
-                    that._DNS_API_ +  '/echarts@5.3.3/dist/echarts.min.js'
-                ], 
-                {async: true}).then(res => {
-                 
+        if ( "/visit/" == document.location.pathname ){   
                 that.buildTrack(2)
                 that.buildTrend(7)
-                that.buildSource(1)
-            })
+                that.buildSource(1) 
         }
     }
 
@@ -103,7 +95,9 @@ class BiglateAnalytics {
                                 <td >{{item.ci}}</td> \
                                 <td> \
                                     <span v-for="vtlItem in item.vtl"> \
-                                        · {{vtlItem.tl}} </br>\
+                                        <span v-if="vtlItem.md === \'page\'"> \
+                                            · <a :href=vtlItem.pn>{{vtlItem.tl}} </br>\
+                                        </span> \
                                     <span>\
                                 </td> \
                                 <td>{{item.la}}</td> \
@@ -147,13 +141,13 @@ class BiglateAnalytics {
                         {title:'最近7天',ds:7,split:true,btnClass:(7==_ds?'':'btn-link')},
                         {title:'最近14天',ds:14,split:true,btnClass:(14==_ds?'':'btn-link')},
                         {title:'最近30天',ds:30,split:true,btnClass:(30==_ds?'':'btn-link')},
-                        {title:'最近60天',ds:60,split:false,btnClass:(60==_ds?'':'btn-link')},
+                        {title:'最近60天',ds:60,split:false,btnClass:(60==_ds?'':'btn-link')}
                     ]
                 }
             })
             // casvas
             $('#visit-user-trend-chart').remove();
-            $("#visit-user-trend").append('<div id="visit-user-trend-chart" style="width: 600px;height:400px;"></div>');
+            $("#visit-user-trend").append('<div id="visit-user-trend-chart" style="width: 100%;height:400px;"></div>');
             var myChart = echarts.init(document.getElementById('visit-user-trend-chart'));
             // data
             var dts=new Array()
@@ -175,12 +169,14 @@ class BiglateAnalytics {
                     {
                         name: '独立IP数',
                         type: 'line',
-                        data: ins
+                        data: ins,
+                        smooth: true
                     },
                     {
                         name: '浏览量',
                         type: 'line',
-                        data: rns
+                        data: rns,
+                        smooth: true
                     }
                 ]
             }
@@ -202,7 +198,7 @@ class BiglateAnalytics {
                         </div>  \
                     </div> '
             var _userSourceVue = new Vue({
-                el: '#visit-user-trend',
+                el: '#visit-user-source',
                 data: {
                     navs:[
                         {title:'今天',ds:1,split:true,btnClass:(1==_ds?'':'btn-link')},
@@ -213,49 +209,215 @@ class BiglateAnalytics {
                     ]
                 }
             })
-            // casvas
+            // render
             $('#visit-user-source-chart').remove();
-            $("#visit-user-source").append('<canvas id="visit-user-source-chart"></canvas>');
-            const ctx = document.getElementById('visit-user-source-chart').getContext('2d');
-            // data
-            var dts=new Array()
-            var rns=new Array()
-            var ins=new Array()
-            res.data.forEach((item,index) => {
-                dts.push(item.dt)
-                rns.push(item.rn)
-                ins.push(item.in)
-            })
-            // config
-            var vchart = new Chart(ctx, {
-                type: "line",
-                data: {
-                    labels: dts,
-                    datasets: [
-                      {
-                        label: '独立IP数',
-                        data: ins,
-                        borderColor: 'rgba(54, 162, 235, 1)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                      },
-                      {
-                        label: '浏览量',
-                        data: rns,
-                        borderColor: 'rgba(255,99,132,1)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                      }
-                    ]
-                },
-                options: {
-                    responsive: true,
-                    showLines: false,
-                    plugins: {
-                      legend: {
-                        position: 'top',
-                      }
+            $("#visit-user-source").append('<div id="visit-user-source-chart" style="width: 910px;height:620px;"></div>');
+            var myChart = echarts.init(document.getElementById('visit-user-source-chart')); 
+            const data = res.data.mdl;
+            const geoCoordMap = res.data.gcm;
+            const convertData = function (data) {
+                var res = [];
+                for (var i = 0; i < data.length; i++) {
+                    var geoCoord = geoCoordMap[data[i].name];
+                    if (geoCoord) {
+                        res.push({
+                            name: data[i].name,
+                            value: geoCoord.concat(data[i].value)
+                        });
                     }
                 }
-            });
+                return res;
+            };
+            var option = {
+                title: {
+                    text: '',
+                    left: 'center'
+                },
+                tooltip: {
+                    trigger: 'item'
+                },
+                bmap: {
+                    center: [104.114129, 37.550339],
+                    zoom: 5,
+                    roam: true,
+                    mapStyle: {
+                    styleJson: [
+                        {
+                            featureType: 'water',
+                            elementType: 'all',
+                            stylers: {
+                                color: '#d1d1d1'
+                            }
+                        },
+                        {
+                            featureType: 'land',
+                            elementType: 'all',
+                            stylers: {
+                                color: '#f3f3f3'
+                            }
+                        },
+                        {
+                            featureType: 'railway',
+                            elementType: 'all',
+                            stylers: {
+                                visibility: 'off'
+                            }
+                        },
+                        {
+                            featureType: 'highway',
+                            elementType: 'all',
+                            stylers: {
+                                color: '#fdfdfd'
+                            }
+                        },
+                        {
+                            featureType: 'highway',
+                            elementType: 'labels',
+                            stylers: {
+                                visibility: 'off'
+                            }
+                        },
+                        {
+                            featureType: 'arterial',
+                            elementType: 'geometry',
+                            stylers: {
+                                color: '#fefefe'
+                            }
+                        },
+                        {
+                            featureType: 'arterial',
+                            elementType: 'geometry.fill',
+                            stylers: {
+                                color: '#fefefe'
+                            }
+                        },
+                        {
+                            featureType: 'poi',
+                            elementType: 'all',
+                            stylers: {
+                                visibility: 'off'
+                            }
+                        },
+                        {
+                            featureType: 'green',
+                            elementType: 'all',
+                            stylers: {
+                                visibility: 'off'
+                            }
+                        },
+                        {
+                            featureType: 'subway',
+                            elementType: 'all',
+                            stylers: {
+                                visibility: 'off'
+                            }
+                        },
+                        {
+                            featureType: 'manmade',
+                            elementType: 'all',
+                            stylers: {
+                                color: '#d1d1d1'
+                            }
+                        },
+                        {
+                            featureType: 'local',
+                            elementType: 'all',
+                            stylers: {
+                                color: '#d1d1d1'
+                            }
+                        },
+                        {
+                            featureType: 'arterial',
+                            elementType: 'labels',
+                            stylers: {
+                                visibility: 'off'
+                            }
+                        },
+                        {
+                            featureType: 'boundary',
+                            elementType: 'all',
+                            stylers: {
+                                color: '#fefefe'
+                            }
+                        },
+                        {
+                            featureType: 'building',
+                            elementType: 'all',
+                            stylers: {
+                                color: '#d1d1d1'
+                            }
+                        },
+                        {
+                            featureType: 'label',
+                            elementType: 'labels.text.fill',
+                            stylers: {
+                                color: '#999999'
+                            }
+                        }
+                    ]
+                    }
+                },
+                series: [
+                    {
+                        name: 'pm2.5',
+                        type: 'scatter',
+                        coordinateSystem: 'bmap',
+                        data: convertData(data),
+                        symbolSize: function (val) {
+                            return val[2] / 10;
+                        },
+                        encode: {
+                            value: 2
+                        },
+                        label: {
+                            formatter: '{b}',
+                            position: 'right',
+                            show: false
+                        },
+                        emphasis: {
+                            label: {
+                            show: true
+                            }
+                        }
+                    },
+                    {
+                        name: 'Top 5',
+                        type: 'effectScatter',
+                        coordinateSystem: 'bmap',
+                        data: convertData(
+                            data
+                            .sort(function (a, b) {
+                                return b.value - a.value;
+                            })
+                            .slice(0, 6)
+                        ),
+                        symbolSize: function (val) {
+                            return val[2] / 10;
+                        },
+                        encode: {
+                            value: 2
+                        },
+                        showEffectOn: 'render',
+                        rippleEffect: {
+                            brushType: 'stroke'
+                        },
+                        label: {
+                            formatter: '{b}',
+                            position: 'right',
+                            show: true
+                        },
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowColor: '#333'
+                        },
+                        emphasis: {
+                            scale: true
+                        },
+                        zlevel: 1
+                    }
+                ]
+            };
+            option && myChart.setOption(option);
         }
     }
 
@@ -284,11 +446,11 @@ class BiglateAnalytics {
     } 
     
     /**
-     * 动态加载函数
+     * 动态加载函数 【异步场景下实用，否则会出现未完全加载导致某些undefined的问题】
      * @param src cookie名称
      * @param attrs cookie值
      */
-    loadScript(srcArray,attrs) {
+    loadScript(srcArray,attrs) { 
         return new Promise((resolve, reject) => {
             try {
                 for(let src of srcArray){

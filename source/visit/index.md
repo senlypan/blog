@@ -6,7 +6,18 @@ introduce: |
     统计潘深练个人网站的访问流量趋势、用户轨迹、访客来源等。
 ---
 
+
 <link href="https://dns.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script type="text/javascript" src="https://dns.panshenlian.com/npm/vue@2/dist/vue.js" ></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=6zR1Pk0LoCMv9NYFICGNSNHT2Qgrc9HF"></script>
+<script type="text/javascript" src="https://dns.panshenlian.com/npm/echarts@5.3.3/dist/echarts.min.js" ></script> 
+<script type="text/javascript" src="https://dns.panshenlian.com/npm/echarts@5.3.3/dist/extension/bmap.min.js" ></script> 
+<style>
+    .ec-extension-bmap{
+        width: 910px !important;
+        height: 600px !important;
+    }
+</style>
 
 ## 访客来源
 
