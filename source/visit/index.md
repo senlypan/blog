@@ -19,13 +19,13 @@ introduce: |
     }
 </style>
 
-## 访客来源
-
-<div id="visit-user-source"></div>
-
 ## 流量趋势
 
 <div id="visit-user-trend"></div>
+
+## 访客来源
+
+<div id="visit-user-source"></div>
 
 ## 用户轨迹
 
