@@ -1,5 +1,5 @@
 ---
-title: 网站统计
+title: 访问统计
 date: 2022-06-23 15:29:18
 preview: https://www.panshenlian.com/images/post/me/share/visit.jpg
 introduce: |
@@ -9,23 +9,25 @@ introduce: |
 
 <link href="https://dns.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script type="text/javascript" src="https://dns.panshenlian.com/npm/vue@2/dist/vue.js" ></script>
-<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=6zR1Pk0LoCMv9NYFICGNSNHT2Qgrc9HF"></script>
-<script type="text/javascript" src="https://dns.panshenlian.com/npm/echarts@5.3.3/dist/echarts.min.js" ></script> 
-<script type="text/javascript" src="https://dns.panshenlian.com/npm/echarts@5.3.3/dist/extension/bmap.min.js" ></script> 
+
+<script type="text/javascript" src="https://dns.panshenlian.com/npm/echarts@old/dist/echarts.min.js" ></script> 
+<script type="text/javascript" src="https://dns.panshenlian.com/npm/echarts@old/dist/china.js" ></script> 
+
+
 <style>
     .ec-extension-bmap{
         width: 910px !important;
-        height: 600px !important;
+        height: 650px !important;
     }
 </style>
-
-## 流量趋势
-
-<div id="visit-user-trend"></div>
 
 ## 访客来源
 
 <div id="visit-user-source"></div>
+
+## 流量趋势
+
+<div id="visit-user-trend"></div>
 
 ## 用户轨迹
 

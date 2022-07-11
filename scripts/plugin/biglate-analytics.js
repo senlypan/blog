@@ -23,9 +23,9 @@ class BiglateAnalytics {
             }
         )
         if ( "/visit/" == document.location.pathname ){   
-                that.buildTrack(2)
-                that.buildTrend(7)
-                that.buildSource(1) 
+            that.buildSource(14) 
+            that.buildTrend(14)
+            that.buildTrack(2)
         }
     }
 
@@ -211,10 +211,10 @@ class BiglateAnalytics {
             })
             // render
             $('#visit-user-source-chart').remove();
-            $("#visit-user-source").append('<div id="visit-user-source-chart" style="width: 910px;height:620px;"></div>');
+            $("#visit-user-source").append('<div id="visit-user-source-chart" style="width: 910px;height:650px;"></div>');
             var myChart = echarts.init(document.getElementById('visit-user-source-chart')); 
             const data = res.data.mdl;
-            const geoCoordMap = res.data.gcm;
+            const geoCoordMap = res.data.gcm;   
             const convertData = function (data) {
                 var res = [];
                 for (var i = 0; i < data.length; i++) {
@@ -227,197 +227,125 @@ class BiglateAnalytics {
                     }
                 }
                 return res;
-            };
+            };  
+
+            /*
+            var data = [];
+            for (var key in geoCoordMap) {
+                data.push({ name: key, value: geoCoordMap[key] });
+            } 
+            var dataValue = data;
+            var data1 = dataValue.splice(0, 6);
+            */
+
             var option = {
-                title: {
-                    text: '',
-                    left: 'center'
-                },
                 tooltip: {
-                    trigger: 'item'
+                    show: false
                 },
-                bmap: {
-                    center: [104.114129, 37.550339],
-                    zoom: 5,
-                    roam: true,
-                    mapStyle: {
-                    styleJson: [
-                        {
-                            featureType: 'water',
-                            elementType: 'all',
-                            stylers: {
-                                color: '#d1d1d1'
-                            }
-                        },
-                        {
-                            featureType: 'land',
-                            elementType: 'all',
-                            stylers: {
-                                color: '#f3f3f3'
-                            }
-                        },
-                        {
-                            featureType: 'railway',
-                            elementType: 'all',
-                            stylers: {
-                                visibility: 'off'
-                            }
-                        },
-                        {
-                            featureType: 'highway',
-                            elementType: 'all',
-                            stylers: {
-                                color: '#fdfdfd'
-                            }
-                        },
-                        {
-                            featureType: 'highway',
-                            elementType: 'labels',
-                            stylers: {
-                                visibility: 'off'
-                            }
-                        },
-                        {
-                            featureType: 'arterial',
-                            elementType: 'geometry',
-                            stylers: {
-                                color: '#fefefe'
-                            }
-                        },
-                        {
-                            featureType: 'arterial',
-                            elementType: 'geometry.fill',
-                            stylers: {
-                                color: '#fefefe'
-                            }
-                        },
-                        {
-                            featureType: 'poi',
-                            elementType: 'all',
-                            stylers: {
-                                visibility: 'off'
-                            }
-                        },
-                        {
-                            featureType: 'green',
-                            elementType: 'all',
-                            stylers: {
-                                visibility: 'off'
-                            }
-                        },
-                        {
-                            featureType: 'subway',
-                            elementType: 'all',
-                            stylers: {
-                                visibility: 'off'
-                            }
-                        },
-                        {
-                            featureType: 'manmade',
-                            elementType: 'all',
-                            stylers: {
-                                color: '#d1d1d1'
-                            }
-                        },
-                        {
-                            featureType: 'local',
-                            elementType: 'all',
-                            stylers: {
-                                color: '#d1d1d1'
-                            }
-                        },
-                        {
-                            featureType: 'arterial',
-                            elementType: 'labels',
-                            stylers: {
-                                visibility: 'off'
-                            }
-                        },
-                        {
-                            featureType: 'boundary',
-                            elementType: 'all',
-                            stylers: {
-                                color: '#fefefe'
-                            }
-                        },
-                        {
-                            featureType: 'building',
-                            elementType: 'all',
-                            stylers: {
-                                color: '#d1d1d1'
-                            }
-                        },
-                        {
-                            featureType: 'label',
-                            elementType: 'labels.text.fill',
-                            stylers: {
-                                color: '#999999'
-                            }
-                        }
-                    ]
-                    }
-                },
-                series: [
-                    {
-                        name: 'pm2.5',
-                        type: 'scatter',
-                        coordinateSystem: 'bmap',
-                        data: convertData(data),
-                        symbolSize: function (val) {
-                            return val[2] / 10;
-                        },
-                        encode: {
-                            value: 2
-                        },
-                        label: {
-                            formatter: '{b}',
-                            position: 'right',
-                            show: false
+                geo: {
+                    map: "china",
+                    roam: false,// 一定要关闭拖拽
+                    zoom: 1,
+                    center: [105, 36], // 调整地图位置
+                    label: {
+                        normal: {
+                            show: false, //省份名展示与否
+                            fontSize: "10",
+                            color: "#000"
                         },
                         emphasis: {
-                            label: {
                             show: true
-                            }
-                        }
+                        },
+                        itemStyle: {
+                          color: "#abcabc",
+                        },
                     },
-                    {
-                        name: 'Top 5',
-                        type: 'effectScatter',
-                        coordinateSystem: 'bmap',
-                        data: convertData(
+                    itemStyle: {
+                        normal: {
+                            areaColor: "#ffffff",
+                            borderColor: "#cccccc",
+                            borderWidth: 1,
+                            fontSize: "10",
+                            color: "#000"
+                        },
+                        emphasis: {
+                            areaColor: "#eeeeee",
+                            shadowOffsetX: 0,
+                            shadowOffsetY: 0,
+                            shadowBlur: 5,
+                            borderWidth: 0,
+                            shadowColor: "rgba(0, 0, 0, 0.5)"
+                        }
+                    }
+                } ,
+				series: [ 
+					{
+					  name: "全部访客来源",
+					  type: "scatter",
+					  coordinateSystem: "geo",
+					  data: convertData(data), 
+					  symbol: "circle",
+					  symbolSize: 8,
+					  hoverSymbolSize: 10, 
+					  encode: {
+						value: 2
+					  },
+					  label: {
+						formatter: "{b}",
+						position: "right",
+						show: false
+					  },
+					  itemStyle: {
+						color: "#01aaed",
+					  },
+					  emphasis: {
+						label: {
+						  show: false
+						}
+					  }
+					},
+					{
+					  name: "Top 5",
+					  type: "effectScatter",
+					  coordinateSystem: "geo",
+					  data: convertData(
                             data
                             .sort(function (a, b) {
                                 return b.value - a.value;
                             })
                             .slice(0, 6)
-                        ),
-                        symbolSize: function (val) {
-                            return val[2] / 10;
-                        },
-                        encode: {
-                            value: 2
-                        },
-                        showEffectOn: 'render',
-                        rippleEffect: {
-                            brushType: 'stroke'
-                        },
-                        label: {
-                            formatter: '{b}',
-                            position: 'right',
-                            show: true
-                        },
-                        itemStyle: {
-                            shadowBlur: 10,
-                            shadowColor: '#333'
-                        },
-                        emphasis: {
-                            scale: true
-                        },
-                        zlevel: 1
-                    }
-                ]
-            };
-            option && myChart.setOption(option);
+                      ),
+					  symbolSize: 15,
+					  tooltip: {
+						show: false
+					  },
+					  encode: {
+						value: 2
+					  },
+					  showEffectOn: "render",
+					  rippleEffect: {
+						brushType: "stroke",
+						color: "#01aaed",
+						period: 9,
+						scale: 5
+					  },
+					  hoverAnimation: true,
+					  label: {
+						formatter: "{b}",
+						position: "right",
+						show: true
+					  },
+					  itemStyle: {
+						color: "#01aaed",
+						shadowBlur: 2,
+						shadowColor: "#333"
+					  },
+					  zlevel: 1
+					}
+				]
+            }
+            myChart.setOption(option);  
+            
         }
     }
 
