@@ -3,7 +3,8 @@
  * https://github.com/SunQQQ/SunQBlog-UserSide
  */
 
-var _BIGLATE_ANALYTICS
+var _BIGLATE_ANALYTICSvar 
+var _zhubaiVue
 
 class BiglateAnalytics {
     
@@ -11,6 +12,7 @@ class BiglateAnalytics {
     _OPEN_API_ = 'https://open.panshenlian.com'
     _DNS_API_ = 'https://dns.panshenlian.com/npm'
     _ANALY_ = '/app/data/analy/client'
+    _SCAN_ = '/app/data/scan/'
 
     init(){ 
         var that = this
@@ -26,6 +28,9 @@ class BiglateAnalytics {
             that.buildSource(14) 
             that.buildTrend(14)
             that.buildTrack(2)
+        }
+        if ( "/2022/07/11/trial-001-zhubai/" == document.location.pathname ){
+            that.buildZhubaiRand()
         }
     }
 
@@ -61,6 +66,18 @@ class BiglateAnalytics {
             url: that._OPEN_API_ + that._ANALY_ + "/source/"+_ds,
             success: function(res){ 
                 that.buildSourceVue(res,_ds)
+            }
+        });
+    }
+
+    buildZhubaiRand(){
+        var that = this
+        $.ajax({
+            type: "POST",
+            contentType: "application/json",
+            url: that._OPEN_API_ + that._SCAN_ + "/zhubai/list/rand",
+            success: function(res){ 
+                that.buildZhubaiRandVue(res)
             }
         });
     }
@@ -229,15 +246,6 @@ class BiglateAnalytics {
                 return res;
             };  
 
-            /*
-            var data = [];
-            for (var key in geoCoordMap) {
-                data.push({ name: key, value: geoCoordMap[key] });
-            } 
-            var dataValue = data;
-            var data1 = dataValue.splice(0, 6);
-            */
-
             var option = {
                 tooltip: {
                     show: false
@@ -346,6 +354,81 @@ class BiglateAnalytics {
             }
             myChart.setOption(option);  
             
+        }
+    }
+
+    buildZhubaiRandVue(res){
+        var that = this
+        if (res && res.code == 200){
+            document.getElementById("zhubai-rand").innerHTML =    
+                    '<div style="margin-bottom:10px;"> \
+                        <div style="display:inline-block;float:right;padding-bottom:10px;"> \
+                             {{zhubai_reflush_times}} 秒后自动刷新数据 \
+                        </div>  \
+                    </div> \
+                    <table class="table table-striped" > \
+                        <thead> \
+                            <tr> \
+                                <th width="10%" style="font-weight:100;" >竹白</th> \
+                                <th width="20%" style="font-weight:100;" >专栏</th> \
+                                <th width="15%" style="font-weight:100;" >作者</th> \
+                                <th width="10%" style="font-weight:100;" >微信</th> \
+                                <th width="10%" style="font-weight:100;" >邮箱</th> \
+                                <th width="10%" style="font-weight:100;" >RSS</th> \
+                                <th width="10%" style="font-weight:100;" >会员</th> \
+                            </tr> \
+                        </thead> \
+                        <tbody style="font-size:14px;"> \
+                            <tr v-for="item in items" style="vertical-align:middle"> \
+                                <td :style="item.style"  align="center"> \
+                                    <img :src="item.ar" height="50px" width="50px" :id="item.tk" \
+                                        style="border-radius:50%;border:2px solid #fff;" > \
+                                </td> \
+                                <td> \
+                                    <a :href=item.tk target="_blank">《{{item.ne}}》</a> \
+                                    <span style="color:#aaa"> | {{item.dp}}</span> \
+                                </td> \
+                                <td >{{item.am}}</td> \
+                                <td ><span v-if="item.iw === true" >✔️</span><span v-else>❌</span></td> \
+                                <td ><span v-if="item.ie === true" >✔️</span><span v-else>❌</span></td> \
+                                <td ><span v-if="item.ir === true" >✔️</span><span v-else>❌</span></td> \
+                                <td style="white-space:nowrap;"> \
+                                    <span v-if="item.fs === true" > \
+                                        <ul v-for="kk in item.mps_arr" > \
+                                            <li>{{kk}}</li> \
+                                        </ul> \
+                                    </span><span v-else>❌</span> \
+                                </td> \
+                            </tr> \
+                        </tbody> \
+                    </table>' 
+        
+            for (var i = 0; i < res.data.length; i++) {
+                // 设置主色
+                var color = res.data[i].ac.split(';')[0]
+                res.data[i].style =  "background:"+color+" !important;"
+                // 设置会员
+                if(res.data[i].fs == true){  
+                    var arr = res.data[i].mps.split(',')  
+                    res.data[i].mps_arr = arr
+                    res.data[i].mps_arr.length = (res.data[i].mps_arr.length - 1)
+                }
+            } 
+            var _zhubaiVue = new Vue({
+                el: '#zhubai-rand',
+                data: {
+                    items: res.data,
+                    zhubai_reflush_times: 60
+                }
+            })
+            // 数秒刷新
+            var timer = setInterval(function(){
+                _zhubaiVue.zhubai_reflush_times--;
+                if(_zhubaiVue.zhubai_reflush_times <= 0){ 
+                    clearInterval(timer)
+                    that.buildZhubaiRand() 
+                }
+           },1000)
         }
     }
 
