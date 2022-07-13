@@ -362,14 +362,15 @@ class BiglateAnalytics {
         if (res && res.code == 200){
             document.getElementById("zhubai-rand").innerHTML =    
                     '<div style="margin-bottom:10px;"> \
-                        <div style="display:inline-block;float:right;padding-bottom:10px;"> \
+                        <div style="display:block;padding-bottom:10px;color:rgb(240 5 14);margin:auto;text-align:center;"> \
                              {{zhubai_reflush_times}} 秒后自动刷新数据 \
                         </div>  \
                     </div> \
                     <table class="table table-striped" > \
                         <thead> \
                             <tr> \
-                                <th width="10%" style="font-weight:100;" >竹白</th> \
+                                <th width="10%" style="font-weight:100;" align="center">竹白</th> \
+                                <th width="10%" style="font-weight:100;" align="center">配色推荐</th> \
                                 <th width="20%" style="font-weight:100;" >专栏</th> \
                                 <th width="15%" style="font-weight:100;" >作者</th> \
                                 <th width="10%" style="font-weight:100;" >微信</th> \
@@ -384,15 +385,20 @@ class BiglateAnalytics {
                                     <img :src="item.ar" height="50px" width="50px" :id="item.tk" \
                                         style="border-radius:50%;border:2px solid #fff;" > \
                                 </td> \
+                                <td style="white-space:nowrap;" align="center" vertical-align="middle"> \
+                                    <span v-for="cc in item.color_arr" > \
+                                        <span :style="cc"></span> \
+                                    </span> \
+                                </td> \
                                 <td> \
                                     <a :href=item.tk target="_blank">《{{item.ne}}》</a> \
                                     <span style="color:#aaa"> | {{item.dp}}</span> \
                                 </td> \
-                                <td >{{item.am}}</td> \
-                                <td ><span v-if="item.iw === true" >✔️</span><span v-else>❌</span></td> \
-                                <td ><span v-if="item.ie === true" >✔️</span><span v-else>❌</span></td> \
-                                <td ><span v-if="item.ir === true" >✔️</span><span v-else>❌</span></td> \
-                                <td style="white-space:nowrap;"> \
+                                <td align="center" >{{item.am}}</td> \
+                                <td align="center" ><span v-if="item.iw === true" >✔️</span><span v-else>❌</span></td> \
+                                <td align="center" ><span v-if="item.ie === true" >✔️</span><span v-else>❌</span></td> \
+                                <td align="center" ><span v-if="item.ir === true" >✔️</span><span v-else>❌</span></td> \
+                                <td align="center" style="white-space:nowrap;"> \
                                     <span v-if="item.fs === true" > \
                                         <ul v-for="kk in item.mps_arr" > \
                                             <li>{{kk}}</li> \
@@ -405,8 +411,23 @@ class BiglateAnalytics {
         
             for (var i = 0; i < res.data.length; i++) {
                 // 设置主色
-                var color = res.data[i].ac.split(';')[0]
+                var color_arr = res.data[i].ac.split(';')
+                var color = color_arr[0]
                 res.data[i].style =  "background:"+color+" !important;"
+                // 设置配色
+                var color_arr_style =[]  
+                for (var c = 0; c < color_arr.length-1; c++) {
+                    var color_rgb = color_arr[c]
+                    var color_style = {
+                        display: "block",
+                        width: "80px",
+                        height: "20px",
+                        margin: "0px 0px 2px",
+                        background: color_rgb
+                    }
+                    color_arr_style[c] = color_style
+                }
+                res.data[i].color_arr = color_arr_style
                 // 设置会员
                 if(res.data[i].fs == true){  
                     var arr = res.data[i].mps.split(',')  
