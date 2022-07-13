@@ -5,6 +5,7 @@
 
 var _BIGLATE_ANALYTICSvar 
 var _zhubaiVue
+var _zhubaiError=0
 
 class BiglateAnalytics {
     
@@ -357,12 +358,53 @@ class BiglateAnalytics {
         }
     }
 
+    enrollZhubai(){
+        var that = this
+        var kw = $("#zhubai_kw").val()
+        if (kw){ 
+            $("#zhubai_kw_rs").html("快马加鞭 ~ 传送中 ~")
+            $("#zhubai_kw_rs").css("color","#ccc")
+            $("#zhubai_error").html("")
+            _zhubaiError = 0
+            $.ajax({
+                type: "GET",
+                contentType: "application/json",
+                url: that._OPEN_API_ + that._SCAN_ + "/zhubai/enroll/"+kw,
+                success: function(res){ 
+                    console.log("res>>>"+res)
+                    $("#zhubai_kw").val("")
+                    $("#zhubai_kw_rs").html("成功收录 ~ 你可真是棒棒 ~")
+                    $("#zhubai_kw_rs").css("color","#60b044")
+                    $("#zhubai_error").html("")
+                    _zhubaiError = 0
+                }
+            });
+        } else {
+            _zhubaiError ++
+            $("#zhubai_kw_rs").html("壮士 ~ 高抬贵手 ~")
+            $("#zhubai_kw_rs").css("color","rgb(240, 5, 14)") 
+            if ( Number(_zhubaiError) > Number(1) ){
+                $("#zhubai_error").html( " x " + _zhubaiError)
+                $("#zhubai_error").css("color","rgb(240, 5, 14)") 
+            }
+        }
+    }
+
     buildZhubaiRandVue(res){
         var that = this
         if (res && res.code == 200){
             document.getElementById("zhubai-rand").innerHTML =    
                     '<div style="margin-bottom:10px;"> \
-                        <div style="display:block;padding-bottom:10px;color:rgb(240 5 14);margin:auto;text-align:center;"> \
+                        <div style="display:inline-block;"> \
+                                <span class="input-group-addon" style="display:inline-block;">https://</span> \
+                                <input type="text" class="form-control" id="zhubai_kw" style="display:inline-block;width:100px;"> \
+                                <span class="input-group-addon" style="display:inline-block;">.zhubai.love/</span> \
+                                <button  v-on:click="_BIGLATE_ANALYTICS.enrollZhubai()" \
+                                    type="button" class="btn btn-primary" style="display:inline-block;margin:0px 15px;">提交收录</button> \
+                                <span class="input-group-addon" style="display:inline-block;" id="zhubai_kw_rs" ></span> \
+                                <span class="input-group-addon" style="display:inline-block;" id="zhubai_error" ></span> \
+                        </div>  \
+                        <div style="display:inline-block;margin-top:5px;color:rgb(240 5 14);float:right;"> \
                              {{zhubai_reflush_times}} 秒后自动刷新数据 \
                         </div>  \
                     </div> \
@@ -394,7 +436,15 @@ class BiglateAnalytics {
                                     <a :href=item.tk target="_blank">《{{item.ne}}》</a> \
                                     <span style="color:#aaa"> | {{item.dp}}</span> \
                                 </td> \
-                                <td align="center" >{{item.am}}</td> \
+                                <td align="center">\
+                                    {{item.am}} \
+                                    <span v-if="item.fm === 1" \
+                                        style="display:block;width:90px;border-radius:5%;background: rgb(212, 192, 130);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
+                                            网友提交收录</span>\
+                                    <span v-else \
+                                        style="display:block;width:70px;border-radius:5%;background: rgb(172, 180, 188);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
+                                            收录于词库</span>\
+                                </td> \
                                 <td align="center" ><span v-if="item.iw === true" >✔️</span><span v-else>❌</span></td> \
                                 <td align="center" ><span v-if="item.ie === true" >✔️</span><span v-else>❌</span></td> \
                                 <td align="center" ><span v-if="item.ir === true" >✔️</span><span v-else>❌</span></td> \
@@ -435,7 +485,7 @@ class BiglateAnalytics {
                     res.data[i].mps_arr.length = (res.data[i].mps_arr.length - 1)
                 }
             } 
-            var _zhubaiVue = new Vue({
+            _zhubaiVue = new Vue({
                 el: '#zhubai-rand',
                 data: {
                     items: res.data,
