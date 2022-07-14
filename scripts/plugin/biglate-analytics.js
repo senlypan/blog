@@ -441,9 +441,12 @@ class BiglateAnalytics {
                                     <span v-if="item.fm === 1" \
                                         style="display:block;width:90px;border-radius:5%;background: rgb(212, 192, 130);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
                                             网友提交收录</span>\
+                                    <span v-else-if="item.fm === 2" \
+                                        style="display:block;width:90px;border-radius:5%;background: rgb(190, 81, 142);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
+                                            搜索引擎抓取</span>\
                                     <span v-else \
-                                        style="display:block;width:70px;border-radius:5%;background: rgb(172, 180, 188);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
-                                            收录于词库</span>\
+                                        style="display:block;width:90px;border-radius:5%;background: rgb(172, 180, 188);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
+                                            中英词库抓取</span>\
                                 </td> \
                                 <td align="center" ><span v-if="item.iw === true" >✔️</span><span v-else>❌</span></td> \
                                 <td align="center" ><span v-if="item.ie === true" >✔️</span><span v-else>❌</span></td> \
