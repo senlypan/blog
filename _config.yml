@@ -110,6 +110,8 @@ tag_map:
   读书: reading
   时间: time
   实验: trial
+  黑客: hacker
+  画家: painter
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
