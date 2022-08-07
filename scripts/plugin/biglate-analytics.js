@@ -5,7 +5,10 @@
 
 var _BIGLATE_ANALYTICSvar 
 var _zhubaiVue
+var _zhubaiPostVue
+var _zhubaiTimer
 var _zhubaiError=0
+var _zhubaiPostError=0
 
 class BiglateAnalytics {
     
@@ -13,7 +16,7 @@ class BiglateAnalytics {
     _OPEN_API_ = 'https://open.panshenlian.com'
     _DNS_API_ = 'https://dns.panshenlian.com/npm'
     _ANALY_ = '/app/data/analy/client'
-    _SCAN_ = '/app/data/scan/'
+    _SCAN_ = '/app/data/scan'
 
     init(){ 
         var that = this
@@ -30,8 +33,9 @@ class BiglateAnalytics {
             that.buildTrend(14)
             that.buildTrack(2)
         }
-        if ( "/2022/07/11/trial-001-zhubai/" == document.location.pathname ){
-            that.buildZhubaiRand()
+        if ( "/2022/08/07/trial-001-zhubai/" == document.location.pathname ){
+            that.buildZhubaiRand('pcls')
+            that.buildZhubaiPostVue()
         }
     }
 
@@ -71,16 +75,63 @@ class BiglateAnalytics {
         });
     }
 
-    buildZhubaiRand(){
+    buildZhubaiRand(_qt){
         var that = this
+        var qt = 'rand'
+        if (_qt){
+            qt = _qt
+        }
         $.ajax({
             type: "POST",
             contentType: "application/json",
-            url: that._OPEN_API_ + that._SCAN_ + "/zhubai/list/rand",
+            url: that._OPEN_API_ + that._SCAN_ + "/zhubai/list/" + qt,
             success: function(res){ 
-                that.buildZhubaiRandVue(res)
+                that.buildZhubaiRandVue(res,qt)
             }
-        });
+        })
+    }
+
+    buildZhubaiPost(){ 
+        var that = this
+        var kw = $("#zhubai_post_kw").val()
+        if (kw){ 
+            $("#zhubai_post_kw_rs").html("快马加鞭 ~ 检索中 ~")
+            $("#zhubai_post_kw_rs").css("color","#ccc")
+            $("#zhubai_post_error").html("")
+            _zhubaiPostError = 0
+            // data wrap
+            var _data = {}
+            _data.keyword = kw
+            var selectValue = $("#zhubai_post_select").val()
+            if ("tl" == selectValue){
+                _data.title = 1
+            } else {
+                _data.content = 1
+            }
+            $.ajax({
+                type: "POST",
+                contentType: "application/json",
+                url: that._OPEN_API_ + that._SCAN_ + "/zhubai/post/query",
+                data: JSON.stringify(_data),
+                success: function(res){ 
+                    $("#zhubai_post_kw").val("")
+                    $("#zhubai_post_kw_rs").html("成功检索 ~ 你可真是棒棒 ~")
+                    $("#zhubai_post_kw_rs").css("color","#60b044")
+                    $("#zhubai_post_error").html("")
+                    _zhubaiPostError = 0
+                    // render
+                    that.buildZhubaiPostVue(res)
+                }
+            });
+        } else {
+            _zhubaiPostError ++
+            $("#zhubai_post_kw_rs").html("壮士 ~ 来个关键词 ~")
+            $("#zhubai_post_kw_rs").css("color","rgb(240, 5, 14)") 
+            if ( Number(_zhubaiPostError) > Number(1) ){
+                $("#zhubai_post_error").html( " x " + _zhubaiPostError)
+                $("#zhubai_post_error").css("color","rgb(240, 5, 14)") 
+            }
+        }
     }
 
     buildTrackVue(res,_ds){
@@ -367,7 +418,7 @@ class BiglateAnalytics {
             $("#zhubai_error").html("")
             _zhubaiError = 0
             $.ajax({
-                type: "GET",
+                type: "POST",
                 contentType: "application/json",
                 url: that._OPEN_API_ + that._SCAN_ + "/zhubai/enroll/"+kw,
                 success: function(res){ 
@@ -390,7 +441,7 @@ class BiglateAnalytics {
         }
     }
 
-    buildZhubaiRandVue(res){
+    buildZhubaiRandVue(res,_qt){
         var that = this
         if (res && res.code == 200){
             document.getElementById("zhubai-rand").innerHTML =    
@@ -404,25 +455,36 @@ class BiglateAnalytics {
                                 <span class="input-group-addon" style="display:inline-block;" id="zhubai_kw_rs" ></span> \
                                 <span class="input-group-addon" style="display:inline-block;" id="zhubai_error" ></span> \
                         </div>  \
-                        <div style="display:inline-block;margin-top:5px;color:rgb(240 5 14);float:right;"> \
-                             {{zhubai_reflush_times}} 秒后自动刷新数据 \
+                    </div> \
+                    <div style="margin-bottom:40px;margin-top:40px;"> \
+                        <div v-for="nav in navs" style="display:inline-block;"> \
+                            <span>&nbsp;{{nav.icon}}&nbsp;</span>\
+                            <span v-bind:class="[nav.btnClass]" v-on:click="_BIGLATE_ANALYTICS.buildZhubaiRand(nav.qt)"> \
+                                {{nav.title}} \
+                                <font v-if="nav.reflushTimes === true" style="color:red">\
+                                    （{{zhubai_reflush_times}}秒后自动刷新）</font>\
+                            </span>  \
+                            <span v-if="nav.split === true" >&nbsp;&nbsp;|&nbsp;&nbsp;</span>\
                         </div>  \
                     </div> \
                     <table class="table table-striped" > \
                         <thead> \
                             <tr> \
+                                <th width="10%" style="font-weight:100;" align="center">序号</th> \
                                 <th width="10%" style="font-weight:100;" align="center">竹白</th> \
-                                <th width="10%" style="font-weight:100;" align="center">配色推荐</th> \
-                                <th width="20%" style="font-weight:100;" >专栏</th> \
-                                <th width="15%" style="font-weight:100;" >作者</th> \
-                                <th width="10%" style="font-weight:100;" >微信</th> \
-                                <th width="10%" style="font-weight:100;" >邮箱</th> \
-                                <th width="10%" style="font-weight:100;" >RSS</th> \
+                                <th width="10%" style="font-weight:100;" align="center">推荐配色</th> \
+                                <th width="10%" style="font-weight:100;" >专栏</th> \
+                                <th width="10%" style="font-weight:100;" >作者</th> \
+                                <th width="10%" style="font-weight:100;" >订阅</th> \
+                                <th width="10%" style="font-weight:100;color:rgb(249, 4, 90)" v-if="selected === pcls" >创作总量</th> \
+                                <th width="10%" style="font-weight:100;color:rgb(172, 52, 220)" v-if="selected === pcs" >创作篇数</th> \
+                                <th width="10%" style="font-weight:100;color:rgb(28, 156, 92)" v-if="selected === pcla" >篇均字数</th> \
                                 <th width="10%" style="font-weight:100;" >会员</th> \
                             </tr> \
                         </thead> \
                         <tbody style="font-size:14px;"> \
-                            <tr v-for="item in items" style="vertical-align:middle"> \
+                            <tr v-for="(item,index) in items" style="vertical-align:middle"> \
+                                <td align="center" >{{index+1}}</td> \
                                 <td :style="item.style"  align="center"> \
                                     <img :src="item.ar" height="50px" width="50px" :id="item.tk" \
                                         style="border-radius:50%;border:2px solid #fff;" > \
@@ -439,29 +501,35 @@ class BiglateAnalytics {
                                 <td align="center">\
                                     {{item.am}} \
                                     <span v-if="item.fm === 1" \
-                                        style="display:block;width:90px;border-radius:5%;background: rgb(212, 192, 130);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
-                                            网友提交收录</span>\
+                                        style="display:block;width:65px;border-radius:5%;background: rgb(212, 192, 130);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
+                                            网友收录</span>\
                                     <span v-else-if="item.fm === 2" \
-                                        style="display:block;width:90px;border-radius:5%;background: rgb(190, 81, 142);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
-                                            搜索引擎抓取</span>\
+                                        style="display:block;width:65px;border-radius:5%;background: rgb(190, 81, 142);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
+                                            引擎抓取</span>\
                                     <span v-else \
-                                        style="display:block;width:90px;border-radius:5%;background: rgb(172, 180, 188);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
-                                            中英词库抓取</span>\
+                                        style="display:block;width:65px;border-radius:5%;background: rgb(172, 180, 188);padding:5px;color:#fff;font-size:12px;margin-top:10px;">\
+                                            词库收集</span>\
                                 </td> \
-                                <td align="center" ><span v-if="item.iw === true" >✔️</span><span v-else>❌</span></td> \
-                                <td align="center" ><span v-if="item.ie === true" >✔️</span><span v-else>❌</span></td> \
-                                <td align="center" ><span v-if="item.ir === true" >✔️</span><span v-else>❌</span></td> \
+                                <td align="center" > \
+                                    <span v-if="item.iw === true" >微信&nbsp;</span> \
+                                    <span v-if="item.ie === true" >邮箱&nbsp;</span> \
+                                    <span v-if="item.ir === true" >RSS</span> \
+                                </td> \
+                                <td align="center" style="font-weight:100;color:rgb(249, 4, 90)" v-if="selected === pcls"  >{{item.pls}}字</td> \
+                                <td align="center" style="font-weight:100;color:rgb(172, 52, 220)" v-if="selected === pcs" >{{item.pcs}}篇</td> \
+                                <td align="center" style="font-weight:100;color:rgb(28, 156, 92)" v-if="selected === pcla" >{{item.pla}}字</td> \
                                 <td align="center" style="white-space:nowrap;"> \
                                     <span v-if="item.fs === true" > \
-                                        <ul v-for="kk in item.mps_arr" > \
-                                            <li>{{kk}}</li> \
+                                        <ul style="list-style:none;padding:0px;margin:0px;"> \
+                                            <li v-for="kk in item.mps_arr">{{kk}}</li> \
                                         </ul> \
                                     </span><span v-else>❌</span> \
                                 </td> \
                             </tr> \
                         </tbody> \
-                    </table>' 
+                    </table>'  
         
+            // 样式构建
             for (var i = 0; i < res.data.length; i++) {
                 // 设置主色
                 var color_arr = res.data[i].ac.split(';')
@@ -473,7 +541,7 @@ class BiglateAnalytics {
                     var color_rgb = color_arr[c]
                     var color_style = {
                         display: "block",
-                        width: "80px",
+                        width: "70px",
                         height: "20px",
                         margin: "0px 0px 2px",
                         background: color_rgb
@@ -492,18 +560,103 @@ class BiglateAnalytics {
                 el: '#zhubai-rand',
                 data: {
                     items: res.data,
-                    zhubai_reflush_times: 60
+                    zhubai_reflush_times: 60 ,
+                    selected:_qt,
+                    pcls:'pcls',pcla:'pcla',pcs:'pcs',rand:'rand',
+                    navs:[
+                        {icon:'🏆',title:'劳模创作者',qt:'pcls',split:true,reflushTimes:false,
+                            btnClass:('pcls'==_qt?'':'btn-link')},
+                        {icon:'👺',title:'稳定创作者',qt:'pcla',split:true,reflushTimes:false,
+                            btnClass:('pcla'==_qt?'':'btn-link')},
+                        {icon:'🚀',title:'高产创作者',qt:'pcs',split:true,reflushTimes:false,
+                            btnClass:('pcs'==_qt?'':'btn-link')},
+                        {icon:'⏱️',title:'随机创作者',qt:'rand',split:false,reflushTimes:('rand'==_qt?true:false),
+                            btnClass:('rand'==_qt?'':'btn-link')}
+                    ]
                 }
             })
+            // 清除Timer
+            if(_zhubaiTimer){
+                clearInterval(_zhubaiTimer)
+            }
             // 数秒刷新
-            var timer = setInterval(function(){
-                _zhubaiVue.zhubai_reflush_times--;
-                if(_zhubaiVue.zhubai_reflush_times <= 0){ 
-                    clearInterval(timer)
-                    that.buildZhubaiRand() 
-                }
-           },1000)
+            if ('rand'==_qt) {
+                _zhubaiTimer = setInterval(function(){
+                    _zhubaiVue.zhubai_reflush_times--;
+                    if(_zhubaiVue.zhubai_reflush_times <= 0){ 
+                        clearInterval(_zhubaiTimer)
+                        that.buildZhubaiRand() 
+                    }
+               },1000)
+            }
         }
+    }
+
+    buildZhubaiPostVue(res,_nav_name){ 
+        var that = this
+        var _html = 
+            '<div style="margin-bottom:10px;"> \
+                <div style="display:inline-block;"> \
+                        <span class="input-group-addon" style="display:inline-block;">按</span> \
+                        <select class="selectpicker" id="zhubai_post_select" \
+                            style="display:inline-block;width:80px;padding: 0.375rem 0.75rem;line-height:1.5;"> \
+                                <option value="tl">标题</option>\
+                                <option value="ct">内容</option>\
+                        </select> \
+                        <span class="input-group-addon" style="display:inline-block;">检索关键词为</span> \
+                        <input type="text" class="form-control" id="zhubai_post_kw" style="display:inline-block;width:100px;"> \
+                        <span class="input-group-addon" style="display:inline-block;">的文章</span> \
+                        <button  v-on:click="_BIGLATE_ANALYTICS.buildZhubaiPost()" \
+                            type="button" class="btn btn-primary" style="display:inline-block;margin:0px 15px;">立即检索</button> \
+                        <span class="input-group-addon" style="display:inline-block;" id="zhubai_post_kw_rs" ></span> \
+                        <span class="input-group-addon" style="display:inline-block;" id="zhubai_post_error" ></span> \
+                </div>  \
+            </div> \
+            <table class="table table-striped" > \
+                <thead> \
+                    <tr> \
+                        <th width="8%" style="font-weight:100;" align="center">序号</th> \
+                        <th width="8%" style="font-weight:100;" align="center">竹白</th> \
+                        <th width="10%" style="font-weight:100;" >专栏</th> \
+                        <th width="12%" style="font-weight:100;" >免费阅读</th> \
+                        <th width="14%" style="font-weight:100;" >标题</th> \
+                        <th width="48%" style="font-weight:100;" >匹配条目</th> \
+                    </tr> \
+                </thead> \
+                <tbody style="font-size:14px;"> \
+                    <tr v-for="(item,index) in items" style="vertical-align:middle"> \
+                        <td align="center" >{{index+1}}</td> \
+                        <td align="center"> \
+                            <img :src="item.at" height="50px" width="50px" :id="item._i_" \
+                                style="border-radius:50%;border:2px solid #fff;" > \
+                        </td> \
+                        <td align="center" >{{item.an}}</td> \
+                        <td align="center" ><span v-if="item.ipc === true" >❌</span><span v-else>✔️</span></td> \
+                        <td align="left" > \
+                            <a :href=item.pl target="_blank">{{item.tl}}</a> \
+                        </td> \
+                        <td align="left" > \
+                            <div v-for="hhll in item.hl"> \
+                                {{hhll}} \
+                            </div> \
+                        </td> \
+                    </tr> \
+                </tbody> \
+            </table>'  
+        document.getElementById("zhubai-post-search").innerHTML = _html
+
+        // render
+        var items_data
+        if (res && res.code == 200){ 
+            items_data = res.data.list
+        } else {
+        }
+        _zhubaiPostVue = new Vue({
+            el: '#zhubai-post-search',
+            data: {
+                items: items_data
+            }
+        }) 
     }
 
     /**
