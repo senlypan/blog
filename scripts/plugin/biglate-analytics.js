@@ -115,7 +115,7 @@ class BiglateAnalytics {
                 data: JSON.stringify(_data),
                 success: function(res){ 
                     // render
-                    that.buildZhubaiPostVue(res)
+                    that.buildZhubaiPostVue(res,kw)
                     // data init 
                     $("#zhubai_post_select").val(selectValue)
                     $("#zhubai_post_kw_rs").html("成功！你可真是棒棒 ~")
@@ -596,8 +596,9 @@ class BiglateAnalytics {
         }
     }
 
-    buildZhubaiPostVue(res,_nav_name){ 
+    buildZhubaiPostVue(res,_kw){ 
         var that = this
+        if(!_kw){ _kw = ''}
         var _html = 
             '<div style="margin-bottom:10px;"> \
                 <div style="display:inline-block;"> \
@@ -608,7 +609,7 @@ class BiglateAnalytics {
                                 <option value="ct">内容</option>\
                         </select> \
                         <span class="input-group-addon" style="display:inline-block;">&nbsp;检索关键词为&nbsp;</span> \
-                        <input type="text" class="form-control" id="zhubai_post_kw" style="display:inline-block;width:200px;"> \
+                        <input type="text" class="form-control" id="zhubai_post_kw" style="display:inline-block;width:200px;" value='+_kw+'> \
                         <span class="input-group-addon" style="display:inline-block;">&nbsp;的文章</span> \
                         <button  v-on:click="_BIGLATE_ANALYTICS.buildZhubaiPost()" \
                             type="button" class="btn btn-primary" style="display:inline-block;margin:0px 15px;">立即检索</button> \
@@ -656,12 +657,20 @@ class BiglateAnalytics {
         var items_data = []
         if (res && res.code == 200){ 
             items_data = res.data.list
-        } else { 
+        } else {
             var _temp_item = {
                 'an':'/','ipc':false,'tl':'赶紧试试吧~',
                 hl:['支持按 <font color=red>标题</font> 或 <font color=red>内容</font> 搜索哦~'],
-                'at':'https://imgs.zhubai.love/87fc641465194b9184ca9ae1dc2fe891.png'}
+                'at':'https://imgs.zhubai.love/dd7101659e044850b5c57a3e910ab838.jpg'}
             items_data.push(_temp_item)
+        }
+        // no data
+        if (items_data.length <= 0 ){
+            var _dodata_item = {
+                'an':'/','ipc':false,'tl':'查无内容哦~',
+                hl:['换个关键词例如 <font color=red>竹白</font> 或者 <font color=red>按内容</font> 检索试试吧~'],
+                'at':'https://imgs.zhubai.love/87fc641465194b9184ca9ae1dc2fe891.png'}
+            items_data.push(_dodata_item)
         }
         _zhubaiPostVue = new Vue({
             el: '#zhubai-post-search',
