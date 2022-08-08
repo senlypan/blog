@@ -512,9 +512,9 @@ class BiglateAnalytics {
                                             词库收集</span>\
                                 </td> \
                                 <td align="center" > \
-                                    <span v-if="item.iw === true" >微信&nbsp;</span> \
-                                    <span v-if="item.ie === true" >邮箱&nbsp;</span> \
-                                    <span v-if="item.ir === true" >RSS</span> \
+                                    微信&nbsp;<span v-if="item.iw === true" >✔️</span><span v-else>❌</span></br> \
+                                    邮箱&nbsp;<span v-if="item.ie === true" >✔️</span><span v-else>❌</span></br> \
+                                    RSS&nbsp;<span v-if="item.ir === true" >✔️</span><span v-else>❌</span> \
                                 </td> \
                                 <td align="center" style="font-weight:100;color:rgb(249, 4, 90)" v-if="selected === pcls"  >{{item.pls}}字</td> \
                                 <td align="center" style="font-weight:100;color:rgb(172, 52, 220)" v-if="selected === pcs" >{{item.pcs}}篇</td> \
@@ -524,7 +524,7 @@ class BiglateAnalytics {
                                         <ul style="list-style:none;padding:0px;margin:0px;"> \
                                             <li v-for="kk in item.mps_arr">{{kk}}</li> \
                                         </ul> \
-                                    </span><span v-else>❌</span> \
+                                    </span><span v-else>免费</span> \
                                 </td> \
                             </tr> \
                         </tbody> \
