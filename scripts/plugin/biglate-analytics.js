@@ -114,13 +114,14 @@ class BiglateAnalytics {
                 url: that._OPEN_API_ + that._SCAN_ + "/zhubai/post/query",
                 data: JSON.stringify(_data),
                 success: function(res){ 
-                    $("#zhubai_post_kw").val("")
-                    $("#zhubai_post_kw_rs").html("成功检索 ~ 你可真是棒棒 ~")
+                    // render
+                    that.buildZhubaiPostVue(res)
+                    // data init 
+                    $("#zhubai_post_select").val(selectValue)
+                    $("#zhubai_post_kw_rs").html("成功！你可真是棒棒 ~")
                     $("#zhubai_post_kw_rs").css("color","#60b044")
                     $("#zhubai_post_error").html("")
                     _zhubaiPostError = 0
-                    // render
-                    that.buildZhubaiPostVue(res)
                 }
             });
         } else {
@@ -527,7 +528,10 @@ class BiglateAnalytics {
                                 </td> \
                             </tr> \
                         </tbody> \
-                    </table>'  
+                    </table>   \
+                    <div> \
+                        <span style="color:#ccc">📢数据来源于 <a href="https://zhubai.love/" target="_blank">竹白</a> 官网，内容仅用于学习，请勿用于商业用途。</span> \
+                    </div>' 
         
             // 样式构建
             for (var i = 0; i < res.data.length; i++) {
@@ -597,15 +601,15 @@ class BiglateAnalytics {
         var _html = 
             '<div style="margin-bottom:10px;"> \
                 <div style="display:inline-block;"> \
-                        <span class="input-group-addon" style="display:inline-block;">按</span> \
+                        <span class="input-group-addon" style="display:inline-block;">按&nbsp;</span> \
                         <select class="selectpicker" id="zhubai_post_select" \
-                            style="display:inline-block;width:80px;padding: 0.375rem 0.75rem;line-height:1.5;"> \
+                            style="display:inline-block;width:80px;padding: 0.375rem 0.75rem;line-height:1.5;border: 1px solid #ccc;"> \
                                 <option value="tl">标题</option>\
                                 <option value="ct">内容</option>\
                         </select> \
-                        <span class="input-group-addon" style="display:inline-block;">检索关键词为</span> \
-                        <input type="text" class="form-control" id="zhubai_post_kw" style="display:inline-block;width:100px;"> \
-                        <span class="input-group-addon" style="display:inline-block;">的文章</span> \
+                        <span class="input-group-addon" style="display:inline-block;">&nbsp;检索关键词为&nbsp;</span> \
+                        <input type="text" class="form-control" id="zhubai_post_kw" style="display:inline-block;width:200px;"> \
+                        <span class="input-group-addon" style="display:inline-block;">&nbsp;的文章</span> \
                         <button  v-on:click="_BIGLATE_ANALYTICS.buildZhubaiPost()" \
                             type="button" class="btn btn-primary" style="display:inline-block;margin:0px 15px;">立即检索</button> \
                         <span class="input-group-addon" style="display:inline-block;" id="zhubai_post_kw_rs" ></span> \
@@ -616,11 +620,11 @@ class BiglateAnalytics {
                 <thead> \
                     <tr> \
                         <th width="8%" style="font-weight:100;" align="center">序号</th> \
-                        <th width="8%" style="font-weight:100;" align="center">竹白</th> \
+                        <th width="10%" style="font-weight:100;" align="center">竹白</th> \
                         <th width="10%" style="font-weight:100;" >专栏</th> \
                         <th width="12%" style="font-weight:100;" >免费阅读</th> \
                         <th width="14%" style="font-weight:100;" >标题</th> \
-                        <th width="48%" style="font-weight:100;" >匹配条目</th> \
+                        <th width="46%" style="font-weight:100;" >匹配条目</th> \
                     </tr> \
                 </thead> \
                 <tbody style="font-size:14px;"> \
@@ -636,20 +640,28 @@ class BiglateAnalytics {
                             <a :href=item.pl target="_blank">{{item.tl}}</a> \
                         </td> \
                         <td align="left" > \
-                            <div v-for="hhll in item.hl"> \
-                                {{hhll}} \
+                            <div v-for="hhll in item.hl" > \
+                                <p v-html="hhll"></p>\
                             </div> \
                         </td> \
                     </tr> \
                 </tbody> \
-            </table>'  
+            </table>  \
+            <div> \
+                <span style="color:#ccc">📢数据来源于 <a href="https://zhubai.love/" target="_blank">竹白</a> 官网，内容仅用于学习，请勿用于商业用途。</span> \
+            </div>' 
         document.getElementById("zhubai-post-search").innerHTML = _html
 
         // render
-        var items_data
+        var items_data = []
         if (res && res.code == 200){ 
             items_data = res.data.list
-        } else {
+        } else { 
+            var _temp_item = {
+                'an':'/','ipc':false,'tl':'赶紧试试吧~',
+                hl:['支持按 <font color=red>标题</font> 或 <font color=red>内容</font> 搜索哦~'],
+                'at':'https://imgs.zhubai.love/87fc641465194b9184ca9ae1dc2fe891.png'}
+            items_data.push(_temp_item)
         }
         _zhubaiPostVue = new Vue({
             el: '#zhubai-post-search',
