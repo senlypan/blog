@@ -8,6 +8,10 @@ introduce: |
 
 ### 技术
 
+#### 试验田
+- [No.1：竹白网站实现专栏与文章检索](/2022/08/07/trial-001-zhubai/)
+
+
 #### Mybatis
 - [Mybatis系列全解（一）：手写一套持久层框架](/2020/11/16/mybatis-001-hand-write-frame/)
 - [Mybatis系列全解（二）：Mybatis简介与环境搭建](/2020/11/28/mybatis-002-introduct-and-environment-construction/)

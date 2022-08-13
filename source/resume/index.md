@@ -19,7 +19,7 @@ introduce: |
 
 * Github：[senlypan](https://github.com/senlypan)
 * 个人网站：[www.panshenlian.com](https://www.panshenlian.com/)
-* 联系邮箱：[panshenlian@gmail.com](mailto:panshenlian@gmail.com)，邮件中请先进行自我介绍或提供社交网络、博客、产品链接，否则不回复。
+* 联系邮箱：[panshenlian#gmail.com](mailto:panshenlian@gmail.com)，邮件中请先进行自我介绍或提供社交网络、博客、产品链接，否则不回复。
 
 
 ## 工作经验
