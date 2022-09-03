@@ -12,7 +12,7 @@ introduce: |
 2009 ~ 2013年本科就读于 [佛山科学技术学院](https://www.fosu.edu.cn/)。
 2013 ~ 2015年与大学朋友合伙创业，负责研发，主营微信公众号生态平台。
 2015 ~ 2016年在 [以大科技](http://www.ebigcn.com/)， 产品经理 && 项目经理。
-2016 至今在 [河南建业](https://www.centralchina.com/)，研发组长。
+2016 至今在 [河南建业](https://www.centralchina.com/)。
 
 
 ## 联系方式
