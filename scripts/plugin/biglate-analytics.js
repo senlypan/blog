@@ -3,7 +3,7 @@
  * https://github.com/SunQQQ/SunQBlog-UserSide
  */
 
-var _BIGLATE_ANALYTICSvar 
+var _BIGLATE_ANALYTICS
 var _zhubaiVue
 var _zhubaiPostVue
 var _zhubaiTimer
