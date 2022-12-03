@@ -3,6 +3,7 @@ title: 竹白网站实现专栏与文章检索
 date: 2022-08-07 17:11:18
 tags:
 - 实验
+- 竹白
 preview: https://www.panshenlian.com/images/post/me/share/visit.jpg
 introduce: |
     对竹白网站做简单实验。

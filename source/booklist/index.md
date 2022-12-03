@@ -26,6 +26,9 @@ introduce: |
 |《新程序员004》|计算机|已读|10天|[无](https://book.douban.com/subject/35928464/)|他山之石|**★★★**|
 |《儿童牙齿护理-百科全书》|健康|已读|7天|[无](https://book.douban.com/subject/30607924/)|初探牙齿|**★★**|
 |《癌症·真相》|医学|已读|15天|[8.8](https://book.douban.com/subject/26592648/)|初窥癌症|**★★★**|
+|《正面管教》|教育|已读|18天|[8.8](https://book.douban.com/subject/3420606/)|科学管教|**★★**|
+|《创业36条军规》|创业|已读|7天|[8.3](https://book.douban.com/subject/26794032/)|创业本质|**★★★**|
+|《养育的选择》|教育|已读|15天|[8.6](https://book.douban.com/subject/26797268/)|育儿策略|**★★**|
 |《数据密集型应用系统设计》|计算机|在读中..||[9.7](https://book.douban.com/subject/30329536/)|干货密集|**★★★★**|
 |《趋势2030》|经济学|在读中..||[6.4](https://book.douban.com/subject/35809919/)|登高望远|**★★**|
 |《华为工作法》|管理学|在读中..||[5.7](https://book.douban.com/subject/26932497/)|懂的都懂|**★★**|

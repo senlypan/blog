@@ -1,5 +1,5 @@
 ---
-title: 无聊产品正经事【季刊】
+title: 无聊产品正经事
 date: 2022-04-16 11:51:09
 preview: https://www.panshenlian.com/images/post/me/share/product.jpg
 introduce: |

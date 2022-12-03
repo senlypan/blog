@@ -40,21 +40,21 @@ right_menus:
 ## Banners && Widgets 
 banners:
   jade: |
-    | 2022-11-12：十二日凌晨三时许，我从睡梦中忽坐起，推醒爱人，告诉她：“我想辞职，然后在孩子上小学之前，带他到处走走，见见外面的世界。另外我还想拍视频、做专栏、换套活法 ...”，她听完翻了身，以为我说梦话，又睡入梦乡了。其实没有梦话，只是一些忽闪忽闪的梦想清单，一颗颗之前埋下的种子，最近好像要发芽。我靠坐在床头，没有再入睡，直至天亮。———— 我们此生短暂，且放光芒。
+    | 2022-12-03：甚是感慨，企业裁员，年头至尾，我自然成了剩斗士，继续处理余下，负责一地鸡毛，正打当年，空负热情，行业低迷。郑州实属一座邪都，多灾多噩，产业窄，人才稀，投机，务虚。且收拾行囊，回归北上广。
 
 widgets:
   -
     markdown: |
       Hi，我是大晚，真名潘深练，英文ID：biglate ，未来想做自由职业者，相信技术，会让生活更有趣。
 
-      * [《 无聊科技正经事周刊》](https://weekly.panshenlian.com) 
-      * [《 Java并发编程学习小册 》](http://concurrent-programming.panshenlian.com/#/zh-cn/)
-      * [《 架构师演进小册 》](http://qa.panshenlian.com/#/)
+      * 做了一个 [《竹白百科》](https://www.zhubai.wiki/) 
+      * 有个文档 [《云游戏平台搭建指南》](http://cloudgaming.panshenlian.com/) 
 
   -
     markdown: |
       <img src="https://www.panshenlian.com/images/post/wechat/v2.jpg" alt="潘潘和他的朋友们" width="100%"> 
       Weibo: <a href="https://weibo.com/senlypan" target="_blank">划水弹夹想吃肉</a><br/>
+      Bilibili: <a href="https://space.bilibili.com/232947570" target="_blank">潘大晚</a><br/> 
       Twitter: <a href="https://twitter.com/man_paddle" target="_blank">划水怪</a><br/> 
       Email: panshenlian#gmail.com 
 

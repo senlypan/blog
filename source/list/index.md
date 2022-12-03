@@ -10,6 +10,7 @@ introduce: |
 
 #### 试验田
 - [No.1：竹白网站实现专栏与文章检索](/2022/08/07/trial-001-zhubai/)
+- [No.2：为什么我又做了竹白百科？](/2022/12/03/trial-002-zhubai-wiki/)
 
 
 #### Mybatis
