@@ -74,6 +74,8 @@ introduce: |
 - 支持作品分享
 - 支持创作者分享
 
+![share](/images/post/product/zhubai/share.jpg)
+
 ![sharecard](/images/post/product/zhubai/sharecard.jpg)
 
 ## 末尾
