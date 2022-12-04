@@ -6,7 +6,7 @@ biglate_analytics: 1
 biglate_ajax: 1
 
 ## Meta
-rss: http://panshenlian/atom.xml
+rss: /atom.xml
 favicon: /avatars/v1.ico
 icon: /avatars/v1.ico
 source_url: 'https://github.com/senlypan/blog/blob/master/source/'
