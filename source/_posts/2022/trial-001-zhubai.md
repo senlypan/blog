@@ -12,6 +12,13 @@ introduce: |
 <link href="https://dns.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script type="text/javascript" src="https://dns.panshenlian.com/npm/vue@2/dist/vue.js" ></script>
 
+
+## 前言
+
+👏👏👏 欢迎来访朋友，本竹白功能已经升级为 [《竹白百科》](https://www.zhubai.wiki/)，增加了作品展示，分享，RSS订阅等，也兼容移动端，方便阅读，具体升级原因详见 [《为什么我又做了竹白百科？》](/2022/12/03/trial-002-zhubai-wiki/)
+
+当然，如果大家喜欢当然版本，那么请继续使用，此页面功能依然会为您保留。
+
 ## 竹白初测评
 
 [竹白](https://zhubai.love/) 这个平台算是较新的创作者平台，能够帮助创作者触达更多紧密且忠实的读者，我挺喜欢它的 UI 设计和体验，目前我在竹白平台也跟风开了一个专栏 [《无聊科技正经事》](https://wednesday.zhubai.love/)，我猜测一是质量一般，所以读者寥寥，二是我没有主动去自我推广（当然推广之后可能仍然没有流量）。
