@@ -63,6 +63,16 @@ introduce: |
 
 ![author](/images/post/product/zhubai/author.jpg)
 
+
+
+- 检索结果
+
+
+
+![search-box](/images/post/product/zhubai/search-box.jpg)
+
+![search-result](/images/post/product/zhubai/search-result.jpg)
+
 #### 3、UI
 
 我是全栈工程师，但如果要说 UI ，那真的是难倒我了，于是鉴于自己一直收听的播客节目 [《枫言枫语》](https://www.xiaoyuzhoufm.com/episode/62d58b0664f141ad8150151f) 之前也做了一件类似的事 [《中文播客榜》](https://xyzrank.com/)，所以我直接把 UI 样式搬了过来，然后用 React 搭建了几个组件，基本就用了。
