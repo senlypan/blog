@@ -88,9 +88,31 @@ introduce: |
 
 ![sharecard](/images/post/product/zhubai/sharecard.jpg)
 
+#### 5、访迹
+
+另外，添加了一个简单的访问痕迹统计页面 - [竹白访迹](http://analy.zhubai.wiki/)，方便分析竹白百科的流量模型和用户行为，也提供了流量的来源渠道，方便大家 **反向** 查看更多有意思的信息源。
+
+- 访客总览
+
+![analy1](/images/post/product/zhubai/analy1.jpg)
+
+- 流量趋势
+
+![analy1](/images/post/product/zhubai/analy2.jpg)
+
+- 访客来源
+
+![analy1](/images/post/product/zhubai/analy3.jpg)
+
+- 用户轨迹
+
+![analy1](/images/post/product/zhubai/analy4.jpg)
+
+
+
 ## 末尾
 
-更多功能，建议到 [竹白百科](https://www.zhubai.wiki/) 上细细查阅，如有问题，请随时联系我。
+更多功能，建议到 [竹白百科](https://www.zhubai.wiki/)  or [竹白访迹](http://analy.zhubai.wiki/) 上细细查阅，如有问题，请随时联系我。
 
 
 
