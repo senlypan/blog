@@ -111,8 +111,10 @@ tag_map:
   时间: time
   实验: trial
   竹白: zhubai
+  竹白百科: zhubai-wiki
   黑客: hacker
   画家: painter
+  汇报: report
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta

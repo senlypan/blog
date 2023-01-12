@@ -11,7 +11,7 @@ introduce: |
 #### 试验田
 - [No.1：竹白网站实现专栏与文章检索](/2022/08/07/trial-001-zhubai/)
 - [No.2：为什么我又做了竹白百科？](/2022/12/03/trial-002-zhubai-wiki/)
-
+- [No.3：竹白百科月度汇报 × 邀请您加入阅享室！](/2023/01/12/001-zhubai-wiki-monthly-report/)
 
 #### Mybatis
 - [Mybatis系列全解（一）：手写一套持久层框架](/2020/11/16/mybatis-001-hand-write-frame/)
