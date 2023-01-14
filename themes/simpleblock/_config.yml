@@ -27,11 +27,7 @@ menus:
   
 right_menus:
   '科技周刊': /weekly
-##  '产品季刊': /product
   '访问统计': /visit
-  '开往': 
-    target: '_blank'
-    href: 'https://travellings.link'
   'Github':
     target: '_blank'
     href: 'https://github.com/senlypan/blog'
@@ -40,7 +36,7 @@ right_menus:
 ## Banners && Widgets 
 banners:
   jade: |
-    | 2023-01-10：周末和老婆专门跑了一趟深圳，算是去考察新战场，深圳的空气质量比郑州好上不少，或者这边空气更养人，深圳，年后见，人生不设限！
+    | 2023-01-10：周末和老婆专门跑了一趟深圳，算是去考察新战场，深圳的空气质量比郑州好上不少，当然很喜欢郑州，但是或许这边空气更养人，深圳，年后见，人生不设限！
 
 widgets:
   -
