@@ -1049,7 +1049,7 @@ public class MyExampleTypeHandler extends BaseTypeHandler<String> {
 
 
 
-这里，自定义类型处理器将会覆盖已有的处理 Java String 类型的属性以及 VARCHAR 类型的参数和结果的类型处理器，基本以上步骤就已经自定了 **JdbcType.VARCHAR** 与 **String**类做映射转换。
+这里，自定义类型处理器将会覆盖已有的处理 Java 字符串 类型的属性以及 VARCHAR 类型的参数和结果的类型处理器，基本以上步骤就已经自定了 **JdbcType.VARCHAR** 与 **String**类做映射转换。
 
 
 

@@ -135,7 +135,7 @@ JDK 8 的新特性都还没摸透，JDK 16 的新特性就提着刀来了。
 
 ![](https://www.panshenlian.com/images/post/00_old_article_images/sourceMaterial/05.png)
 
-5、将 [ZGC（可扩展的低延迟垃圾收集器）线程堆栈处理](https://openjdk.java.net/jeps/376) 从安全点移至并发阶段。该计划的目标包括从ZGC安全点中删除线程堆栈处理，使堆栈处理变得懒性、协同、并发和增量，从ZGC安全点移除所有其它单一线程的 root 处理，并为其它虚拟机子系统提供了一种延迟处理堆栈的机制。ZGC旨在使 HotSpot 中的GC暂停和可伸缩性问题成为过去。到目前为止，随着堆大小和元空间大小变化而伸缩的GC操作已经从安全点操作中移除，并迁到并发阶段，它们包括标记，重定位，引用处理，类卸载和大多 root 处理。GC安全点中唯一仍保留执行的是子集root处理和限时标记终止操作。这些 root 处理包括Java线程堆栈和其它线程 root，由于它们会随线程数量而伸缩所以会存在问题。要消除这些问题，每个线程的处理（包括堆栈扫描）必须移动到并发阶段。通过这项计划，提升延迟的吞吐成本将会微不足道，并且在典型计算机上ZGC安全点内部花销的时间将会少于1毫秒。
+5、将 [ZGC（可扩展的低延迟垃圾回收器）线程堆栈处理](https://openjdk.java.net/jeps/376) 从安全点移至并发阶段。该计划的目标包括从ZGC安全点中删除线程堆栈处理，使堆栈处理变得懒性、协同、并发和增量，从ZGC安全点移除所有其它单一线程的 root 处理，并为其它虚拟机子系统提供了一种延迟处理堆栈的机制。ZGC旨在使 HotSpot 中的GC暂停和可伸缩性问题成为过去。到目前为止，随着堆大小和元空间大小变化而伸缩的GC操作已经从安全点操作中移除，并迁到并发阶段，它们包括标记，重定位，引用处理，类卸载和大多 root 处理。GC安全点中唯一仍保留执行的是子集root处理和限时标记终止操作。这些 root 处理包括Java线程堆栈和其它线程 root，由于它们会随线程数量而伸缩所以会存在问题。要消除这些问题，每个线程的处理（包括堆栈扫描）必须移动到并发阶段。通过这项计划，提升延迟的吞吐成本将会微不足道，并且在典型计算机上ZGC安全点内部花销的时间将会少于1毫秒。
 
 
 
@@ -259,7 +259,7 @@ JDK 8 的新特性都还没摸透，JDK 16 的新特性就提着刀来了。
 `[8]` Jigsaw 项目: *https://openjdk.java.net/projects/jigsaw/*
 `[9]` 标准替代版本: *https://wiki.openjdk.java.net/display/JDK8/Java+Dependency+Analysis+Tool#JavaDependencyAnalysisTool-ReplaceusesoftheJDK'sinternalAPIs*
 `[10]` 外部链接程序 API: *https://openjdk.java.net/jeps/389*
-`[11]` ZGC（可扩展的低延迟垃圾收集器）线程堆栈处理: *https://openjdk.java.net/jeps/376*
+`[11]` ZGC（可扩展的低延迟垃圾回收器）线程堆栈处理: *https://openjdk.java.net/jeps/376*
 `[12]` 弹性元空间功能: *https://openjdk.java.net/jeps/387*
 `[13]` 启用C++ 14语言功能: *https://openjdk.java.net/jeps/347*
 `[14]` C++ 14: *https://www.infoworld.com/article/2608800/application-development-c-14-is-done-here-s-what-s-new.html*
