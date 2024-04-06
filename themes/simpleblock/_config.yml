@@ -16,7 +16,7 @@ license:
 
 ## Menus
 menus:
-  '关于大晚': /about
+  '关于我': /about
   '简历': /resume
   '在读书单': /booklist
   '在听播客': /podcasts
@@ -36,21 +36,21 @@ right_menus:
 ## Banners && Widgets 
 banners:
   jade: |
-    | 2023-03-12：
-    | 成功的路上并不拥挤，因为坚持下来的人不多。只要你能经得起诱惑，受得了挫折，忍得住委屈，耐得住时间，守得住方向，则无事不成。
+    | 2024-04-06：
+    | 来深圳满一年，工作不算劳累，身心不疲惫，收支基本平衡，高级工程师兼主管，业务技术成长较缓，仍旧有危机感，仍旧未能偿还历史巨额债务。老婆裸辞奔赴自媒体红海，刚入门报课学习，基本思路是找对标账号，依葫芦画瓢，然后出了几个平淡作品，无明显流量，现每日抓耳挠腮，日渐发胖。孩子即将上小学，对足球依然热爱，学习能力很强，打游戏比我厉害，基本乖巧，好胜心很强，开始学会讨好父母，以获得更多玩游戏的时间和购买礼物的机会。
 
 widgets:
   -
     markdown: |
-      Hi, 我是潘深练，可以叫我大晚，一名大龄边缘程序员，十八级社恐跑男，平时喜欢捣鼓一些小创意，有很多理想，也有点理想主义，同时也是一名读瘾晚期患者。
+      Hi, 我是潘深练，一名大龄程序员，坚定不移热爱技术，平时喜欢捣鼓一些小创意，有很多理想，也有点理想主义，同时也是一名读瘾晚期患者。
 
       ❤️做了一款阅读工具叫 [竹白百科](https://www.zhubai.wiki/)
 
   -
     markdown: |
-      <img src="https://www.panshenlian.com/images/post/wechat/v2.jpg" alt="潘大晚" width="100%"> 
+      <img src="https://www.panshenlian.com/images/post/wechat/v2.jpg" alt="第一次当爸爸吖" width="100%"> 
       Weibo: <a href="https://weibo.com/senlypan" target="_blank">划水弹夹想吃肉</a><br/>
-      Bilibili: <a href="https://space.bilibili.com/232947570" target="_blank">潘大晚</a><br/> 
+      Bilibili: <a href="https://space.bilibili.com/232947570" target="_blank">第一次当爸爸吖</a><br/> 
       Twitter: <a href="https://twitter.com/man_paddle" target="_blank">划水怪</a><br/> 
       Email: panshenlian#gmail.com 
 

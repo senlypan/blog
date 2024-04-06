@@ -1277,7 +1277,7 @@ public class BoundSql {
 
 
 
-> 文章持续更新，微信搜索「**潘大晚**」第一时间阅读，随时有惊喜。本文会在 **GitHub** [https://github.com/JavaWorld](https://github.com/senlypan/JavaWorld) 收录，关于热腾腾的技术、框架、面经、解决方案、摸鱼技巧、教程、视频、漫画等等等等，我们都会以最美的姿势第一时间送达，欢迎 Star ~ 我们未来 **不止文章**！想进读者群的朋友欢迎撩我个人号：panshenlian，备注「**加群**」我们群里畅聊， **BIU ~** 
+> 文章持续更新，微信搜索「**第一次当爸爸吖**」第一时间阅读，随时有惊喜。本文会在 **GitHub** [https://github.com/JavaWorld](https://github.com/senlypan/JavaWorld) 收录，关于热腾腾的技术、框架、面经、解决方案、摸鱼技巧、教程、视频、漫画等等等等，我们都会以最美的姿势第一时间送达，欢迎 Star ~ 我们未来 **不止文章**！想进读者群的朋友欢迎撩我个人号：panshenlian，备注「**加群**」我们群里畅聊， **BIU ~** 
 
 
 
