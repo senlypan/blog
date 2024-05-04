@@ -25,7 +25,7 @@ introduce: |
 |《人月神话》|计算机|备读库||[8.5](https://book.douban.com/subject/26358448/)|/||
 |《Java并发编程实战》|计算机|备读库||[9.0](https://book.douban.com/subject/10484692/)|并发圣典|**★★★**|
 |《Java并发编程的艺术》|计算机|备读库||[7.5](https://book.douban.com/subject/26591326/)|并发干货|**★★**|
-|《智慧的疆界：从图灵机到人工智能》|计算机|已读|2天|[9.2](https://book.douban.com/subject/30379536/)|人工智能入门简史|**★★**|
+|《智慧的疆界：从图灵机到人工智能》|计算机|已读|2天|[9.2](https://book.douban.com/subject/30379536/)|人工智能背景读物|**★★**|
 
 ### 2023年 
 
