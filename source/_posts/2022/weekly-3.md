@@ -612,7 +612,7 @@ Opuses 甜点实际上是由覆盖着这些石膏状蛋白酥皮的冰淇淋组�
 
 微信搜索“第一次当爸爸吖”或者扫描二维码，即可订阅。
 
-![](https://www.panshenlian.com/images/post/wechat/v2.jpg)
+![](https://www.panshenlian.com/images/post/wechat/v3.jpg)
 
 本刊开源（GitHub: [senlypan/weekly](https://github.com/senlypan/weekly)），欢迎投稿，推荐或自荐文章/软件/资源，请[提交 issue](https://github.com/senlypan/weekly/issues) 。
 
