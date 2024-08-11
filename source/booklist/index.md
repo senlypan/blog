@@ -12,12 +12,8 @@ introduce: |
 
 |书名|类别|进度|历时|豆瓣|感受|推荐|
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|《知行：技术人的管理之路》|管理学|在读||[9.3](https://book.douban.com/subject/33463986/)|工程师学管理||
-|《一本书读懂支付》|计算机|在读||[7.1](https://book.douban.com/subject/36422205/)|支付技术架构||
-|《跨境支付及金融服务——通道、流程</br>与系统》|支付金融|在读||[/](https://book.douban.com/subject/36157157/)|跨境支付业务||
 |《编写可读代码的艺术》|计算机|备读库||[8.7](https://book.douban.com/subject/10797189/)|/||
 |《深入理解Java虚拟机（第3版）》|计算机|备读库||[9.5](https://book.douban.com/subject/34907497/)|经典实践|**★★★**|
-|《原则》|管理学|备读库||[8.3](https://book.douban.com/subject/27608239/)|/||
 |《置身事内》|经济学|备读库||[9.1](https://book.douban.com/subject/35546622/)|/||
 |《硅谷钢铁侠 埃隆·马斯克的冒险人生》|创业|备读库||[8.0](https://book.douban.com/subject/26759508/)|/||
 |《Java虚拟机规范（Java SE 8版）》|计算机|备读库||[8.4](https://book.douban.com/subject/26418340/)|/||
@@ -25,7 +21,13 @@ introduce: |
 |《人月神话》|计算机|备读库||[8.5](https://book.douban.com/subject/26358448/)|/||
 |《Java并发编程实战》|计算机|备读库||[9.0](https://book.douban.com/subject/10484692/)|并发圣典|**★★★**|
 |《Java并发编程的艺术》|计算机|备读库||[7.5](https://book.douban.com/subject/26591326/)|并发干货|**★★**|
-|《智慧的疆界：从图灵机到人工智能》|计算机|已读|2天|[9.2](https://book.douban.com/subject/30379536/)|人工智能背景读物|**★★**|
+|《原则》|管理学|已读|5天|[8.3](https://book.douban.com/subject/27608239/)|正确废话|**★**|
+|《知行：技术人的管理之路》|管理学|已读|14天|[9.3](https://book.douban.com/subject/33463986/)|工程师学管理|**★★★★**|
+|《一本书读懂支付》|计算机|已读|5天|[7.1](https://book.douban.com/subject/36422205/)|支付架构通识|**★★★**|
+|《跨境支付及金融服务</br>——通道、流程与系统》|支付金融|已读|5天|[/](https://book.douban.com/subject/36157157/)|跨境支付入门|**★★**|
+|《远见：如何规划职业生涯3大阶段》|励志鸡汤|已读|1天|[7.6](https://book.douban.com/subject/27609489/)|正确废话|**★**|
+|《优秀到不能被忽视》|励志鸡汤|已读|1天|[7.9](https://book.douban.com/subject/26781120/)|正确废话|**★**|
+|《智慧的疆界：从图灵机到人工智能》|计算机|已读|2天|[9.2](https://book.douban.com/subject/30379536/)|AI背景读物|**★★**|
 
 ### 2023年 
 
