@@ -13,8 +13,8 @@ var _zhubaiPostError=0
 class BiglateAnalytics {
     
     _LOCATION_COOKIE = '_wwwpanshenliancom_location'
-    _OPEN_API_ = 'https://open.panshenlian.com'
-    _DNS_API_ = 'https://dns.panshenlian.com/npm'
+    _OPEN_API_ = 'http://open.panshenlian.com'
+    _DNS_API_ = 'http://dns.panshenlian.com/npm'
     _ANALY_ = '/app/data/analy/client'
     _SCAN_ = '/app/data/scan'
 

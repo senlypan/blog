@@ -9,8 +9,8 @@ introduce: |
     对竹白网站做简单实验。
 ---
 
-<link href="https://dns.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script type="text/javascript" src="https://dns.panshenlian.com/npm/vue@2/dist/vue.js" ></script>
+<link href="http://dns.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script type="text/javascript" src="http://dns.panshenlian.com/npm/vue@2/dist/vue.js" ></script>
 
 
 ## 前言
