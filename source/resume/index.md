@@ -13,7 +13,7 @@ introduce: |
 2013 ~ 2015年与朋友合伙创业，负责研发 x 主营微信公众号生态平台。
 2015 ~ 2016年在 [以大科技](http://www.ebigcn.com/)， 项目经理 x 技术负责人。
 2016 ~ 2023年在 [河南建业](https://www.centralchina.com/)，技术组长。
-2023 ~ 2099年在 [OceanPayment](https://www.oceanpayment.com/)，系统架构师。
+2023 ~ 2099年在 [Oceanpayment](https://www.oceanpayment.com/)，系统架构师。
 
 ## 联系方式
 
