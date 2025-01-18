@@ -5,7 +5,7 @@ author: 潘深练
 tags:
 - 科技周刊
 - 跑步
-preview: https://weekly.panshenlian.com/_media/images/2022/issue-7/cover.jpg
+preview: http://weekly.panshenlian.com/_media/images/2022/issue-7/cover.jpg
 introduce: |
     村上春树的黑魔法：写作建议与天赋、专注、耐力。
 ---
@@ -16,13 +16,13 @@ introduce: |
 
 ## 封面图
 
-![村上春树](https://weekly.panshenlian.com/_media/images/2022/issue-7/cover.jpg)
+![村上春树](http://weekly.panshenlian.com/_media/images/2022/issue-7/cover.jpg)
 
 村上春树的黑魔法：写作建议与天赋、专注、耐力。（[via](https://lithub.com/whats-needed-is-magic-writing-advice-from-haruki-murakami/)）
 
 ## 本周话题：向村上春树学跑步，向古川武士学养成
 
-![topic](https://weekly.panshenlian.com/_media/images/2022/issue-7/topic-001.jpg)
+![topic](http://weekly.panshenlian.com/_media/images/2022/issue-7/topic-001.jpg)
 
 **1、近来**
 
@@ -34,7 +34,7 @@ introduce: |
 
 分享近来读完的两本书籍，分别是村上春树的《当我谈跑步时，我谈些什么》与古川武士的《坚持，一种可以养成的习惯》，恰巧都是出自日本作家之手，都在谈论坚持的意义，不禁感叹人家的思维方式，不光做事，还探究里层的学问，实在让人钦佩。
 
-![topic](https://weekly.panshenlian.com/_media/images/2022/issue-7/topic-002.jpg)
+![topic](http://weekly.panshenlian.com/_media/images/2022/issue-7/topic-002.jpg)
 
 **2、当我谈跑步时，我谈些什么**
 
@@ -56,7 +56,7 @@ introduce: |
 - 老实说，我甚至觉得每天坚持跑步同意志的强弱，并没有太大的关联，我能够坚持跑步三十年，恐怕还是因为跑步合乎我的性情，至少“不觉得那么痛苦”。
 - 持之以恒，不乱节奏，对于长期作业实在至为重要。一旦节奏得以设定，其余的问题便可以迎刃而解。然后要让惯性的轮子以一定的速度准确无误地旋转起来，对待持之以恒，何等小心翼翼亦不为过。
 
-![topic](https://weekly.panshenlian.com/_media/images/2022/issue-7/topic-003.jpg)
+![topic](http://weekly.panshenlian.com/_media/images/2022/issue-7/topic-003.jpg)
 
 **3、坚持，一种可以养成的习惯**
 
@@ -74,7 +74,7 @@ introduce: |
 
 以“农民”的眼光，撒下习惯的种子，此刻便开始！
 
-![topic](https://weekly.panshenlian.com/_media/images/2022/issue-7/topic-004.jpg)
+![topic](http://weekly.panshenlian.com/_media/images/2022/issue-7/topic-004.jpg)
 
 **4、写在最后**
 
@@ -86,55 +86,55 @@ Don't quit , Do it.
 
 1、[苹果正式下架 iPod](https://www.techradar.com/news/apple-officially-retires-the-ipod)（英文）
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/keji-004.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/keji-004.jpg)
 
 5月10日，苹果宣布 iPod touch（第 7 代）售完即止，不再发售。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/keji-006.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/keji-006.jpg)
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/keji-005.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/keji-005.jpg)
 
 ▲  目前苹果市场应该是购买不到了， iPod touch 将活在回忆里。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-001.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-001.jpg)
 
 ▲  最初的 iPod 于 2001 年 10 月 23 日推出，是第一款将惊人的 1,000 首歌曲和 10 小时电池装入令人惊叹的 6.5 盎司包装中的 MP3 播放器。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-002.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-002.jpg)
 
 ▲ iPod mini 于 2004 年 2 月 20 日推出，将用户对 iPod 的所有喜爱融入到仅 3.6 盎司的更小设计中。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-003.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-003.jpg)
 
 ▲ iPod nano（第 2 代）于 2006 年 9 月 25 日推出，提供纤薄的设计、明亮的彩色显示屏、六种时尚的颜色和长达 24 小时的电池续航时间，用户口袋里最多可放 2,000 首歌曲。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-004.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-004.jpg)
 
 ▲ iPod touch 于 2007 年 9 月 5 日首次推出，它带来了革命性的 Multi-Touch 界面，使 iPhone 凭借华丽的 3.5 英寸宽屏显示屏成为 iPod 的热门产品。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-005.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-005.jpg)
 
 ▲ iPod nano（第 7 代）于 2012 年 9 月 12 日推出，是迄今为止最薄的 iPod，仅 5.4 毫米，配备 2.5 英寸多点触控显示屏。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-006.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-006.jpg)
 
 ▲ iPod shuffle（第 4 代）于 2015 年 7 月 15 日推出，采用时尚设计，电池续航时间长达 15 小时，2GB 存储空间可容纳数百首歌曲，还有一个 VoiceOver 按钮可以听到歌曲标题、播放列表名称或电池状态。
 
-![iPod](https://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-007.jpg)
+![iPod](http://weekly.panshenlian.com/_media/images/2022/issue-7/ipod-007.jpg)
 
 ▲ iPod touch（第 7 代）于 2019 年 5 月 28 日推出，配备 A10 Fusion 芯片，可实现身临其境的增强现实体验和 Group FaceTime，以及 256GB 的存储空间。
 
 2、[优步测试机器人送餐](https://edition.cnn.com/2022/05/13/cars/uber-robot-delivery-la/index.html)（英文）
 
-![优步](https://weekly.panshenlian.com/_media/images/2022/issue-7/keji-001.jpg)
+![优步](http://weekly.panshenlian.com/_media/images/2022/issue-7/keji-001.jpg)
 
 ▲  Nuro
 
 优步本月将启动两项测试计划，以在大洛杉矶地区提供 UberEats。它将结合使用四轮机器人和自动驾驶汽车，具体取决于交付周期。客户将在优步应用程序中收到有关如何取回食物的说明。
 
-![优步](https://weekly.panshenlian.com/_media/images/2022/issue-7/keji-002.jpg)
+![优步](http://weekly.panshenlian.com/_media/images/2022/issue-7/keji-002.jpg)
 
-![优步](https://weekly.panshenlian.com/_media/images/2022/issue-7/keji-003.jpg) 
+![优步](http://weekly.panshenlian.com/_media/images/2022/issue-7/keji-003.jpg) 
 
 一名安全司机将在场进行汽车交付，并对机器人进行远程监控。从长远来看，自动化交付可以使交付更加实惠，并为更多类型的服务创造市场。
 
@@ -142,29 +142,29 @@ Don't quit , Do it.
 
 1、[5G，你比4G多1G？](https://mp.weixin.qq.com/s/SlxB7j4Mjyj-jzGouwHkqg)（中文）
 
-![5G](https://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-001.jpg) 
+![5G](http://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-001.jpg) 
 
 30年，从1G的大哥大，到全球规模最大的5G网络，我们的通信技术高速飞奔，我们的生活方式也彻底改变。
 
 回忆过去的30年，你会看到一段怎样的历程？
 
-![5G](https://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-002.jpg) 
+![5G](http://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-002.jpg) 
 
 ▲  中国移动 联合 星球研究所，共同出品科普视频《从1G到5G，中国经历了什么？》，用9分钟为你呈现，30年速度与激情 。
 
 2、[排名：世界上最受欢迎的社交网络，以及谁拥有它们（截止2022年）](https://www.visualcapitalist.com/ranked-social-networks-worldwide-by-users/)（英文）
 
-![社交](https://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-003.jpg) 
+![社交](http://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-003.jpg) 
 
 全球有超过45 亿人使用某种形式的社交媒体——约占全球人口的 57%。
 
 然而，尽管社交媒体的受众广泛且多样化，但少数几家公司控制了世界上大多数最受欢迎的社交媒体平台。Meta（前身为 Facebook的科技巨头）、腾讯、Alphabet（YouTube母公司）、字节跳动等，基本垄端了社交媒体领域。
 
-![社交](https://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-004.jpg) 
+![社交](http://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-004.jpg) 
 
-![社交](https://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-006.jpg) 
+![社交](http://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-006.jpg) 
 
-![社交](https://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-007.jpg) 
+![社交](http://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-007.jpg) 
 
 ▲  按月活跃用户划分的顶级社交平台
 
@@ -179,7 +179,7 @@ Don't quit , Do it.
 - NO.13：抖音  
 - NO.21：百度贴吧
 
-![社交](https://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-005.jpg) 
+![社交](http://weekly.panshenlian.com/_media/images/2022/issue-7/linggan-005.jpg) 
 
 ▲  十亿用户俱乐部（月活跃用户数）
 
@@ -189,7 +189,7 @@ Don't quit , Do it.
 
 1、[高级概念：关于JavaScript引擎如何工作](https://blog.bitsrc.io/javascript-under-the-hood-advanced-concepts-developers-should-know-a89ddbb11228)（英文）
 
-![JavaScript](https://weekly.panshenlian.com/_media/images/2022/issue-7/source-001.jpg)
+![JavaScript](http://weekly.panshenlian.com/_media/images/2022/issue-7/source-001.jpg)
 
 目前是 2022 年，JavaScript 已经接管了互联网。人们涌向库和框架，希望寻找有关于 JavaScript 有价值的东西，研究其内部工作原理，并希望成为前10% 的  JavaScript 开发者。
 
@@ -197,17 +197,17 @@ Don't quit , Do it.
 
 2、[Flutter 3 介绍（发布）](https://medium.com/flutter/introducing-flutter-3-5eb69151622f)（英文）
 
-![Flutter](https://weekly.panshenlian.com/_media/images/2022/issue-7/source-002.jpg)
+![Flutter](http://weekly.panshenlian.com/_media/images/2022/issue-7/source-002.jpg)
 
 Flutter 3.0 重磅发布，横跨 iOS、Android、Windows 等六大平台。
 
-![Flutter](https://weekly.panshenlian.com/_media/images/2022/issue-7/source-003.jpg)
+![Flutter](http://weekly.panshenlian.com/_media/images/2022/issue-7/source-003.jpg)
 
 Flutter 是 Google 发布的一个用于创建跨平台、高性能移动应用的框架，简而言之，Flutter 是一套构建用户界面（UI）的工具包，开源、免费、背靠大山（Google）。
 
 3、[CSS 2022 现状](https://web.dev/state-of-css-2022/)（英文）
 
-![CSS](https://weekly.panshenlian.com/_media/images/2022/issue-7/article-001.jpg)
+![CSS](http://weekly.panshenlian.com/_media/images/2022/issue-7/article-001.jpg)
 
 Google IO 2022 演讲上关于当今和未来 Web 样式功能的介绍。
 
@@ -215,15 +215,15 @@ Google IO 2022 演讲上关于当今和未来 Web 样式功能的介绍。
 
 1、[Effidit：腾讯出品的智能创作助手](https://effidit.qq.com/)
 
-![Effidit](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-003.jpg)
+![Effidit](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-003.jpg)
 
 智能创作助手 Effidit（Efficient and Intelligent Editing） 是由腾讯 AI Lab 开发的一个研究性原型系统，探索用 AI 技术提升写作者的写作效率和创作体验。 
 
-![Effidit](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-004.jpg)
+![Effidit](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-004.jpg)
 
-![Effidit](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-005.jpg)
+![Effidit](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-005.jpg)
 
-![Effidit](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-006.jpg)
+![Effidit](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-006.jpg)
 
 创作辅助能力包括但不仅限于：
 
@@ -236,7 +236,7 @@ Google IO 2022 演讲上关于当今和未来 Web 样式功能的介绍。
 - 跨语言例句检索
 - 论文检索
 
-![Effidit](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-007.jpg)
+![Effidit](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-007.jpg)
 
 我简单尝试了功能，智能创作助手 Effidit 的纠错、润色、补全、推荐等能力均已非常出色，基本可以成为我写文章的审查润色助手了。
 
@@ -244,11 +244,11 @@ Google IO 2022 演讲上关于当今和未来 Web 样式功能的介绍。
 
 2、[musicn： 一个下载高品质音乐的命令行工具 ](https://github.com/zonemeen/musicn)
 
-![musicn](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-001.jpg)
+![musicn](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-001.jpg)
 
 🎵 一个下载高品质音乐的命令行工具，其中音乐来源于**咪咕**（API 是从公开的网络中获得）。
 
-![musicn](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-002.jpg)
+![musicn](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-002.jpg)
 
 说明：
 
@@ -260,9 +260,9 @@ Google IO 2022 演讲上关于当今和未来 Web 样式功能的介绍。
 
 3、[json visio：JSON 数据可视化工具](https://github.com/AykutSarac/jsonvisio.com)
 
-![jsonvisio](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-008.jpg)
+![jsonvisio](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-008.jpg)
 
-![jsonvisio](https://weekly.panshenlian.com/_media/images/2022/issue-7/tools-009.jpg)
+![jsonvisio](http://weekly.panshenlian.com/_media/images/2022/issue-7/tools-009.jpg)
 
 Github 上一款用于 json 数据的可视化工具，支持导入导出，以及简单两种样式展示，目前 star 4.1k。
 
@@ -270,7 +270,7 @@ Github 上一款用于 json 数据的可视化工具，支持导入导出，以�
 
 1、[Web3 DApp 最佳编程实践指南](https://guoyu.mirror.xyz/RD-xkpoxasAU7x5MIJmiCX4gll3Cs0pAd5iM258S1Ek)
 
-![DApp](https://weekly.panshenlian.com/_media/images/2022/issue-7/source-005.jpg)
+![DApp](http://weekly.panshenlian.com/_media/images/2022/issue-7/source-005.jpg)
 
 文章将会涉及到开发一个 DApp （**去中心化应用程序**）所涵盖的几乎所有方面内容。包括：
 
@@ -286,15 +286,15 @@ Github 上一款用于 json 数据的可视化工具，支持导入导出，以�
 
 2、[Go语言学习：完全教程](https://kps.hashnode.dev/learn-go-the-complete-course)（英文）
 
-![Go](https://weekly.panshenlian.com/_media/images/2022/issue-7/source-004.jpg)
+![Go](http://weekly.panshenlian.com/_media/images/2022/issue-7/source-004.jpg)
 
 本文详细介绍了 Go 编程语言的基础知识和高级特性。
 
-![Go](https://weekly.panshenlian.com/_media/images/2022/issue-7/source-006.jpg)
+![Go](http://weekly.panshenlian.com/_media/images/2022/issue-7/source-006.jpg)
 
 3、[《Designing Data-Intensive Applications》 (中文翻译电子书)](https://github.com/Vonng/ddia)（中文）
 
-![设计数据密集型应用](https://weekly.panshenlian.com/_media/images/2022/issue-7/source-007.jpg)
+![设计数据密集型应用](http://weekly.panshenlian.com/_media/images/2022/issue-7/source-007.jpg)
 
 豆瓣 9.7 分，个人多次推荐，一本讨论数据系统设计实现的经典，也是学习分布式系统设计的辅助读物。
 
@@ -302,7 +302,7 @@ Github 上一款用于 json 数据的可视化工具，支持导入导出，以�
 
 1、[生活的无限可能：一个硅谷程序员的飞行梦](https://www.ximalaya.com/sound/442836946)（中文）
 
-![一个硅谷程序员的飞行梦](https://weekly.panshenlian.com/_media/images/2022/issue-7/boke-001.jpeg)
+![一个硅谷程序员的飞行梦](http://weekly.panshenlian.com/_media/images/2022/issue-7/boke-001.jpeg)
 
 本周推荐一期关于谷歌程序员学习开飞机的经历，与编程关联不大，可以当口水听，如果你也有小愿望，说不定能触动你。
 
@@ -324,7 +324,7 @@ Github 上一款用于 json 数据的可视化工具，支持导入导出，以�
 
 1、[软件工程师的修炼与成长系列](https://vgod.medium.com/list/e731a8ecf20d)（中文繁体）
 
-![软件工程師的修炼与成長系列](https://weekly.panshenlian.com/_media/images/2022/issue-7/post-001.jpg)
+![软件工程師的修炼与成長系列](http://weekly.panshenlian.com/_media/images/2022/issue-7/post-001.jpg)
 
 软件工程师的修炼与成长系列文摘来自 vgod's blog，目前暂出 10 篇，文摘内容干货十足，值得慢慢品味。
 

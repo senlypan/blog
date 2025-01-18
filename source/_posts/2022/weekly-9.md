@@ -5,14 +5,14 @@ author: 潘深练
 tags:
 - 科技周刊
 - 开源
-preview: https://weekly.panshenlian.com/_media/images/2022/issue-9/cover.jpg
+preview: http://weekly.panshenlian.com/_media/images/2022/issue-9/cover.jpg
 introduce: |
     周刊调整。
 ---
 
 ## 封面图
 
-![](https://weekly.panshenlian.com/_media/images/2022/issue-9/cover.jpg)
+![](http://weekly.panshenlian.com/_media/images/2022/issue-9/cover.jpg)
 
 Pexels . Norbert Kundrak . ([via](https://www.pexels.com/zh-cn/photo/3625023/))
 
@@ -46,7 +46,7 @@ Pexels . Norbert Kundrak . ([via](https://www.pexels.com/zh-cn/photo/3625023/))
 
 所以，不如把我闭源的项目做成效能平台？
 
-![](https://weekly.panshenlian.com/_media/images/2022/issue-9/topic-002.jpg)
+![](http://weekly.panshenlian.com/_media/images/2022/issue-9/topic-002.jpg)
 
 **其次想做一个人工智能周刊项目**。
 
@@ -54,13 +54,13 @@ Pexels . Norbert Kundrak . ([via](https://www.pexels.com/zh-cn/photo/3625023/))
 
 所以，不如把流水线交由智能自动化来实现，如此一来，我不仅抽离出来，后续要想达到每日一刊，也是极其简单。
 
-![](https://weekly.panshenlian.com/_media/images/2022/issue-9/topic-001.jpg)
+![](http://weekly.panshenlian.com/_media/images/2022/issue-9/topic-001.jpg)
 
 ## 播客
 
 1、[涛思数据创始人陶建辉：爱捣腾的53岁程序员](https://www.ximalaya.com/sound/440665194)（中文）
 
-![](https://weekly.panshenlian.com/_media/images/2022/issue-9/boke-001.jpg)
+![](http://weekly.panshenlian.com/_media/images/2022/issue-9/boke-001.jpg)
 
 陶建辉是涛思数据创始人和CEO，开源了物联网大数据平台TDengine，多次创业与被收购。
 
@@ -72,7 +72,7 @@ Pexels . Norbert Kundrak . ([via](https://www.pexels.com/zh-cn/photo/3625023/))
 
 1、[我写的别人都知道怎么办？](https://mp.weixin.qq.com/s/-XoazO5iZdhga8bZQvre1g)（中文）
 
-![](https://weekly.panshenlian.com/_media/images/2022/issue-9/post-001.jpg)
+![](http://weekly.panshenlian.com/_media/images/2022/issue-9/post-001.jpg)
 
 如果你刚迈入写作行列，或是曾经参与真实写作，是否有过这个困扰：
 
