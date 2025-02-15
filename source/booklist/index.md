@@ -8,10 +8,12 @@ introduce: |
 
 
 
-### 2024年 
+### 2025年 
 
 |书名|类别|进度|历时|豆瓣|感受|推荐|
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|《低代码应用开发》|计算机|备读库||[暂无](https://book.douban.com/subject/36739818/)|/||
+|《低代码开发平台的设计与实现》|计算机|备读库||[暂无](https://book.douban.com/subject/35706526/)|/||
 |《编写可读代码的艺术》|计算机|备读库||[8.7](https://book.douban.com/subject/10797189/)|/||
 |《深入理解Java虚拟机（第3版）》|计算机|备读库||[9.5](https://book.douban.com/subject/34907497/)|经典实践|**★★★**|
 |《置身事内》|经济学|备读库||[9.1](https://book.douban.com/subject/35546622/)|/||
@@ -19,6 +21,11 @@ introduce: |
 |《Java虚拟机规范（Java SE 8版）》|计算机|备读库||[8.4](https://book.douban.com/subject/26418340/)|/||
 |《Software Engineer at Google》|计算机|备读库||[8.5](https://book.douban.com/subject/34875994/)|/||
 |《人月神话》|计算机|备读库||[8.5](https://book.douban.com/subject/26358448/)|/||
+
+### 2024年 
+
+|书名|类别|进度|历时|豆瓣|感受|推荐|
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |《Java并发编程实战》|计算机|备读库||[9.0](https://book.douban.com/subject/10484692/)|并发圣典|**★★★**|
 |《Java并发编程的艺术》|计算机|备读库||[7.5](https://book.douban.com/subject/26591326/)|并发干货|**★★**|
 |《原则》|管理学|已读|5天|[8.3](https://book.douban.com/subject/27608239/)|正确废话|**★**|
