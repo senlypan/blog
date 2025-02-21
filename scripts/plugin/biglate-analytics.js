@@ -14,7 +14,7 @@ class BiglateAnalytics {
     
     _LOCATION_COOKIE = '_wwwpanshenliancom_location'
     _OPEN_API_ = 'http://open.panshenlian.com'
-    _DNS_API_ = 'http://dns.panshenlian.com/npm'
+    _DNS_API_ = 'https://www.panshenlian.com/npm'
     _ANALY_ = '/app/data/analy/client'
     _SCAN_ = '/app/data/scan'
 

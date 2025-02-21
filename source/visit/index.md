@@ -7,11 +7,11 @@ introduce: |
 ---
 
 
-<link href="http://dns.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-<script type="text/javascript" src="http://dns.panshenlian.com/npm/vue@2/dist/vue.js" ></script>
+<link href="https://www.panshenlian.com/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script type="text/javascript" src="https://www.panshenlian.com/npm/vue@2/dist/vue.js" ></script>
 
-<script type="text/javascript" src="http://dns.panshenlian.com/npm/echarts@old/dist/echarts.min.js" ></script> 
-<script type="text/javascript" src="http://dns.panshenlian.com/npm/echarts@old/dist/china.js" ></script> 
+<script type="text/javascript" src="https://www.panshenlian.com/npm/echarts@old/dist/echarts.min.js" ></script> 
+<script type="text/javascript" src="https://www.panshenlian.com/npm/echarts@old/dist/china.js" ></script> 
 
 
 <style>
