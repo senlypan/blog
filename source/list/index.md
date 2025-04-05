@@ -1,5 +1,5 @@
 ---
-title: 所有日志
+title: 技术日志
 date: 2022-02-14 16:04:26
 preview: https://www.panshenlian.com/images/post/me/share/list.jpg
 introduce: |
